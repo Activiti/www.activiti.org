@@ -11,10 +11,11 @@ Open Source Business Automation Designed for the Cloud
 @rallegre: Activiti is a lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday. Activiti 7 is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios. This project is driven by a community of domain experts  from different companies with strong industry experience.
 
 ## Key Features
-- Activiti Process Runtime: cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments. 
+- Activiti Process Runtime: cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments. Click here to know more. 
+- Activiti Decision Runtime: cloud native, lightweight and reactive Decision Runtime
 - Activiti Forms Runtime: 
 - Activiti Cloud Connectors: 
-- Activiti Decision Runtime: 
+
 - Activiti Application / Case Management Router: 
 
 # Quick start
