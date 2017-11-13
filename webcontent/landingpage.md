@@ -1,17 +1,16 @@
 # Title
-Open Source Business Automation Designed for the Cloud
+Business Automation Suite Designed for the Cloud
+@rallegre: Solve Business Automation Scenatios
 # Sub-title
 @salaboy: Enabling the Cloud to be smarter
-@rallegre: Bridging the gap between Business & IT
+@rallegre: Solve Business Automation Scenatios with a  distributed, microservice-style BPM architecture
 # Description
 
-@salaboy: Activiti is a Business Automation Suite designed and built for the Cloud. Based on its BPM heritage, Activiti  evolved to serve as an umbrella for a set of Cloud Native building blocks focused on Business Automation for highly distributed environments. 
+Activiti is an open-source Business Automation Suite designed and built for the Cloud. Based on its BPM heritage, Activiti  evolved to serve as an umbrella for a set of Cloud Native building blocks focused on Business Automation for highly distributed environments. The Activiti project is animated by an open community of domain experts from different companies with strong industry experience.
 
-
-@rallegre: Activiti is a lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday. Activiti 7 is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios. This project is driven by a community of domain experts  from different companies with strong industry experience.
 
 ## Key Features
-- Activiti Process Runtime: cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments. Click here to know more. 
+- Activiti Process Runtime: cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments. Click here to know more.
 - Activiti Decision Runtime: cloud native, lightweight and reactive Decision Runtime
 - Activiti Forms Runtime: 
 - Activiti Cloud Connectors: 
