@@ -20,8 +20,8 @@ Activiti is an open-source Business Automation Suite designed and built for the 
 # Top menus
 * Documentation
   * Activiti v7.0
-    [Developers guide!] (https://activiti.gitbooks.io/activiti-7-developers-guide/content/)
-    [Getting started!] (https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started.html)
+    * [Developers guide](https://activiti.gitbooks.io/activiti-7-developers-guide/content/)
+    * [Getting started](https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started.html)
   * Activiti v6.0
     [Activiti v6.0 developers guide!] (https://www.activiti.org/userguide/)
     [Getting started!] (https://www.activiti.org/quick-start)
