@@ -26,18 +26,22 @@ Activiti is an open-source Business Automation Suite designed and built for the 
     * [Javadocs](https://www.activiti.org/javadocs/index.html)
     
 **Community**
+Engage with the Activiti community.
 * [Alfresco community](https://community.alfresco.com/community/bpm)
 * [Forum](https://community.alfresco.com/community/bpm/contentfilterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D)
 * [GitHub](https://github.com/Activiti)
 * [Gitter chat room](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 * [Stack Overflow](https://stackoverflow.com/search?q=activiti)
 * [Issue tracker](https://activiti.atlassian.net/secure/Dashboard.jspa)
+* [Roadmap](https://github.com/Activiti/Activiti/wiki/Activiti-7-Roadmap)
+* [How to contribute](https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html)
 
 **Blog** 
-a placeholder to render content coming from different blogs.
+A placeholder to render content coming from different blogs.
 
 **Enterprise** 
-just a link to the Alfresco.com website page presenting the enterprise edition.
+just a link to the Alfresco.com website page presenting the Enterprise Edition.
+https://www.alfresco.com/platform/process-services-bpm
 **Get Activiti**
 
 # Footer menus
