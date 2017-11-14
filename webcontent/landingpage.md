@@ -42,13 +42,15 @@ There are several ways you can collaborate as an individual or as an organizatio
 
 A placeholder to render content coming from different blogs.
 
+* [Activiti 7 blogs](https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~category%5Bactiviti-7%5D&filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bblogpost%5D)
+
 **Enterprise** 
 
 just a link to the Alfresco.com website page presenting the Enterprise Edition.
 https://www.alfresco.com/platform/process-services-bpm
 
 **Get Activiti**
-
+Use a form (smilar to [this one](https://www.activiti.org/download-bpm)) to capture user information (optional).
 
 # Footer menus
 Github Gitter Gitbook Stackoverflow Jive
