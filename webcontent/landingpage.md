@@ -7,7 +7,7 @@ Helping businesses in solving automation challenges in distributed, highly-scala
 Activiti is an open-source Business Automation Suite designed and built for the Cloud. Based on its BPM heritage, Activiti  evolved to serve as an umbrella for a set of Cloud Native building blocks focused on Business Automation for highly distributed environments. The Activiti project is animated by an open community of domain experts from different companies with strong industry experience.
 
 ### Key Features
-* Activiti Process Runtime: cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments. Click here to know more.
+* Activiti Process Runtime: cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments.
 * Activiti Decision Runtime: cloud native, lightweight and reactive Decision Runtime
 * Activiti Forms Runtime: 
 * Activiti Cloud Connectors: 
