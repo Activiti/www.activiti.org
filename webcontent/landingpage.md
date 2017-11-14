@@ -2,8 +2,7 @@
 ## Title
 Business Automation Suite Designed for the Cloud
 ## Sub-title
-@salaboy: Enabling the Cloud to be smarter
-@rallegre: Solve automation challenges with a distributed, microservice-style BPM architecture
+Helping you to solve automation  challenges in distributed, microservice architecture
 ## Description
 
 Activiti is an open-source Business Automation Suite designed and built for the Cloud. Based on its BPM heritage, Activiti  evolved to serve as an umbrella for a set of Cloud Native building blocks focused on Business Automation for highly distributed environments. The Activiti project is animated by an open community of domain experts from different companies with strong industry experience.
