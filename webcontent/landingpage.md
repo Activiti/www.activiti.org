@@ -26,6 +26,7 @@ Activiti is an open-source Business Automation Suite designed and built for the 
     * [Javadocs](https://www.activiti.org/javadocs/index.html)
     
 **Community**
+
 There are several ways you can collaborate as an individual or as an organization. We recommend you to get in touch via our [Gitter chat room](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
 * [Gitter chat room](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
@@ -38,12 +39,16 @@ There are several ways you can collaborate as an individual or as an organizatio
 * [How to contribute](https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html)
 
 **Blog** 
+
 A placeholder to render content coming from different blogs.
 
 **Enterprise** 
+
 just a link to the Alfresco.com website page presenting the Enterprise Edition.
 https://www.alfresco.com/platform/process-services-bpm
+
 **Get Activiti**
+
 
 # Footer menus
 Github Gitter Gitbook Stackoverflow Jive
