@@ -16,7 +16,7 @@ Activiti is an open-source Business Automation Suite designed and built for the 
 ## Quick start
 
 # Top menus
-**Documentation**
+1. **Documentation**
   * Activiti v7.0
     * [Developers guide](https://activiti.gitbooks.io/activiti-7-developers-guide/content/)
     * [Getting started](https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started.html)
@@ -25,7 +25,7 @@ Activiti is an open-source Business Automation Suite designed and built for the 
     * [Getting started](https://www.activiti.org/quick-start)
     * [Javadocs](https://www.activiti.org/javadocs/index.html)
     
-**Community**
+2. **Community**
 
 There are several ways you can collaborate as an individual or as an organization. We recommend you to get in touch via our [Gitter chat room](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
@@ -38,19 +38,19 @@ There are several ways you can collaborate as an individual or as an organizatio
 * [Roadmap](https://github.com/Activiti/Activiti/wiki/Activiti-7-Roadmap)
 * [How to contribute](https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html)
 
-**Blog** 
+3. **Blog** 
 
 A placeholder to render content coming from different blogs.
 
 * [Activiti 7 blogs](https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~category%5Bactiviti-7%5D&filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bblogpost%5D)
 
-**Enterprise** 
+4. **Get Activiti**
+Use a form (smilar to [this one](https://www.activiti.org/download-bpm)) to capture user information (optional).
+
+5. **Enterprise** 
 
 just a link to the Alfresco.com website page presenting the Enterprise Edition.
 https://www.alfresco.com/platform/process-services-bpm
-
-**Get Activiti**
-Use a form (smilar to [this one](https://www.activiti.org/download-bpm)) to capture user information (optional).
 
 # Footer menus
 Github Gitter Gitbook Stackoverflow Jive
