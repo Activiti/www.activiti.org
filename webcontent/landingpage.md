@@ -47,7 +47,13 @@ A placeholder to render content coming from different blogs.
 ## Get Activiti
 
 Use a form (smilar to [this one](https://www.activiti.org/download-bpm)) to capture user information (optional).
-To run Activiti 7 & Activiti Cloud, 
+
+Activiti 7
+* [Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
+* [Maven central](http://search.maven.org/#search%7Cga%7C1%7Cactiviti)
+
+Activiti 6
+* [Activiti-6.0.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
 
 ## Enterprise
 
