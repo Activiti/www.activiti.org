@@ -25,8 +25,14 @@ Activiti is an open-source Business Automation Suite designed and built for the 
     * [Getting started](https://www.activiti.org/quick-start)
     * [Javadocs](https://www.activiti.org/javadocs/index.html)
 **Community**
-* existing Jive forum for Activiti 5 & 6 and a new Jive pace or discorse forum for Actviti 7.
+* [Alfresco community](https://community.alfresco.com/community/bpm)
+* [Forum](https://community.alfresco.com/community/bpm/contentfilterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D)
+* [Github](https://github.com/Activiti)
+
 * Blog: a placeholder to render content coming from different blogs.
 * Enterprise: just a link to the Alfresco.com website page presenting the enterprise edition.
+**Get Activiti**
+
 # Footer menus
 Social icons: Github, Gitter, Gitbook, Stackoverflow, Jive
+
