@@ -66,10 +66,15 @@ Activiti 5.22
 https://www.alfresco.com/platform/process-services-bpm
 
 # Footer menus
-[![GitHub Logo](/assets/img/GitHub-Mark-32px.png)](https://github.com/Activiti))
-![Gitter](/assets/img/apple-icon-57x57.png) ![Gitbook](/assets/img/Gitbook.png)  ![Stackoverflow](/assets/img/stackoverflow.png)
+[![GitHub Logo](/assets/img/GitHub-Mark-32px.png)](https://github.com/Activiti)
+[![Gitter](/assets/img/apple-icon-57x57.png)](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+[![Gitbook](/assets/img/Gitbook.png)](https://activiti.gitbooks.io/activiti-7-developers-guide/content/)
+[![Stackoverflow](/assets/img/stackoverflow.png)](https://stackoverflow.com/search?q=activiti)
 ## Team
+https://www.activiti.org/about
 ## Services
+Enterprise support, maintenance, and consulting services are available through commercial subscriptions from [Alfresco](https://www.alfresco.com/), the primary sponsor of the Activiti Community.
+
 © 2017 [Alfresco Software](https://www.alfresco.com/), Inc. All Rights Reserved.
 
 
