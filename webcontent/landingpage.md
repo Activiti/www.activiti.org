@@ -66,5 +66,5 @@ Activiti 5.22
 https://www.alfresco.com/platform/process-services-bpm
 
 # Footer menus
-![GitHub Logo](/images/logo.png) Gitter Gitbook Stackoverflow Jive
+![GitHub Logo](/assets/img/GitHub-Mark-120px-plus.png) Gitter Gitbook Stackoverflow Jive
 
