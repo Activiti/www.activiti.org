@@ -30,12 +30,11 @@ Activiti is an open-source Business Automation Suite designed and built for the 
     * [Developers guide](https://github.com/Activiti/Activiti/releases/tag/activiti-5.22.0)
 ## Community
 
-There are several ways you can collaborate as an individual or as an organization. We recommend you to get in touch via our Gitter chat room.
+There are several ways you can collaborate as an individual or as an organization. We recommend you to join our chat.
 
-* [Gitter chat room](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+* [Chat](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 * [GitHub](https://github.com/Activiti)
-* [Forum](https://community.alfresco.com/community/bpm/contentfilterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D)
-* [Alfresco community](https://community.alfresco.com/community/bpm)
+* [Community forum](https://community.alfresco.com/community/bpm/contentfilterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D)
 * [Stack Overflow](https://stackoverflow.com/search?q=activiti)
 * [Issue tracker](https://activiti.atlassian.net/secure/Dashboard.jspa)
 * [Roadmap](https://github.com/Activiti/Activiti/wiki/Activiti-7-Roadmap)
