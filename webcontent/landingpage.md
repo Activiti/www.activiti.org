@@ -66,7 +66,8 @@ Activiti 5.22
 https://www.alfresco.com/platform/process-services-bpm
 
 # Footer menus
-![GitHub Logo](/assets/img/GitHub-Mark-32px.png) ![Gitter](/assets/img/apple-icon-57x57.png) ![Gitbook](/assets/img/Gitbook.png)  ![Stackoverflow](/assets/img/stackoverflow.png)
+[![GitHub Logo](https://github.com/Activiti)](/assets/img/GitHub-Mark-32px.png)
+![Gitter](/assets/img/apple-icon-57x57.png) ![Gitbook](/assets/img/Gitbook.png)  ![Stackoverflow](/assets/img/stackoverflow.png)
 ## Team
 ## Services
 © 2017 [Alfresco Software](https://www.alfresco.com/), Inc. All Rights Reserved.
