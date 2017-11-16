@@ -23,6 +23,7 @@ Activiti is an open-source Business Automation Suite designed and built for the 
   * Activiti v6.0
     * [Developers guide](https://www.activiti.org/userguide/)
     * [Getting started](https://www.activiti.org/quick-start)
+    * [Migration guide 5.x to 6.x](https://www.activiti.org/migration.html)
     * [Javadocs](https://www.activiti.org/javadocs/index.html)
   * Activiti v5.0
     * [Javadocs](https://www.activiti.org/javadocs/index.html)
@@ -56,6 +57,9 @@ Activiti 7
 
 Activiti 6
 * [Activiti-6.0.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
+
+Activiti 5.22
+* [Activiti-5.22.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
 
 ## Enterprise
 
