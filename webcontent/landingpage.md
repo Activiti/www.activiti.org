@@ -63,7 +63,6 @@ Activiti 5.22
 
 ## Enterprise
 
-just a link to the Alfresco.com website page presenting the Enterprise Edition.
 https://www.alfresco.com/platform/process-services-bpm
 
 # Footer menus
