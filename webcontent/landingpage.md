@@ -70,6 +70,7 @@ https://www.alfresco.com/platform/process-services-bpm
 [![Gitter](/assets/img/apple-icon-57x57.png)](https://gitter.im/Activiti/Activiti7?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![Gitbook](/assets/img/Gitbook.png)](https://activiti.gitbooks.io/activiti-7-developers-guide/content/)
 [![Stackoverflow](/assets/img/stackoverflow.png)](https://stackoverflow.com/search?q=activiti)
+[![Alfresco](/assets/img/alfresco-logo.png)](https://www.alfresco.com/)
 ## Team
 https://www.activiti.org/about
 ## Services
