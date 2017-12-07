@@ -36,7 +36,7 @@ There are several ways you can collaborate as an individual or as an organizatio
 * [GitHub](https://github.com/Activiti)
 * [Community forum](https://community.alfresco.com/community/bpm/contentfilterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D)
 * [Stack Overflow](https://stackoverflow.com/search?q=activiti)
-* [Issue tracker](https://activiti.atlassian.net/secure/Dashboard.jspa)
+* [Issue tracker](https://github.com/Activiti/Activiti/issues)
 * [Roadmap](https://github.com/Activiti/Activiti/wiki/Activiti-7-Roadmap)
 * [How to contribute](https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html)
 
