@@ -1,154 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Activiti</title>
+  <meta name="description" content="Activiti | New cloud native BPM suite and fresh look coming soon!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-W4HV22');</script>
+  <!-- End Google Tag Manager -->
+</head>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+<body class="activiti-splash">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+  Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+  your experience.</p>
+<![endif]-->
 
-    <title>Activiti</title>
+<div class="hero clearfix">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+  <div class="hero__wrapper">
+    <img src="assets/img/logo.png"/>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <div class="hero__title-wrap">
+      <h1 class="hero__title">New cloud native BPM suite and fresh look coming soon!</h1>
+    </div>
 
-    <style>
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
+    <div class="hero__buttons">
+      <button class="btn" type="button">Developer Guide</button>
+      <button class="btn" type="button">Blog</button>
+    </div>
+  </div>
 
-    html: {
-      height: 100%;
-    }
+</div>
 
-    body {
-      padding-bottom: 40px;
-      color: #5a5a5a;
-      height: 100%;
-      background-color: #eee;
-    }
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .col-lg-4 {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: 200;
-    }
-    .marketing .col-lg-4 p {
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-
-    .featurette-divider {
-      margin: 30px 0; /* Space out the Bootstrap <hr> more */
-    }
-
-    .activiti-icon {
-      font-size: 100px;
-    }
-
-    .activiti-link {
-       text-decoration: none;
-    }
-
-    .activiti-link:hover .activiti-link:hover, .activiti-link:visited, .activiti-link:link, .activiti-link:active {
-      color: inherit;
-       text-decoration: none;
-    }
-
-    .activiti-link > h2 {
-      font-size: 24px;
-      margin: 0px;
-    }
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (min-width: 768px) {
-      .featurette-heading {
-        font-size: 50px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .featurette-heading {
-        margin-top: 120px;
-      }
-    }
-    </style>
-
-  </head>
-  <body>
-
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="jumbotron">
-
-      <div class="container marketing">
-
-        <div class="row">
-          <div class="col-lg-12" style="margin-top:40px;text-align:center;">
-            <img src="logo.png" style="width:600px;">
-             <!-- <h2 style="font-weight:100; margin-top:50px;">Workflow and Business Process Management</h2> -->
-             <!--  <h2 style="font-weight:100; margin-top:0px;">Embeddable. Lightweight. Super Performant.</h2> -->
-             <h2 style="font-weight:100; margin-top:50px;">New website coming soon. Stay tuned!</h2>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row">
-          <div class="col-lg-4">
-            <a href="http://activiti.org/download.html" class="activiti-link">
-              <i class="fa fa-cloud-download activiti-icon" aria-hidden="true"></i>
-              <h2>Download</h2>
-            </a>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <a href="https://www.activiti.org/docs" class="activiti-link">
-              <i class="fa fa-question-circle-o activiti-icon" aria-hidden="true"></i>
-              <h2>Docs</h2>
-            </a>
-             <!-- <div class="dropup" style="margin-top:10px;"> -->
-               <!-- <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> -->
-               <!-- Older versions -->
-                 <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="font-size: 10px;"></span> -->
-               <!-- </a> -->
-              <!-- <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> -->
-                <!-- <li><a href="userguide/5.21.0/index.html">Activiti 5.21.0</a></li> -->
-                <!-- <li><a href="userguide/5.20.0/index.html">Activiti 5.20.0</a></li> -->
-                <!-- <li><a href="userguide/5.19.0/index.html">Activiti 5.19.0</a></li> -->
-              <!-- </ul> -->
-             <!-- </div> -->
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <a href="https://github.com/Activiti/Activiti" class="activiti-link">
-              <i class="fa fa-github activiti-icon" aria-hidden="true"></i>
-              <h2>Source</h2>
-            </a>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-      </div><!-- /.container -->
-
-    </div> <!-- /.jumbotron -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4HV22"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
 </html>

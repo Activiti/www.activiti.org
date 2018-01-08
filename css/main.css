@@ -1,0 +1,312 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+:root {
+  --orange: #ff9901;
+  --blue: #2196f3;
+  --blue-dark: #01579b;
+  --white: #fff;
+  --grey: #e6e6ec;
+  --grey-dark: #39373a;
+  --font-grey: #727174;
+  --background: #eef0f0;
+  --font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+body {
+  margin: 0;
+}
+
+.activiti-splash h1, .activiti-splash h2 {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.activiti-splash h1, .activiti-splash h2 {
+  color: #727174;
+  line-height: 1.4;
+}
+
+.activiti-splash h3, .activiti-splash h4 {
+  font-weight: 400;
+  margin: 0;
+  color: #727174;
+}
+
+.activiti-splash p, .activiti-splash h3, .activiti-splash h4, .activiti-splash a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.activiti-splash h4 {
+  color: #fff;
+}
+
+.activiti-splash p {
+  color: #727174;
+}
+
+.activiti-splash h1 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.activiti-splash h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.activiti-splash h3 {
+  font-size: 16px;
+}
+
+.activiti-splash h4 {
+  font-size: 16px;
+}
+
+.activiti-splash p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+a {
+  color: #2196f3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #01579b;
+}
+
+
+/*  > Tablet */
+@media only screen and (min-width: 768px) {
+  .activiti-splash h1 {
+    font-size: 22px;
+  }
+
+  .activiti-splash h3 {
+    font-size: 18px;
+  }
+}
+
+/*  ie 10 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .hero img {
+  }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  background: url("../assets/img/art.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero__wrapper {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column wrap;
+  -ms-flex-align:center;
+  -ms-flex-pack: center;
+  padding: 50px 30px 0;
+}
+
+.hero h1 {
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+h1::after {
+  background-color: #afbdb8;
+  bottom: -20px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.hero img {
+  width: 350px;
+  height: 150px;
+}
+
+
+/*  > laptop */
+@media (min-width: 1024px) {
+  .hero__wrapper{
+    padding-top: 90px;
+  }
+}
+
+/*  > laptop */
+@media (min-width: 1280px) {
+  .hero__wrapper{
+    padding-top: 260px;
+  }
+
+  .hero img {
+    width: 408px;
+    height: 184px;
+  }
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.hero__buttons {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  -ms-flex-align:center;
+  -ms-flex-pack: center;
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  width: 140px;
+  height: 45px;
+  color: #fff;
+  background-color: #24b15d;
+  border: 1px solid #11562d;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: .3s;
+  transition-property: transform;
+}
+
+.btn:hover, .btn:active {
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(.9);
+  color: #8cc943;
+  background-color: #fff;
+}
+
+
+/*  > Tablet */
+@media (min-width: 768px) {
+  .hero__buttons {
+    width: 60%;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+
+/*  > laptop */
+@media (min-width: 1024px) {
+  .hero__buttons {
+    width: 50%;
+  }
+}
+
+/*  > laptop */
+@media (min-width: 1280px) {
+  .hero__buttons {
+    width: 30%;
+  }
+}
+
+
