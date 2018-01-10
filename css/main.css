@@ -94,7 +94,7 @@ body {
 
 .activiti-splash h1, .activiti-splash h2 {
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .activiti-splash h1, .activiti-splash h2 {
@@ -157,7 +157,7 @@ a:hover, a:active {
 /*  > Tablet */
 @media only screen and (min-width: 768px) {
   .activiti-splash h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .activiti-splash h3 {
@@ -165,11 +165,6 @@ a:hover, a:active {
   }
 }
 
-/*  ie 10 */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .hero img {
-  }
-}
 
 /* ==========================================================================
    Hero
@@ -194,7 +189,7 @@ a:hover, a:active {
   -ms-flex-align:center;
   -ms-flex-pack: center;
   position: relative;
-  top: 15%;
+  top: 20%;
 }
 
 .hero h1 {
