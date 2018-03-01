@@ -65,12 +65,13 @@ https://www.alfresco.com/platform/process-services-bpm
 
 Get Activiti (opens a web page with 3 options below)
 Activiti 7
-* [Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
-* [Maven central](http://search.maven.org/#search%7Cga%7C1%7Cactiviti)
+[Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
+[Maven central](http://search.maven.org/#search%7Cga%7C1%7Cactiviti)
 Activiti 6
-* [Activiti-6.0.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
+Activiti-6.0.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
 Activiti 5.22
-* [Activiti-5.22.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
+[Activiti-5.22.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
+
 ## Team
 https://www.activiti.org/about
 ## Services
