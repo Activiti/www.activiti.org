@@ -46,9 +46,10 @@ A placeholder to render content coming from different blogs.
 
 * [Activiti 7 blogs](https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~category%5Bactiviti-7%5D&filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bblogpost%5D)
 
-## Get Activiti
+## Try Activiti
 
-Use a form (smilar to [this one](https://www.activiti.org/download-bpm)) to capture user information (optional).
+Use a form (smilar to [this one](https://www.activiti.org/content/acitiviti-7)) to capture user information (optional).
+[Activiti Quick Start](https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/getting-started/getting-started/quickstart.html)
 
 Activiti 7
 * [Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
