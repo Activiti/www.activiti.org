@@ -51,15 +51,6 @@ A placeholder to render content coming from different blogs.
 Use a form (smilar to [this one](https://www.activiti.org/content/acitiviti-7)) to capture user information (optional).
 [Activiti Quick Start](https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/getting-started/getting-started/quickstart.html)
 
-Activiti 7
-* [Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
-* [Maven central](http://search.maven.org/#search%7Cga%7C1%7Cactiviti)
-
-Activiti 6
-* [Activiti-6.0.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
-
-Activiti 5.22
-* [Activiti-5.22.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
 
 ## Enterprise
 
@@ -71,6 +62,14 @@ https://www.alfresco.com/platform/process-services-bpm
 [![Gitbook](/assets/img/Gitbook.png)](https://activiti.gitbooks.io/activiti-7-developers-guide/content/)
 [![Stackoverflow](/assets/img/stackoverflow.png)](https://stackoverflow.com/search?q=activiti)
 [![Alfresco](/assets/img/alfresco-logo.png)](https://www.alfresco.com/)
+Get Activiti
+Activiti 7
+* [Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
+* [Maven central](http://search.maven.org/#search%7Cga%7C1%7Cactiviti)
+Activiti 6
+* [Activiti-6.0.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
+Activiti 5.22
+* [Activiti-5.22.0.zip](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
 ## Team
 https://www.activiti.org/about
 ## Services
