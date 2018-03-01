@@ -63,7 +63,7 @@ https://www.alfresco.com/platform/process-services-bpm
 [![Stackoverflow](/assets/img/stackoverflow.png)](https://stackoverflow.com/search?q=activiti)
 [![Alfresco](/assets/img/alfresco-logo.png)](https://www.alfresco.com/)
 
-Get Activiti:
+**Get Activiti:**
 * Activiti 7
   * [Reference Docker Images & Examples](https://hub.docker.com/u/activiti/dashboard/)
   * [Maven central](http://search.maven.org/#search%7Cga%7C1%7Cactiviti)
