@@ -1,0 +1,34 @@
+<footer class='bg-grey-lighter'>
+  <div class="container mx-auto p-4 flex flex-wrap items-start">
+    <div class="mb-4">
+      <h4>Documentation</h4>
+      <ul>
+        <li><a href="#">Version 7</a></li>
+        <li><a href="#">Version 6</a></li>
+        <li><a href="#">Version 5</a></li>
+        <li><a href="#">Product Roadmap</a></li>
+      </ul>
+    </div>
+    <div class="mb-4">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="{{ link blog.html }}">Blog</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Stack Overflow</a></li>
+        <li><a href="#">Issue Tracker</a></li>
+      </ul>
+    </div>
+    <div class="mb-4">
+      <h4>Team</h4>
+    </div>
+    <a href="{% link get-started.html %}" class='ml-auto bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full no-underline'>Get started</a>
+  </div>
+</footer>
+<footer class='mx-auto flex flex-wrap justify-center items-center py-2 px-4'>
+  <a class="mr-2 sm:mr-4 lg:mr-8 flex-none w-32" href="{{ "/" | relative_url }}">
+    {% include icon-alfresco.svg %}
+  </a>
+  <p>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
+</footer>

@@ -1,0 +1,13 @@
+<div class="border-b">
+  <header class="container mx-auto px-4" role="banner">
+    <nav class='flex items-center py-4'>
+      <a class="lg:mr-8 flex-none" href="{{ "/" | relative_url }}">
+        <img src='{{ "/assets/activiti-logo.png" | relative_url }}' alt="{{ site.title | escape }}"/>
+      </a>
+      <a class="text-blue-dark mx-8 {% if page.path == 'docs.html' %}active{% endif %}" href="{% link docs.html %}">Documentation</a>
+      <a class="text-blue-dark mx-8 {% if page.path == 'blog.html' %}active{% endif %}" href="{% link blog.html %}">Community / Blog</a>
+      <a class="text-blue-dark mx-8 {% if page.path == 'team.html' %}active{% endif %}" href="{% link team.html %}">Team</a>
+      <a href="{% link get-started.html %}" class='ml-auto bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full no-underline'>Get started</a>
+    </nav>
+  </header>
+</div>
