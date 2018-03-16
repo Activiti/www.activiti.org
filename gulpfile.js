@@ -34,7 +34,7 @@ class TailwindExtractor {
  */
 gulp.task("css", ["jekyll-build"], function() {
   const atimport = require("postcss-import");
-  const autoprefixer = require("gulp-autoprefixer");
+  const autoprefixer = require("autoprefixer");
   const cleancss = require("gulp-clean-css");
   const postcss = require("gulp-postcss");
   const tailwindcss = require("tailwindcss");
@@ -43,13 +43,13 @@ gulp.task("css", ["jekyll-build"], function() {
 
   return gulp
     .src(mainCSS)
-    .pipe(postcss([atimport(), tailwindcss(tailwindConfig)]))
-    .pipe(
+    .pipe(postcss([
+      atimport(), 
+      tailwindcss(tailwindConfig),
       autoprefixer({
-        browsers: ["last 2 versions"],
         cascade: false
       })
-    )
+    ]))
     .pipe(cleancss())
     .pipe(gulp.dest("assets/css/"))
     .pipe(gulp.dest("_site/assets/css/"));

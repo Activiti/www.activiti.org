@@ -4,9 +4,9 @@
   "description": "The website source for Activiti.org",
   "main": "gulpfile.js",
   "devDependencies": {
+    "autoprefixer": "^8.1.0",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-postcss": "^7.0.1",
     "postcss-import": "^11.1.0",
