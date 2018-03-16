@@ -1,38 +1,64 @@
 const browserSync = require("browser-sync").create();
 const child = require("child_process");
 const gulp = require("gulp");
-const mainCSS = "src/style.css"; /* Main stylesheet (pre-build) */
+const gutil = require('gulp-util');
+const Q = require('q');
+
+const cssFiles = "src/**/*.css";
 const siteRoot = "_site";
 const tailwindConfig = "tailwind.js"; /* Tailwind config */
 
-/**
- * Fix Windows compatibility issue
- */
-const jekyll = process.platform === "win32" ? "jekyll.bat" : "bundle";
+const jekyllTask = function (watch = false) {
+  const deferred = Q.defer();
 
-/**
- * Build Jekyll Site
- */
-gulp.task("jekyll-build", function() {
   browserSync.notify("Building Jekyll site...");
   
-  return child.spawn(jekyll, ['exec', 'jekyll', "build"], { stdio: "inherit" });
+  let child_args = [
+    'exec',
+    'jekyll',
+    'build',
+  ];
+
+  if (watch) {
+    child_args.push('--watch');
+    child_args.push('--incremental');
+  }
+
+  const jekyll = child.spawn('bundle', child_args);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+  jekyll.on('exit', function(code, signal) {
+    deferred.resolve();
+  });
+
+  return deferred.promise;
+} 
+
+/**
+ * Build Site
+ */
+gulp.task("build", ['css'], function() {
+  return jekyllTask();
 });
 
 /**
- * Custom PurgeCSS Extractor
- * https://github.com/FullHuman/purgecss
+ * Build and autorebuild Jekyll site
  */
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g);
-  }
-}
+gulp.task("jekyll:watch", function() {
+  return jekyllTask(true);
+});
 
 /**
  * Compile CSS
  */
-gulp.task("css", ["jekyll-build"], function() {
+gulp.task("css", function() {
   const atimport = require("postcss-import");
   const autoprefixer = require("autoprefixer");
   const cleancss = require("gulp-clean-css");
@@ -42,7 +68,7 @@ gulp.task("css", ["jekyll-build"], function() {
   browserSync.notify("Compiling CSS...");
 
   return gulp
-    .src(mainCSS)
+    .src(cssFiles)
     .pipe(postcss([
       atimport(), 
       tailwindcss(tailwindConfig),
@@ -52,7 +78,6 @@ gulp.task("css", ["jekyll-build"], function() {
     ]))
     .pipe(cleancss())
     .pipe(gulp.dest("assets/css/"))
-    .pipe(gulp.dest("_site/assets/css/"));
 });
 
 /**
@@ -68,19 +93,8 @@ gulp.task("serve", ["css"], () => {
     }
   });
 
-  gulp.watch(
-    [
-      mainCSS,
-      tailwindConfig,
-      "**/*.html",
-      "**/*.md",
-      "**/*.yml",
-      "!_site/**/*",
-      "!node_modules"
-    ],
-    { interval: 500 },
-    ["css"]
-  );
+  gulp.watch([cssFiles, tailwindConfig], { interval: 500 }, ['css']);
 });
 
-gulp.task("default", ["serve"]);
+gulp.task("default", ['build']);
+gulp.task("watch", ['jekyll:watch', 'css', 'serve']);

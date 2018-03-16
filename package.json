@@ -9,7 +9,9 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
     "gulp-postcss": "^7.0.1",
+    "gulp-util": "^3.0.8",
     "postcss-import": "^11.1.0",
+    "q": "^1.5.1",
     "tailwindcss": "^0.5.1"
   },
   "scripts": {
