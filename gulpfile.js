@@ -68,7 +68,7 @@ gulp.task("css", function() {
   browserSync.notify("Compiling CSS...");
 
   return gulp
-    .src(cssFiles)
+    .src('src/style.css')
     .pipe(postcss([
       atimport(), 
       tailwindcss(tailwindConfig),
