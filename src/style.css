@@ -39,6 +39,7 @@
  * @import "components/forms";
  */
 @import "components/wrap";
+@import "components/btn";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
