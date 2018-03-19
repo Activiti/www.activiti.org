@@ -1,34 +1,39 @@
-<footer class='bg-grey-lighter'>
+<footer class='bg-grey-lighter border-t border-green text-sm'>
   <div class="wrap max-w-3xl py-4 flex flex-wrap items-start">
     <div class="mb-4">
       <h4>Documentation</h4>
-      <ul>
-        <li><a href="#">Version 7</a></li>
-        <li><a href="#">Version 6</a></li>
-        <li><a href="#">Version 5</a></li>
-        <li><a href="#">Product Roadmap</a></li>
+      <ul class='list-reset'>
+        <li><a class="text-grey-darker" href="#">Version 7</a></li>
+        <li><a class="text-grey-darker" href="#">Version 6</a></li>
+        <li><a class="text-grey-darker" href="#">Version 5</a></li>
+        <li><a class="text-grey-darker" href="#">Product Roadmap</a></li>
       </ul>
     </div>
     <div class="mb-4">
       <h4>Community</h4>
-      <ul>
-        <li><a href="{{ link blog.html }}">Blog</a></li>
-        <li><a href="#">Chat</a></li>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">Forum</a></li>
-        <li><a href="#">Stack Overflow</a></li>
-        <li><a href="#">Issue Tracker</a></li>
+      <ul class='list-reset'>
+        <li><a class="text-grey-darker" href="{{ link blog.html }}">Blog</a></li>
+        <li><a class="text-grey-darker" href="#">Chat</a></li>
+        <li><a class="text-grey-darker" href="#">Github</a></li>
+        <li><a class="text-grey-darker" href="#">Forum</a></li>
+        <li><a class="text-grey-darker" href="#">Stack Overflow</a></li>
+        <li><a class="text-grey-darker" href="#">Issue Tracker</a></li>
       </ul>
+    </div>
+    <div class="mb-4">
+      <h4>Enterprise</h4>
     </div>
     <div class="mb-4">
       <h4>Team</h4>
     </div>
     <a href="{% link get-started.html %}" class='ml-auto bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full no-underline'>Get started</a>
   </div>
-</footer>
-<footer class='mx-auto flex flex-wrap justify-center items-center py-2 px-4'>
-  <a class="mr-2 md:mr-4 xl:mr-8 flex-none w-32" href="{{ "/" | relative_url }}">
-    {% include icon-alfresco.svg %}
-  </a>
-  <p>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
+  <div class="border-t">
+    <div class="wrap max-w-3xl py-4 flex justify-between items-center">
+      <a class="mr-2 md:mr-4 xl:mr-8 flex-none w-32" href="{{ "/" | relative_url }}">
+        {% include icon-alfresco.svg %}
+      </a>
+      <p>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
+    </div>
+  </div>
 </footer>

@@ -7,3 +7,12 @@ h6 {
   font-weight: config('fontWeights.bold');
   letter-spacing: config('tracking.wide');
 }
+
+a {
+  text-decoration: none;
+  color: config('colors.green-light');
+}
+
+svg {
+  display: block;
+}
