@@ -2,7 +2,7 @@
   <header class="container mx-auto px-4" role="banner">
     <nav class='flex items-center py-4'>
       <a class="xl:mr-8 flex-none" href="{{ "/" | relative_url }}">
-        <img src='{{ "/assets/activiti-logo.png" | relative_url }}' alt="{{ site.title | escape }}"/>
+        {% include activiti-logo.svg %}
       </a>
       <a class="text-blue-dark mx-8 {% if page.path == 'docs.html' %}active{% endif %}" href="{% link docs.html %}">Documentation</a>
       <a class="text-blue-dark mx-8 {% if page.path == 'blog.html' %}active{% endif %}" href="{% link blog.html %}">Community / Blog</a>
