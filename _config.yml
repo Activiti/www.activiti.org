@@ -23,6 +23,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: /:categories/:year/:month/:day/:title
 
+remote_theme: garrettboatman/Blank-Theme-Jekyll
+
 defaults:
   -
     scope:
