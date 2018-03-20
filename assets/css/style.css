@@ -703,8 +703,9 @@ svg {
   color: #fff;
   font-weight: 500;
   text-decoration: none;
-  padding-top: .625em;
-  padding-bottom: .625em;
+  display: inline-block;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
@@ -2276,7 +2277,7 @@ svg {
 }
 
 .p-2 {
-  padding: .625em;
+  padding: .625rem;
 }
 
 .p-3 {
@@ -2320,13 +2321,13 @@ svg {
 }
 
 .py-2 {
-  padding-top: .625em;
-  padding-bottom: .625em;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
 }
 
 .px-2 {
-  padding-left: .625em;
-  padding-right: .625em;
+  padding-left: .625rem;
+  padding-right: .625rem;
 }
 
 .py-3 {
@@ -2412,19 +2413,19 @@ svg {
 }
 
 .pt-2 {
-  padding-top: .625em;
+  padding-top: .625rem;
 }
 
 .pr-2 {
-  padding-right: .625em;
+  padding-right: .625rem;
 }
 
 .pb-2 {
-  padding-bottom: .625em;
+  padding-bottom: .625rem;
 }
 
 .pl-2 {
-  padding-left: .625em;
+  padding-left: .625rem;
 }
 
 .pt-3 {
@@ -4640,7 +4641,7 @@ svg {
   }
 
   .sm\:p-2 {
-    padding: .625em;
+    padding: .625rem;
   }
 
   .sm\:p-3 {
@@ -4684,13 +4685,13 @@ svg {
   }
 
   .sm\:py-2 {
-    padding-top: .625em;
-    padding-bottom: .625em;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
   }
 
   .sm\:px-2 {
-    padding-left: .625em;
-    padding-right: .625em;
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .sm\:py-3 {
@@ -4776,19 +4777,19 @@ svg {
   }
 
   .sm\:pt-2 {
-    padding-top: .625em;
+    padding-top: .625rem;
   }
 
   .sm\:pr-2 {
-    padding-right: .625em;
+    padding-right: .625rem;
   }
 
   .sm\:pb-2 {
-    padding-bottom: .625em;
+    padding-bottom: .625rem;
   }
 
   .sm\:pl-2 {
-    padding-left: .625em;
+    padding-left: .625rem;
   }
 
   .sm\:pt-3 {
@@ -6982,7 +6983,7 @@ svg {
   }
 
   .md\:p-2 {
-    padding: .625em;
+    padding: .625rem;
   }
 
   .md\:p-3 {
@@ -7026,13 +7027,13 @@ svg {
   }
 
   .md\:py-2 {
-    padding-top: .625em;
-    padding-bottom: .625em;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
   }
 
   .md\:px-2 {
-    padding-left: .625em;
-    padding-right: .625em;
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .md\:py-3 {
@@ -7118,19 +7119,19 @@ svg {
   }
 
   .md\:pt-2 {
-    padding-top: .625em;
+    padding-top: .625rem;
   }
 
   .md\:pr-2 {
-    padding-right: .625em;
+    padding-right: .625rem;
   }
 
   .md\:pb-2 {
-    padding-bottom: .625em;
+    padding-bottom: .625rem;
   }
 
   .md\:pl-2 {
-    padding-left: .625em;
+    padding-left: .625rem;
   }
 
   .md\:pt-3 {
@@ -9324,7 +9325,7 @@ svg {
   }
 
   .lg\:p-2 {
-    padding: .625em;
+    padding: .625rem;
   }
 
   .lg\:p-3 {
@@ -9368,13 +9369,13 @@ svg {
   }
 
   .lg\:py-2 {
-    padding-top: .625em;
-    padding-bottom: .625em;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
   }
 
   .lg\:px-2 {
-    padding-left: .625em;
-    padding-right: .625em;
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .lg\:py-3 {
@@ -9460,19 +9461,19 @@ svg {
   }
 
   .lg\:pt-2 {
-    padding-top: .625em;
+    padding-top: .625rem;
   }
 
   .lg\:pr-2 {
-    padding-right: .625em;
+    padding-right: .625rem;
   }
 
   .lg\:pb-2 {
-    padding-bottom: .625em;
+    padding-bottom: .625rem;
   }
 
   .lg\:pl-2 {
-    padding-left: .625em;
+    padding-left: .625rem;
   }
 
   .lg\:pt-3 {
@@ -11666,7 +11667,7 @@ svg {
   }
 
   .xl\:p-2 {
-    padding: .625em;
+    padding: .625rem;
   }
 
   .xl\:p-3 {
@@ -11710,13 +11711,13 @@ svg {
   }
 
   .xl\:py-2 {
-    padding-top: .625em;
-    padding-bottom: .625em;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
   }
 
   .xl\:px-2 {
-    padding-left: .625em;
-    padding-right: .625em;
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .xl\:py-3 {
@@ -11802,19 +11803,19 @@ svg {
   }
 
   .xl\:pt-2 {
-    padding-top: .625em;
+    padding-top: .625rem;
   }
 
   .xl\:pr-2 {
-    padding-right: .625em;
+    padding-right: .625rem;
   }
 
   .xl\:pb-2 {
-    padding-bottom: .625em;
+    padding-bottom: .625rem;
   }
 
   .xl\:pl-2 {
-    padding-left: .625em;
+    padding-left: .625rem;
   }
 
   .xl\:pt-3 {
