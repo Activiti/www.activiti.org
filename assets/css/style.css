@@ -906,6 +906,10 @@ svg {
   background-size: contain;
 }
 
+.bg-full-width {
+  background-size: 100% auto;
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -3334,6 +3338,10 @@ svg {
     background-size: contain;
   }
 
+  .sm\:bg-full-width {
+    background-size: 100% auto;
+  }
+
   .sm\:border-transparent {
     border-color: transparent;
   }
@@ -5734,6 +5742,10 @@ svg {
 
   .md\:bg-contain {
     background-size: contain;
+  }
+
+  .md\:bg-full-width {
+    background-size: 100% auto;
   }
 
   .md\:border-transparent {
@@ -8138,6 +8150,10 @@ svg {
     background-size: contain;
   }
 
+  .lg\:bg-full-width {
+    background-size: 100% auto;
+  }
+
   .lg\:border-transparent {
     border-color: transparent;
   }
@@ -10538,6 +10554,10 @@ svg {
 
   .xl\:bg-contain {
     background-size: contain;
+  }
+
+  .xl\:bg-full-width {
+    background-size: 100% auto;
   }
 
   .xl\:border-transparent {

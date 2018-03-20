@@ -300,6 +300,7 @@ module.exports = {
     'auto': 'auto',
     'cover': 'cover',
     'contain': 'contain',
+    'full-width': '100% auto',
   },
 
 
