@@ -722,6 +722,12 @@ svg {
   transform: scale(.9);
 }
 
+.btn--large {
+  font-size: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
