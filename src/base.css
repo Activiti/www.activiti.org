@@ -1,4 +1,8 @@
-h1,
+h1 {
+  font-size: config('textSizes.4xl');
+  line-height: config('leading.tight');
+}
+
 h2,
 h3,
 h4,
