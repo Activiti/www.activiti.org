@@ -2300,6 +2300,14 @@ svg {
   padding: 2.5rem;
 }
 
+.p-16 {
+  padding: 5rem;
+}
+
+.p-24 {
+  padding: 7.5rem;
+}
+
 .p-px {
   padding: 1px;
 }
@@ -2372,6 +2380,26 @@ svg {
 .px-8 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-16 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-16 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-24 {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.px-24 {
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
 }
 
 .py-px {
@@ -2494,6 +2522,38 @@ svg {
 
 .pl-8 {
   padding-left: 2.5rem;
+}
+
+.pt-16 {
+  padding-top: 5rem;
+}
+
+.pr-16 {
+  padding-right: 5rem;
+}
+
+.pb-16 {
+  padding-bottom: 5rem;
+}
+
+.pl-16 {
+  padding-left: 5rem;
+}
+
+.pt-24 {
+  padding-top: 7.5rem;
+}
+
+.pr-24 {
+  padding-right: 7.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 7.5rem;
+}
+
+.pl-24 {
+  padding-left: 7.5rem;
 }
 
 .pt-px {
@@ -4664,6 +4724,14 @@ svg {
     padding: 2.5rem;
   }
 
+  .sm\:p-16 {
+    padding: 5rem;
+  }
+
+  .sm\:p-24 {
+    padding: 7.5rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
   }
@@ -4736,6 +4804,26 @@ svg {
   .sm\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:px-16 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:py-24 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .sm\:px-24 {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
   }
 
   .sm\:py-px {
@@ -4858,6 +4946,38 @@ svg {
 
   .sm\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 5rem;
+  }
+
+  .sm\:pr-16 {
+    padding-right: 5rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:pl-16 {
+    padding-left: 5rem;
+  }
+
+  .sm\:pt-24 {
+    padding-top: 7.5rem;
+  }
+
+  .sm\:pr-24 {
+    padding-right: 7.5rem;
+  }
+
+  .sm\:pb-24 {
+    padding-bottom: 7.5rem;
+  }
+
+  .sm\:pl-24 {
+    padding-left: 7.5rem;
   }
 
   .sm\:pt-px {
@@ -7006,6 +7126,14 @@ svg {
     padding: 2.5rem;
   }
 
+  .md\:p-16 {
+    padding: 5rem;
+  }
+
+  .md\:p-24 {
+    padding: 7.5rem;
+  }
+
   .md\:p-px {
     padding: 1px;
   }
@@ -7078,6 +7206,26 @@ svg {
   .md\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-16 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
   }
 
   .md\:py-px {
@@ -7200,6 +7348,38 @@ svg {
 
   .md\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 5rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 5rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:pl-16 {
+    padding-left: 5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 7.5rem;
+  }
+
+  .md\:pr-24 {
+    padding-right: 7.5rem;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 7.5rem;
+  }
+
+  .md\:pl-24 {
+    padding-left: 7.5rem;
   }
 
   .md\:pt-px {
@@ -9348,6 +9528,14 @@ svg {
     padding: 2.5rem;
   }
 
+  .lg\:p-16 {
+    padding: 5rem;
+  }
+
+  .lg\:p-24 {
+    padding: 7.5rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
   }
@@ -9420,6 +9608,26 @@ svg {
   .lg\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .lg\:px-24 {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
   }
 
   .lg\:py-px {
@@ -9542,6 +9750,38 @@ svg {
 
   .lg\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 5rem;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 5rem;
+  }
+
+  .lg\:pb-16 {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pl-16 {
+    padding-left: 5rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 7.5rem;
+  }
+
+  .lg\:pr-24 {
+    padding-right: 7.5rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 7.5rem;
+  }
+
+  .lg\:pl-24 {
+    padding-left: 7.5rem;
   }
 
   .lg\:pt-px {
@@ -11690,6 +11930,14 @@ svg {
     padding: 2.5rem;
   }
 
+  .xl\:p-16 {
+    padding: 5rem;
+  }
+
+  .xl\:p-24 {
+    padding: 7.5rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
   }
@@ -11762,6 +12010,26 @@ svg {
   .xl\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:py-24 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .xl\:px-24 {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
   }
 
   .xl\:py-px {
@@ -11884,6 +12152,38 @@ svg {
 
   .xl\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .xl\:pt-16 {
+    padding-top: 5rem;
+  }
+
+  .xl\:pr-16 {
+    padding-right: 5rem;
+  }
+
+  .xl\:pb-16 {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:pl-16 {
+    padding-left: 5rem;
+  }
+
+  .xl\:pt-24 {
+    padding-top: 7.5rem;
+  }
+
+  .xl\:pr-24 {
+    padding-right: 7.5rem;
+  }
+
+  .xl\:pb-24 {
+    padding-bottom: 7.5rem;
+  }
+
+  .xl\:pl-24 {
+    padding-left: 7.5rem;
   }
 
   .xl\:pt-px {
