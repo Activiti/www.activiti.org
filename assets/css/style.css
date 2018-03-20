@@ -3162,6 +3162,10 @@ svg {
  * @import "utilities/skew-transforms";
  */
 
+.bg-image-clouds {
+  background-image: url('../images/clouds.svg');
+}
+
 @media (min-width: 420px) {
   .sm\:list-reset {
     list-style: none;
