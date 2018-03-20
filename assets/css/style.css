@@ -2750,7 +2750,7 @@ svg {
 }
 
 .text-4xl {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 .text-5xl {
@@ -5106,7 +5106,7 @@ svg {
   }
 
   .sm\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .sm\:text-5xl {
@@ -7448,7 +7448,7 @@ svg {
   }
 
   .md\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .md\:text-5xl {
@@ -9790,7 +9790,7 @@ svg {
   }
 
   .lg\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .lg\:text-5xl {
@@ -12132,7 +12132,7 @@ svg {
   }
 
   .xl\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .xl\:text-5xl {
