@@ -645,16 +645,58 @@ button,
 
 h1 {
   font-size: 2.5rem;
-  line-height: 1.25;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
+  font-size: 1.875rem;
   font-weight: 500;
+  line-height: 1.2;
   letter-spacing: .06em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .06em;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .06em;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .06em;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .06em;
+}
+
+.copy * + * {
+  margin-top: .625em;
+}
+
+.copy body,
+.copy br,
+.copy li,
+.copy dt,
+.copy dd,
+.copy th,
+.copy td,
+.copy option {
+  margin-top: 0;
 }
 
 a {
@@ -726,6 +768,25 @@ svg {
   font-size: 1.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.section-heading {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .06em;
+  text-align: center;
+  padding-bottom: .9375rem;
+  margin-bottom: .625em;
+  border-bottom-width: 1px;
+}
+
+.section-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .06em;
+  color: #22be73;
 }
 
 /**
@@ -1633,11 +1694,11 @@ svg {
 }
 
 .leading-tight {
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .leading-normal {
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
 .leading-loose {
@@ -4065,11 +4126,11 @@ svg {
   }
 
   .sm\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   .sm\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.35;
   }
 
   .sm\:leading-loose {
@@ -6471,11 +6532,11 @@ svg {
   }
 
   .md\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   .md\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.35;
   }
 
   .md\:leading-loose {
@@ -8877,11 +8938,11 @@ svg {
   }
 
   .lg\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   .lg\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.35;
   }
 
   .lg\:leading-loose {
@@ -11283,11 +11344,11 @@ svg {
   }
 
   .xl\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   .xl\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.35;
   }
 
   .xl\:leading-loose {

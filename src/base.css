@@ -1,20 +1,44 @@
 h1 {
-  font-size: config('textSizes.4xl');
-  line-height: config('leading.tight');
+  @apply .text-4xl;
+  @apply .font-bold .leading-tight;
 }
 
-h2,
-h3,
-h4,
-h5,
+h2 {
+  @apply .text-3xl;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h3 {
+  @apply .text-2xl;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h4 {
+  @apply .text-xl;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h5 {
+  @apply .text-lg;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
 h6 {
-  font-weight: config('fontWeights.bold');
-  letter-spacing: config('tracking.wide');
+  @apply .text-base;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+.copy * + * {
+  @apply .mt-2;
+}
+
+.copy body, .copy br, .copy li, .copy dt, .copy dd, .copy th, .copy td, .copy option {
+  @apply .mt-0;
 }
 
 a {
   text-decoration: none;
-  color: config('colors.green-light');
+  @apply .text-green-light;
 }
 
 svg {
