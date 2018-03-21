@@ -20,6 +20,18 @@ latest_news_link: https://www.alfresco.com
 </div>
 
 <p class="mt-0"><a href="{{ page.latest_news_link }}" class="block bg-green py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
+
+<div class="wrap max-w-md md:py-4 text-center" markdown='1'>
+----
+
+Activiti has been the leading lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday.
+
+Activiti is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios. 
+
+This project is driven by a community of domain experts from different companies with strong industry experience.
+
+----
+</div>
   
 <div id='get-started' class="wrap py-8 md:py-16 xl:py-24 text-center">
   <h3 class="section-heading">Get started with Activiti</h3>
