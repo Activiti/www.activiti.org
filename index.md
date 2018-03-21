@@ -7,7 +7,7 @@ latest_news: Something here, something here
 latest_news_link: https://www.alfresco.com
 ---
 <div class="bg-no-repeat bg-full-width bg-bottom bg-image-clouds">
-  <div class="wrap py-8 md:py-16 clearfix">
+  <div class="wrap max-w-md py-8 md:py-16 clearfix">
     <div class="md:w-1/2 md:float-left">
       <h1 class="text-green">Open Source <br>Business Automation</h1>
       <p class="text-lg leading-tight mt-0">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
