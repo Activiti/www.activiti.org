@@ -43,6 +43,10 @@ h6 {
   @apply .mt-4;
 }
 
+hr {
+  @apply .my-8 .border-b .max-w-xs;
+}
+
 a {
   text-decoration: none;
   @apply .text-green-light;
