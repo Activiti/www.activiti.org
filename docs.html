@@ -1,7 +1,23 @@
 ---
 title:  "Documentation"
 ---
-
-<h1>{{ page.title | escape }}</h1>
-  
-
+<div class="bg-green">
+  <div class="wrap py-4 lg:py-16 px-0 lg:flex justify-center text-center">
+    {% for item in site.data.documentation_links %}
+      <div class="flex-grow bg-white border shadow mt-3 mx-2 mb-6 pt-3 pb-8 lg:pb-3 lg:min-h-card">
+        <h3 class="pb-3">{{ item.title }}</h3>
+        {% if item.links[0] %}
+          <div class="border-t border-grey">
+            <ul class="list-reset">
+              {% for sub_item in item.links %}
+                <li class="pt-3">
+                  <a href="{{ sub_item.url }}" class="font-normal">{{ sub_item.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

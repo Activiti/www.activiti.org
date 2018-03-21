@@ -2018,6 +2018,10 @@ svg {
   min-height: 0;
 }
 
+.min-h-card {
+  min-height: 24rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -2720,19 +2724,11 @@ svg {
 }
 
 .shadow {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-}
-
-.shadow-md {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+  box-shadow: 1.5px 2.6px 4px 0 rgba(35, 31, 32, .35);
 }
 
 .shadow-lg {
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
-}
-
-.shadow-inner {
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+  box-shadow: 7px 12px 24px 15px rgb(0, 0, 0, .35);
 }
 
 .shadow-none {
@@ -4434,6 +4430,10 @@ svg {
     min-height: 0;
   }
 
+  .sm\:min-h-card {
+    min-height: 24rem;
+  }
+
   .sm\:min-h-full {
     min-height: 100%;
   }
@@ -5136,19 +5136,11 @@ svg {
   }
 
   .sm\:shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  }
-
-  .sm\:shadow-md {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 1.5px 2.6px 4px 0 rgba(35, 31, 32, .35);
   }
 
   .sm\:shadow-lg {
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
-  }
-
-  .sm\:shadow-inner {
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+    box-shadow: 7px 12px 24px 15px rgb(0, 0, 0, .35);
   }
 
   .sm\:shadow-none {
@@ -6824,6 +6816,10 @@ svg {
     min-height: 0;
   }
 
+  .md\:min-h-card {
+    min-height: 24rem;
+  }
+
   .md\:min-h-full {
     min-height: 100%;
   }
@@ -7526,19 +7522,11 @@ svg {
   }
 
   .md\:shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  }
-
-  .md\:shadow-md {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 1.5px 2.6px 4px 0 rgba(35, 31, 32, .35);
   }
 
   .md\:shadow-lg {
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
-  }
-
-  .md\:shadow-inner {
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+    box-shadow: 7px 12px 24px 15px rgb(0, 0, 0, .35);
   }
 
   .md\:shadow-none {
@@ -9214,6 +9202,10 @@ svg {
     min-height: 0;
   }
 
+  .lg\:min-h-card {
+    min-height: 24rem;
+  }
+
   .lg\:min-h-full {
     min-height: 100%;
   }
@@ -9916,19 +9908,11 @@ svg {
   }
 
   .lg\:shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  }
-
-  .lg\:shadow-md {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 1.5px 2.6px 4px 0 rgba(35, 31, 32, .35);
   }
 
   .lg\:shadow-lg {
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
-  }
-
-  .lg\:shadow-inner {
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+    box-shadow: 7px 12px 24px 15px rgb(0, 0, 0, .35);
   }
 
   .lg\:shadow-none {
@@ -11604,6 +11588,10 @@ svg {
     min-height: 0;
   }
 
+  .xl\:min-h-card {
+    min-height: 24rem;
+  }
+
   .xl\:min-h-full {
     min-height: 100%;
   }
@@ -12306,19 +12294,11 @@ svg {
   }
 
   .xl\:shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  }
-
-  .xl\:shadow-md {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 1.5px 2.6px 4px 0 rgba(35, 31, 32, .35);
   }
 
   .xl\:shadow-lg {
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
-  }
-
-  .xl\:shadow-inner {
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+    box-shadow: 7px 12px 24px 15px rgb(0, 0, 0, .35);
   }
 
   .xl\:shadow-none {

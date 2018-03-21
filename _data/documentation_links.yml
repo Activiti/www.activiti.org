@@ -1,0 +1,20 @@
+- title: Activiti 7.0
+  links:
+    - title: Developer Guide
+      url: 'https://activiti.gitbooks.io/activiti-7-developers-guide/content/'
+- title: Activiti 6.0
+  links:
+    - title: Developer Guide
+      url: 'https://www.activiti.org/userguide/'
+    - title: Getting Started
+      url: 'https://www.activiti.org/quick-start'
+    - title: Java Docs
+      url: 'https://www.activiti.org/javadocs/index.html'
+    - title: Migration Guide
+      url: 'https://www.activiti.org/migration.html'
+- title: Activiti 5.0
+  links:
+    - title: Developer Guide
+      url: 'https://www.activiti.org/5.x/userguide/index.html'
+    - title: Java Docs
+      url: 'https://www.activiti.org/javadocs/index.html'

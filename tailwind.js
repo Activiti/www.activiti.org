@@ -495,6 +495,7 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    'card': '24rem',
     'full': '100%',
     'screen': '100vh'
   },
@@ -645,10 +646,8 @@ module.exports = {
   */
 
   shadows: {
-    default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    default: '1.5px 2.6px 4px 0px rgba(35,31,32,0.35)',
+    'lg': '7px 12px 24px 15px rgb(0,0,0,0.35)',
     'none': 'none',
   },
 
