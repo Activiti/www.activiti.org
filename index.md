@@ -1,5 +1,10 @@
 ---
+# This only sets the meta page title, as the visible one is set in the HTML 
+# below, as it has a <br> tag in it.
 title: Open Source Business Automation
+
+latest_news: Something here, something here
+latest_news_link: https://www.alfresco.com
 ---
 <div class="bg-no-repeat bg-full-width bg-bottom bg-image-clouds">
   <div class="wrap py-8 md:py-16 clearfix">
@@ -13,6 +18,8 @@ title: Open Source Business Automation
     </div>
   </div>
 </div>
+
+<a href="{{ page.latest_news_link }}" class="block bg-green py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a>
   
 <div id='get-started' class="wrap py-8 md:py-16 xl:py-24 text-center">
   <h3 class="section-heading">Get started with Activiti</h3>
