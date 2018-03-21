@@ -28,12 +28,19 @@ h6 {
   @apply .font-bold .leading-tight .tracking-wide;
 }
 
-.copy * + * {
-  @apply .mt-2;
-}
-
-.copy body, .copy br, .copy li, .copy dt, .copy dd, .copy th, .copy td, .copy option {
-  @apply .mt-0;
+* + p,
+* + ul,
+* + ol,
+* + blockquote,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + table,
+* + code {
+  @apply .mt-4;
 }
 
 a {

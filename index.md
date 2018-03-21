@@ -10,7 +10,7 @@ latest_news_link: https://www.alfresco.com
   <div class="wrap py-8 md:py-16 clearfix">
     <div class="md:w-1/2 md:float-left">
       <h1 class="text-green">Open Source <br>Business Automation</h1>
-      <p class="text-lg leading-tight">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
+      <p class="text-lg leading-tight mt-0">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
       <a href='#get-started' class="mt-4 btn btn--large">Learn More</a>
     </div>
     <div class="hidden md:block md:float-right">
@@ -19,7 +19,7 @@ latest_news_link: https://www.alfresco.com
   </div>
 </div>
 
-<a href="{{ page.latest_news_link }}" class="block bg-green py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a>
+<p class="mt-0"><a href="{{ page.latest_news_link }}" class="block bg-green py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
   
 <div id='get-started' class="wrap py-8 md:py-16 xl:py-24 text-center">
   <h3 class="section-heading">Get started with Activiti</h3>

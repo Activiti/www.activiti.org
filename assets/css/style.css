@@ -684,19 +684,19 @@ h6 {
   letter-spacing: .06em;
 }
 
-.copy * + * {
-  margin-top: .625em;
-}
-
-.copy body,
-.copy br,
-.copy li,
-.copy dt,
-.copy dd,
-.copy th,
-.copy td,
-.copy option {
-  margin-top: 0;
+* + p,
+* + ul,
+* + ol,
+* + blockquote,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + table,
+* + code {
+  margin-top: 1.25rem;
 }
 
 a {

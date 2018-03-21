@@ -12,7 +12,7 @@
     <div class="flex-no-shrink flex flex-wrap items-start">
       <div class="mb-4">
         <h4>Documentation</h4>
-        <ul class='list-reset'>
+        <ul class='list-reset mt-0'>
           <li><a class="text-grey-darker" href="#">Version 7</a></li>
           <li><a class="text-grey-darker" href="#">Version 6</a></li>
           <li><a class="text-grey-darker" href="#">Version 5</a></li>
@@ -21,7 +21,7 @@
       </div>
       <div class="mb-4 ml-4">
         <h4>Community</h4>
-        <ul class='list-reset'>
+        <ul class='list-reset mt-0'>
           <li><a class="text-grey-darker" href="{% link blog.html %}">Blog</a></li>
           {% for item in site.data.community_links %}
             <li><a class="text-grey-darker" href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
@@ -38,7 +38,7 @@
       <a class="mr-2 md:mr-4 xl:mr-8 flex-none w-32" href="{{ "/" | relative_url }}">
         {% include svg/icon-alfresco.svg %}
       </a>
-      <p>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
+      <p class='mt-0'>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
