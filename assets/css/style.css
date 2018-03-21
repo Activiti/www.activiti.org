@@ -1999,31 +1999,15 @@ svg {
 }
 
 .max-w-md {
-  max-width: 40rem;
+  max-width: 53rem;
 }
 
 .max-w-lg {
-  max-width: 50rem;
-}
-
-.max-w-xl {
   max-width: 63rem;
 }
 
-.max-w-2xl {
-  max-width: 70rem;
-}
-
-.max-w-3xl {
+.max-w-xl {
   max-width: 80rem;
-}
-
-.max-w-4xl {
-  max-width: 90rem;
-}
-
-.max-w-5xl {
-  max-width: 100rem;
 }
 
 .max-w-full {
@@ -4431,31 +4415,15 @@ svg {
   }
 
   .sm\:max-w-md {
-    max-width: 40rem;
+    max-width: 53rem;
   }
 
   .sm\:max-w-lg {
-    max-width: 50rem;
-  }
-
-  .sm\:max-w-xl {
     max-width: 63rem;
   }
 
-  .sm\:max-w-2xl {
-    max-width: 70rem;
-  }
-
-  .sm\:max-w-3xl {
+  .sm\:max-w-xl {
     max-width: 80rem;
-  }
-
-  .sm\:max-w-4xl {
-    max-width: 90rem;
-  }
-
-  .sm\:max-w-5xl {
-    max-width: 100rem;
   }
 
   .sm\:max-w-full {
@@ -6837,31 +6805,15 @@ svg {
   }
 
   .md\:max-w-md {
-    max-width: 40rem;
+    max-width: 53rem;
   }
 
   .md\:max-w-lg {
-    max-width: 50rem;
-  }
-
-  .md\:max-w-xl {
     max-width: 63rem;
   }
 
-  .md\:max-w-2xl {
-    max-width: 70rem;
-  }
-
-  .md\:max-w-3xl {
+  .md\:max-w-xl {
     max-width: 80rem;
-  }
-
-  .md\:max-w-4xl {
-    max-width: 90rem;
-  }
-
-  .md\:max-w-5xl {
-    max-width: 100rem;
   }
 
   .md\:max-w-full {
@@ -9243,31 +9195,15 @@ svg {
   }
 
   .lg\:max-w-md {
-    max-width: 40rem;
+    max-width: 53rem;
   }
 
   .lg\:max-w-lg {
-    max-width: 50rem;
-  }
-
-  .lg\:max-w-xl {
     max-width: 63rem;
   }
 
-  .lg\:max-w-2xl {
-    max-width: 70rem;
-  }
-
-  .lg\:max-w-3xl {
+  .lg\:max-w-xl {
     max-width: 80rem;
-  }
-
-  .lg\:max-w-4xl {
-    max-width: 90rem;
-  }
-
-  .lg\:max-w-5xl {
-    max-width: 100rem;
   }
 
   .lg\:max-w-full {
@@ -11649,31 +11585,15 @@ svg {
   }
 
   .xl\:max-w-md {
-    max-width: 40rem;
+    max-width: 53rem;
   }
 
   .xl\:max-w-lg {
-    max-width: 50rem;
-  }
-
-  .xl\:max-w-xl {
     max-width: 63rem;
   }
 
-  .xl\:max-w-2xl {
-    max-width: 70rem;
-  }
-
-  .xl\:max-w-3xl {
+  .xl\:max-w-xl {
     max-width: 80rem;
-  }
-
-  .xl\:max-w-4xl {
-    max-width: 90rem;
-  }
-
-  .xl\:max-w-5xl {
-    max-width: 100rem;
   }
 
   .xl\:max-w-full {
