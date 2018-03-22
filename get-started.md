@@ -44,3 +44,30 @@ Pull the latest version of the image from the Github Repo.
     </div>
   </div>
 </div>
+
+<div class="wrap py-4 md:py-8 xl:py-16 text-center flex flex-wrap justify-around">
+  <div class="m-8 pb-2">
+    <h3 class="section-heading lg:px-6">Activiti Version 6</h3>
+<div markdown='1'>
+[6.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
+
+[6.x Developer Guide](https://www.activiti.org/userguide/)
+
+[Getting Started](https://www.activiti.org/quick-start)
+
+[Migration Guide 5.x to 6.x](https://www.activiti.org/migration.html)
+
+[Javadocs](https://www.activiti.org/javadocs/index.html)
+</div>
+  </div>
+  <div class="m-8 pb-2">
+    <h3 class="section-heading lg:px-6">Activiti Version 5</h3>
+<div markdown='1'>
+[5.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
+
+[5.x Javadocs](https://www.activiti.org/javadocs/index.html)
+
+[5.x Full Guide](https://github.com/Activiti/Activiti/releases/tag/activiti-5.22.0)
+</div>
+  </div>
+</div>
