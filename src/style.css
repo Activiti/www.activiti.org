@@ -40,6 +40,8 @@
  */
 @import "components/wrap";
 @import "components/btn";
+@import "components/card";
+@import "components/three-cards";
 @import "components/headings";
 
 /**

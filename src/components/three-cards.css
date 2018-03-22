@@ -1,0 +1,33 @@
+.three-cards {
+  @apply .bg-green;
+}
+
+.three-cards__wrap {
+  @apply .wrap;
+  @apply .py-4;
+  @apply .px-0;
+}
+
+@screen lg {
+  .three-cards__wrap {
+    /*
+     * Allow flexing on large screens without forcing a third-width flex-basis
+     * until on extra-large screens.
+     */
+    @apply .flex;
+    @apply .flex-wrap;
+    @apply .justify-center;
+  }
+  .three-cards__card {
+    @apply .my-3;
+  }
+}
+
+@screen xl {
+  .three-cards__wrap {
+    @apply .py-16;
+  }
+  .three-cards__card {
+    flex-basis: calc((100% / 3) - 2 * config(padding.8));
+  }
+}

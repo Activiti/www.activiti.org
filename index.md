@@ -49,5 +49,5 @@ This project is driven by a community of domain experts from different companies
       <p>Quos, tempore eum consequuntur culpa soluta qui provident aspernatur adipisci praesentium optio perferendis voluptatibus harum accusamus, blanditiis possimus officia! Ad, veniam deleniti!</p>
     </div>
   </div>
-  <a href="{% link get-started.html %}" class="btn btn--large">Get Started Now</a>
+  <a href="{% link get-started.md %}" class="btn btn--large">Get Started Now</a>
 </div>
