@@ -778,9 +778,6 @@ svg {
 }
 
 .card {
-  text-align: center;
-  flex-grow: 1;
-  flex-shrink: 0;
   background-color: #fff;
   border-width: 1px;
   box-shadow: 1.5px 2.6px 4px 0 rgba(35, 31, 32, .35);
@@ -790,8 +787,8 @@ svg {
   margin-bottom: 1.875rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-top: .9375rem;
-  padding-bottom: .9375rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   max-width: calc(100% - 2 * .625em);
 }
 
@@ -800,17 +797,6 @@ svg {
   text-align: left;
   display: inline-block;
   margin-bottom: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card__cta {
-    margin-top: auto;
-  }
 }
 
 .card__title {
@@ -837,6 +823,7 @@ svg {
 
 .three-cards {
   background-color: #22be73;
+  text-align: center;
 }
 
 .three-cards__wrap {
@@ -863,8 +850,16 @@ svg {
   }
 
   .three-cards__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
     margin-top: .9375rem;
     margin-bottom: .9375rem;
+  }
+
+  .three-cards__card-cta {
+    margin-top: auto;
   }
 }
 

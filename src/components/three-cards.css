@@ -1,5 +1,6 @@
 .three-cards {
   @apply .bg-green;
+  @apply .text-center;
 }
 
 .three-cards__wrap {
@@ -19,7 +20,15 @@
     @apply .justify-center;
   }
   .three-cards__card {
+    @apply .flex;
+    @apply .flex-col;
+    @apply .flex-grow;
+    @apply .flex-no-shrink;
     @apply .my-3;
+  }
+
+  .three-cards__card-cta {
+    margin-top: auto;
   }
 }
 
