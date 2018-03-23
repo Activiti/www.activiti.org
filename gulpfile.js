@@ -1,8 +1,10 @@
 const browserSync = require("browser-sync").create();
 const child = require("child_process");
+const dest = require('gulp-dest');
 const gulp = require("gulp");
 const gutil = require('gulp-util');
 const Q = require('q');
+const merge = require('merge-stream');
 
 const cssFiles = "src/**/*.css";
 const siteRoot = "_site";
@@ -44,7 +46,7 @@ const jekyllTask = function (watch = false) {
 /**
  * Build Site
  */
-gulp.task("build", ['css'], function() {
+gulp.task("build", ['css', 'js'], function() {
   return jekyllTask();
 });
 
@@ -53,6 +55,20 @@ gulp.task("build", ['css'], function() {
  */
 gulp.task("jekyll:watch", function() {
   return jekyllTask(true);
+});
+
+/**
+ * Compile JS
+ */
+gulp.task('js', function () {
+  var merged = merge();
+  var files = {
+    'jquery/dist/jquery.min.js': 'jquery-min.js',
+  };
+  Object.keys(files).forEach(function(file) {
+    merged.add(gulp.src(`node_modules/${file}`).pipe(dest('', {basename: `${files[file]}`})).pipe(gulp.dest(`assets/js`)));
+  });
+  return merged;
 });
 
 /**
@@ -83,7 +99,7 @@ gulp.task("css", function() {
 /**
  * Serve site with Browsersync
  */
-gulp.task("serve", ["css"], () => {
+gulp.task("serve", ["css", "js"], () => {
   browserSync.init({
     files: [siteRoot + "/**"],
     open: "local",
@@ -100,4 +116,4 @@ gulp.task("serve", ["css"], () => {
 });
 
 gulp.task("default", ['build']);
-gulp.task("watch", ['jekyll:watch', 'css', 'serve']);
+gulp.task("watch", ['jekyll:watch', 'css', 'js', 'serve']);
