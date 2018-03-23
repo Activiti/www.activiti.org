@@ -32,6 +32,38 @@ This project is driven by a community of domain experts from different companies
 
 ----
 </div>
+
+<div class="bg-green">
+  <div class="wrap py-2 md:py-8 xl:py-16 md:px-0 text-white text-center">
+    <div class="md:flex md:flex-wrap md:justify-center">
+      <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/process-runtime.svg %}</div>
+        <h5>Activiti Process Runtime</h5>
+        <p>Cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments.</p>
+      </div>
+      <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/decision-runtime.svg %}</div>
+        <h5>Activiti Decision Runtime</h5>
+        <p>Cloud native, lightweight and reactive Decision Runtime</p>
+      </div>
+      <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/form-runtime.svg %}</div>
+        <h5>Activiti Form Runtime</h5>
+        <p>Cloud native, lightweight Runtime Form Service.</p>
+      </div>
+      <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/cloud-infra.svg %}</div>
+        <h5>Activiti Cloud Connectors</h5>
+        <p>Simplified system to system interactions that can scale in distributed environments.</p>
+      </div>
+      <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/case-management.svg %}</div>
+        <h5>Activiti Cloud Application / Case Management Router</h5>
+        <p>Bridging the gap between content, data and processes for cloud native environments.</p>
+      </div>
+    </div>
+  </div>
+</div>
   
 <div id='get-started' class="wrap py-8 md:py-16 xl:py-24 text-center">
   <h3 class="section-heading">Get started with Activiti</h3>
