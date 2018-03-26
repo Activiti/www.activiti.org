@@ -6,8 +6,8 @@ title: Open Source Business Automation
 latest_news: Something here, something here
 latest_news_link: https://www.alfresco.com
 ---
-<div class="bg-no-repeat bg-full-width bg-bottom bg-image-clouds">
-  <div class="wrap max-w-md py-8 md:py-16 clearfix">
+<div class="bg-no-repeat bg-full-width bg-bottom bg-image-clouds-full md:bg-image-clouds">
+  <div class="text-center md:text-left wrap max-w-md pt-8 pb-16 md:pt-16 clearfix">
     <div class="md:w-1/2 md:float-left">
       <h1 class="text-green">Open Source <br>Business Automation</h1>
       <p class="text-lg leading-tight mt-0">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
@@ -19,7 +19,7 @@ latest_news_link: https://www.alfresco.com
   </div>
 </div>
 
-<p class="mt-0 bg-green"><a href="{{ page.latest_news_link }}" class="wrap block py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
+<p class="mt-0 bg-green"><a href="{{ page.latest_news_link }}" class="border-t border-white md:border-0 wrap block py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
 
 <div class="wrap max-w-md md:py-4 text-center" markdown='1'>
 ----

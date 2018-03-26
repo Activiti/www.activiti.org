@@ -3375,6 +3375,10 @@ svg {
   background-image: url('../images/clouds.svg');
 }
 
+.bg-image-clouds-full {
+  background-image: url('../images/clouds-full.svg');
+}
+
 @media (min-width: 420px) {
   .sm\:list-reset {
     list-style: none;
@@ -5818,6 +5822,14 @@ svg {
 
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:bg-image-clouds {
+    background-image: url('../images/clouds.svg');
+  }
+
+  .sm\:bg-image-clouds-full {
+    background-image: url('../images/clouds-full.svg');
   }
 }
 
@@ -8265,6 +8277,14 @@ svg {
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:bg-image-clouds {
+    background-image: url('../images/clouds.svg');
+  }
+
+  .md\:bg-image-clouds-full {
+    background-image: url('../images/clouds-full.svg');
+  }
 }
 
 @media (min-width: 768px) {
@@ -10711,6 +10731,14 @@ svg {
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:bg-image-clouds {
+    background-image: url('../images/clouds.svg');
+  }
+
+  .lg\:bg-image-clouds-full {
+    background-image: url('../images/clouds-full.svg');
+  }
 }
 
 @media (min-width: 992px) {
@@ -13156,5 +13184,13 @@ svg {
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:bg-image-clouds {
+    background-image: url('../images/clouds.svg');
+  }
+
+  .xl\:bg-image-clouds-full {
+    background-image: url('../images/clouds-full.svg');
   }
 }
