@@ -10,7 +10,7 @@ latest_news_link: https://www.alfresco.com
   <div class="text-center md:text-left wrap max-w-md pt-8 pb-16 md:pt-16 clearfix">
     <div class="md:w-1/2 md:float-left">
       <h1 class="text-green">Open Source <br>Business Automation</h1>
-      <p class="text-lg leading-tight mt-0">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
+      <p class="text-lg leading-tight mt-1">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
       <a href='#get-started' class="mt-4 btn btn--large">Learn More</a>
     </div>
     <div class="hidden md:block md:float-right">
