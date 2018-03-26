@@ -19,7 +19,7 @@ latest_news_link: https://www.alfresco.com
   </div>
 </div>
 
-<p class="mt-0"><a href="{{ page.latest_news_link }}" class="block bg-green py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
+<p class="mt-0 bg-green"><a href="{{ page.latest_news_link }}" class="wrap block py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
 
 <div class="wrap max-w-md md:py-4 text-center" markdown='1'>
 ----
