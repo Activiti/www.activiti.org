@@ -63,7 +63,6 @@ gulp.task("jekyll:watch", function() {
 gulp.task('js', function () {
   var merged = merge();
   var files = [
-    'jquery/dist/jquery.min.js',
     'jquery.cookie/jquery.cookie.js',
   ];
   files.forEach(function(file) {
