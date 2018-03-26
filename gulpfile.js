@@ -63,10 +63,11 @@ gulp.task("jekyll:watch", function() {
 gulp.task('js', function () {
   var merged = merge();
   var files = {
-    'jquery/dist/jquery.min.js': 'jquery-min.js',
+    'jquery/dist/jquery.min.js',
+    'jquery.cookie/jquery.cookie.js',
   };
-  Object.keys(files).forEach(function(file) {
-    merged.add(gulp.src(`node_modules/${file}`).pipe(dest('', {basename: `${files[file]}`})).pipe(gulp.dest(`assets/js`)));
+  files.forEach(function(file) {
+    merged.add(gulp.src(`node_modules/${file}`).pipe(gulp.dest(`assets/js`)));
   });
   return merged;
 });
@@ -107,7 +108,7 @@ gulp.task("serve", ["css", "js"], () => {
     server: {
       baseDir: siteRoot,
       serveStaticOptions: {
-        extensions: ['html']
+        extensions: ['html', 'js']
       }
     }
   });

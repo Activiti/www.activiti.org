@@ -26,9 +26,6 @@ marketo.utils = {};
 
 (function ($) {
 
-  // @TODO Actually include jQuery cookie plugin.
-  $.cookie = function () {};
-
 	//Constants used in generating forms
 	var _MUNCHKIN_ID = '453-LIZ-762';
 	var _BASE_URL = '//app-ab05.marketo.com';
