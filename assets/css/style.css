@@ -773,8 +773,8 @@ svg {
 
 .btn--large {
   font-size: 1.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 
 .card {
@@ -2623,6 +2623,10 @@ svg {
   padding: 2.5rem;
 }
 
+.p-12 {
+  padding: 3.75rem;
+}
+
 .p-16 {
   padding: 5rem;
 }
@@ -2703,6 +2707,16 @@ svg {
 .px-8 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.px-12 {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 
 .py-16 {
@@ -2845,6 +2859,22 @@ svg {
 
 .pl-8 {
   padding-left: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3.75rem;
+}
+
+.pr-12 {
+  padding-right: 3.75rem;
+}
+
+.pb-12 {
+  padding-bottom: 3.75rem;
+}
+
+.pl-12 {
+  padding-left: 3.75rem;
 }
 
 .pt-16 {
@@ -5103,6 +5133,10 @@ svg {
     padding: 2.5rem;
   }
 
+  .sm\:p-12 {
+    padding: 3.75rem;
+  }
+
   .sm\:p-16 {
     padding: 5rem;
   }
@@ -5183,6 +5217,16 @@ svg {
   .sm\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .sm\:py-16 {
@@ -5325,6 +5369,22 @@ svg {
 
   .sm\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3.75rem;
+  }
+
+  .sm\:pr-12 {
+    padding-right: 3.75rem;
+  }
+
+  .sm\:pb-12 {
+    padding-bottom: 3.75rem;
+  }
+
+  .sm\:pl-12 {
+    padding-left: 3.75rem;
   }
 
   .sm\:pt-16 {
@@ -7561,6 +7621,10 @@ svg {
     padding: 2.5rem;
   }
 
+  .md\:p-12 {
+    padding: 3.75rem;
+  }
+
   .md\:p-16 {
     padding: 5rem;
   }
@@ -7641,6 +7705,16 @@ svg {
   .md\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .md\:py-16 {
@@ -7783,6 +7857,22 @@ svg {
 
   .md\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3.75rem;
+  }
+
+  .md\:pr-12 {
+    padding-right: 3.75rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3.75rem;
   }
 
   .md\:pt-16 {
@@ -10019,6 +10109,10 @@ svg {
     padding: 2.5rem;
   }
 
+  .lg\:p-12 {
+    padding: 3.75rem;
+  }
+
   .lg\:p-16 {
     padding: 5rem;
   }
@@ -10099,6 +10193,16 @@ svg {
   .lg\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .lg\:py-16 {
@@ -10241,6 +10345,22 @@ svg {
 
   .lg\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3.75rem;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 3.75rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3.75rem;
   }
 
   .lg\:pt-16 {
@@ -12477,6 +12597,10 @@ svg {
     padding: 2.5rem;
   }
 
+  .xl\:p-12 {
+    padding: 3.75rem;
+  }
+
   .xl\:p-16 {
     padding: 5rem;
   }
@@ -12557,6 +12681,16 @@ svg {
   .xl\:px-8 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .xl\:py-12 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .xl\:px-12 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .xl\:py-16 {
@@ -12699,6 +12833,22 @@ svg {
 
   .xl\:pl-8 {
     padding-left: 2.5rem;
+  }
+
+  .xl\:pt-12 {
+    padding-top: 3.75rem;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 3.75rem;
+  }
+
+  .xl\:pb-12 {
+    padding-bottom: 3.75rem;
+  }
+
+  .xl\:pl-12 {
+    padding-left: 3.75rem;
   }
 
   .xl\:pt-16 {

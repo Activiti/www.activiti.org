@@ -16,5 +16,5 @@
 }
 
 .btn--large {
-  @apply .text-2xl .px-8;
+  @apply .text-2xl .px-12;
 }
