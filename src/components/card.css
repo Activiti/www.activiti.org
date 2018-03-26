@@ -10,6 +10,11 @@
   max-width: calc(100% - 2 * config(margin.2));
 }
 
+.card__bleed {
+  @apply .py-2;
+  @apply .px-6;
+}
+
 .card__content ul {
   @apply .pl-4;
   @apply .text-left;
@@ -24,6 +29,15 @@
   @apply .mb-3;
   @apply .border-b;
   @apply .border-grey;
+}
+
+.card__title__bleed {
+  margin-top: calc(-1 * (config(padding.2) + 1px));
+  margin-left: calc(-1 * (config(padding.6) + 1px));
+  margin-right: calc(-1 * (config(padding.6) + 1px));
+  @apply .py-2;
+  @apply .border;
+  @apply .border-b-0;
 }
 
 .card__list {

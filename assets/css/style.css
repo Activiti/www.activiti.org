@@ -792,6 +792,13 @@ svg {
   max-width: calc(100% - 2 * .625em);
 }
 
+.card__bleed {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+
 .card__content ul {
   padding-left: 1.25rem;
   text-align: left;
@@ -808,6 +815,16 @@ svg {
   margin-bottom: .9375rem;
   border-bottom-width: 1px;
   border-color: #e6e6ec;
+}
+
+.card__title__bleed {
+  margin-top: calc(-1 * (.625rem + 1px));
+  margin-left: calc(-1 * (1.875rem + 1px));
+  margin-right: calc(-1 * (1.875rem + 1px));
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  border-width: 1px;
+  border-bottom-width: 0;
 }
 
 .card__list {
@@ -891,6 +908,85 @@ svg {
   line-height: 1.25;
   letter-spacing: .06em;
   color: #22be73;
+}
+
+.mktoForm {
+  padding: 0 !important;
+}
+
+.mktoLabel {
+  display: none;
+}
+
+.mktoHide {
+  display: none !important;
+}
+
+.mktoFieldWrap,
+.mktoFieldDescriptor,
+.mktoButtonRow {
+  width: 100%;
+}
+
+.mktoFormRow {
+  width: 100%;
+  margin-top: .9375rem !important;
+  margin-bottom: .9375rem !important;
+}
+
+.mktoField {
+  width: 100%;
+  box-shadow: none !important;
+  border-color: #e6e6ec !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+  padding-top: .625rem !important;
+  padding-bottom: .625rem !important;
+}
+
+.mktoButton {
+  background-color: #8bc34a;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  border-radius: .25rem;
+  transition: all .3s ease-in-out;
+  font-size: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mktoForm .mktoForm-message {
+  font-size: .75rem;
+  font-weight: 200;
+  margin-top: 1.875rem;
+  margin-bottom: .3125rem;
+  color: #dbdadb;
+}
+
+.mktoForm .mktoForm-message:first-of-type {
+  float: right;
+  margin-top: .9375rem;
+}
+
+.mktoForm-no-thanks {
+  display: block;
+  text-align: center;
+  margin-top: .9375rem;
+  margin-bottom: .9375rem;
+}
+
+.mktoForm .mktoForm-no-thanks,
+.mktoForm-message a {
+  text-decoration: underline;
+  color: inherit;
+  padding: 0;
 }
 
 /**
@@ -2129,6 +2225,10 @@ svg {
 
 .min-w-0 {
   min-width: 0;
+}
+
+.min-w-1\/2 {
+  min-width: 50%;
 }
 
 .min-w-full {
@@ -4607,6 +4707,10 @@ svg {
     min-width: 0;
   }
 
+  .sm\:min-w-1\/2 {
+    min-width: 50%;
+  }
+
   .sm\:min-w-full {
     min-width: 100%;
   }
@@ -7059,6 +7163,10 @@ svg {
 
   .md\:min-w-0 {
     min-width: 0;
+  }
+
+  .md\:min-w-1\/2 {
+    min-width: 50%;
   }
 
   .md\:min-w-full {
@@ -9515,6 +9623,10 @@ svg {
     min-width: 0;
   }
 
+  .lg\:min-w-1\/2 {
+    min-width: 50%;
+  }
+
   .lg\:min-w-full {
     min-width: 100%;
   }
@@ -11967,6 +12079,10 @@ svg {
 
   .xl\:min-w-0 {
     min-width: 0;
+  }
+
+  .xl\:min-w-1\/2 {
+    min-width: 50%;
   }
 
   .xl\:min-w-full {

@@ -1,0 +1,62 @@
+.mktoForm {
+  padding: 0 !important;
+}
+
+.mktoLabel {
+  @apply .hidden;
+}
+.mktoHide {
+  @apply .hidden !important;
+}
+
+.mktoFieldWrap,
+.mktoFieldDescriptor,
+.mktoButtonRow {
+  @apply .w-full;
+}
+
+.mktoFormRow {
+  @apply .w-full;
+  @apply .my-3 !important;
+}
+
+.mktoField {
+  @apply .w-full;
+  @apply .shadow-none !important;
+  @apply .border-grey !important;
+  @apply .px-4 !important;
+  @apply .py-2 !important;
+}
+
+.mktoButton {
+  @apply .btn;
+  @apply .text-2xl;
+  @apply .w-full;
+  @apply .cursor-pointer;
+  @apply .text-center;
+}
+
+.mktoForm .mktoForm-message {
+  @apply .text-xs;
+  @apply .font-light;
+  @apply .mt-6;
+  @apply .mb-1;
+  @apply .text-grey-dark;
+}
+.mktoForm .mktoForm-message:first-of-type {
+  @apply .float-right;
+  @apply .mt-3;
+}
+
+.mktoForm-no-thanks {
+  @apply .block;
+  @apply .text-center;
+  @apply .my-3;
+}
+
+.mktoForm .mktoForm-no-thanks,
+.mktoForm-message a {
+  @apply .underline;
+  color: inherit;
+  padding: 0;
+}

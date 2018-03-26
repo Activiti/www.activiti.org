@@ -115,15 +115,15 @@ marketo.utils = {};
 			require : '<p class="mktoForm-message">* Required fields</p>',
       no_thanks: '<a class="mktoForm-no-thanks" href="' + redirect + '">' + no_thanks + '</a>'
 		};
+    if (no_thanks && redirect) {
+      $form.append(m.no_thanks);
+    }
 		if (url && privacy_message) {
       $form.append(m.privacy);
     }
 		if ($form.find('.mktoRequired').length > 0) {
 			$form.append(m.require);
 		}
-    if (no_thanks && redirect) {
-      $form.append(m.no_thanks);
-    }
 	};
 	marketo.utils.pushToDataLayer = function (gtmEvent, cb) {
 		if (typeof dataLayer !== "undefined") {
