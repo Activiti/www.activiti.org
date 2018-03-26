@@ -1,13 +1,29 @@
-<div class="border-b border-green">
-  <header class="wrap max-w-xl" role="banner">
-    <nav role='navigation' class='flex items-center py-3'>
-      <a class="mr-2 xl:mr-8 flex-none" href="{{ "/" | relative_url }}">
-        {% include svg/activiti-logo.svg %}
-      </a>
-      <a class="no-underline text-sm text-grey-darker font-normal mx-2 md:mx-4 {% if page.path == 'documentation.html' %}active{% endif %}" href="{% link documentation.html %}">Documentation</a>
-      <a class="no-underline text-sm text-grey-darker font-normal mx-2 md:mx-4 {% if page.path == 'blog.html' %}active{% endif %}" href="{% link blog.html %}">Community</a>
-      <a class="no-underline text-sm text-grey-darker font-normal mx-2 md:mx-4 {% if page.path == 'team.html' %}active{% endif %}" href="{% link team.html %}">Team</a>
-      <a href="{% link get-started.md %}" class='ml-auto btn py-1'>Get started</a>
-    </nav>
-  </header>
-</div>
+<header class="main-menu" id="main-menu" class="" role="banner">
+  <nav class="main-menu__inner" role='navigation'>
+    <a href="#main-menu" class="js-main-menu-toggler main-menu__hamburger main-menu__hamburger--open">
+      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22">
+        <path class="hamburger__line hamburger__line--1" d="M1 1h30v2H1"></path>
+        <path class="hamburger__line hamburger__line--2" d="M1 10h30v2H1"></path>
+        <path class="hamburger__line hamburger__line--3" d="M1 19h30v2H1"></path>
+      </svg>
+    </a>
+    <a href="#menu-close" class="js-main-menu-toggler main-menu__hamburger main-menu__hamburger--close">
+      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22">
+        <path class="hamburger__line hamburger__line--1" d="M1 1h30v2H1"></path>
+        <path class="hamburger__line hamburger__line--2" d="M1 10h30v2H1"></path>
+        <path class="hamburger__line hamburger__line--3" d="M1 19h30v2H1"></path>
+      </svg>
+    </a>
+    <a class="main-menu__logo" href="{{ "/" | relative_url }}">
+      {% include svg/activiti-logo.svg %}
+    </a>
+    <ul class="main-menu__links">
+      <li><a class="main-menu__link" href="{% link documentation.html %}">Documentation</a></a>
+      <li><a class="main-menu__link" href="{% link blog.html %}">Community</a></li>
+      <li><a class="main-menu__link" href="{% link team.html %}">Team</a></li>
+      <li class='ml-auto'><a class='btn py-1' href="{% link get-started.md %}">Get started</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="main-menu__escape" id="menu-close"></div>
+<div class="main-menu__placeholder"></div>
