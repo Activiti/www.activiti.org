@@ -21,7 +21,9 @@
       <li><a class="main-menu__link" href="{% link documentation.html %}">Documentation</a></a>
       <li><a class="main-menu__link" href="{% link blog.html %}">Community</a></li>
       <li><a class="main-menu__link" href="{% link team.html %}">Team</a></li>
-      <li class='ml-auto'><a class='btn py-1' href="{% link get-started.md %}">Get started</a></li>
+      {% if page.url != '/before-you-start' %}
+        <li class='ml-auto'><a class='btn py-1' href="{% link before-you-start.html %}" data-modal="#before-you-start" >Get started</a></li>
+      {% endif %}
     </ul>
   </nav>
 </header>

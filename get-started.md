@@ -13,7 +13,7 @@ Java-based app works on any operating system. Works great with your choice of te
 * Se d ea mala virtuti ipsos.”
 </div>
       <div class="three-cards__card-cta">
-        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/minikube.html" class="btn btn--large">Get Started</a>
+        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/minikube.html" class="btn btn--large px-8 font-normal">Get Started</a>
       </div>
     </div>
     <div class="card three-cards__card">
@@ -26,7 +26,7 @@ Pull the latest version of the image  from the docker index. This is the recomme
 * Se d ea mala virtuti ipsos.”
 </div>
       <div class="three-cards__card-cta">
-        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/quickstart.htm" class="btn btn--large">Get Started</a>
+        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/quickstart.htm" class="btn btn--large px-8 font-normal">Get Started</a>
       </div>
     </div>
 <div class="card three-cards__card">
@@ -39,7 +39,7 @@ Pull the latest version of the image from the Github Repo.
 * Se d ea mala virtuti ipsos.”
 </div>
       <div class="three-cards__card-cta">
-        <a href="https://github.com/Activiti" class="btn btn--large">Get Started</a>
+        <a href="https://github.com/Activiti" class="btn btn--large px-8 font-normal">Get Started</a>
       </div>
     </div>
   </div>

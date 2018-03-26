@@ -34,6 +34,7 @@
   @apply .w-full;
   @apply .cursor-pointer;
   @apply .text-center;
+  @apply .font-normal;
 }
 
 .mktoForm .mktoForm-message {

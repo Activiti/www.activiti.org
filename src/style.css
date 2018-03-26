@@ -45,6 +45,7 @@
 @import "components/headings";
 @import "components/marketo-forms";
 @import "components/main-menu";
+@import "components/modal";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
