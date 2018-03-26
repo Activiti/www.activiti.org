@@ -48,6 +48,7 @@ marketo.utils = {};
 					marketo.utils.dbCountry = data.registry_country_code;
 					marketo.utils.isOptInCountry();
 				});
+        return;
 			} catch(e) {
 				//Lets try and handle this more gracefully and set a default in case we still can't get the right values. But first we check the geoIP cookie
 				marketo.utils.dbCountry = $.cookie('_ccrp');
@@ -57,7 +58,6 @@ marketo.utils = {};
 					marketo.utils.dbCountry = "CA";
 				}
 			}
-			return;
 		}
 		var countryField = marketo.utils.dbCountry;
 
@@ -162,7 +162,16 @@ marketo.utils = {};
 		// DISABLE AJAX REQUEST TO GET USER DATA -- just use the fallback.
 		// getLeadData();
     // @TODO At least set marketo.utils.user.emailOptIn, perhaps from a cookie?
-    marketo.utils.isOptInCountry();
+		setTimeout(function () {
+      marketo.utils.user = {};
+      // For a new anonymous user this will come back as null from Marketo.
+      if (marketo.utils.user.emailOptIn == null) {
+        marketo.utils.user.emailOptIn = 0;
+      }
+      marketo.utils.subscribeStatus = marketo.utils.user.emailOptIn;
+      $(document).trigger('preFillDataReady');
+      marketo.utils.isOptInCountry();
+		});
 	};
 	marketo.utils.getRedirect = function ($form) {
 			return $form.data('redirect');
