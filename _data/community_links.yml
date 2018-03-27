@@ -6,7 +6,7 @@
   url: 'https://stackoverflow.com/questions/tagged/activiti'
 - title: Chat
   image: svg/chat.svg
-  url: '#'
+  url: 'https://gitter.im/Activiti/Activiti7'
 - title: Forum
   image: svg/forum.svg
   url: 'https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D'
