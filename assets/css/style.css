@@ -815,8 +815,11 @@ svg {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
     margin-bottom: .3125rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
     padding-left: .9375rem;
     padding-right: .9375rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -1219,9 +1222,31 @@ svg {
   box-sizing: border-box;
 }
 
+.close-modal {
+  position: absolute;
+  top: -3px;
+  right: 10px;
+}
+
+.close-modal-inner {
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.close-modal:after {
+  content: '\00d7';
+  display: inline-block;
+  font-size: 1.875rem;
+  color: #727174;
+}
+
 @media (min-width: 768px) {
   .blocker {
     top: 0;
+  }
+
+  .close-modal {
+    display: none;
   }
 }
 

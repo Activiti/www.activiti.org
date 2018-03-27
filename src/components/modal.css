@@ -32,8 +32,27 @@
   box-sizing: border-box;
 }
 
+.close-modal {
+  position: absolute;
+  top: -3px;
+  right: 10px;
+}
+.close-modal-inner {
+  text-indent: -9999px;
+  display: inline-block;
+}
+.close-modal:after {
+  content: '\00d7';
+  display: inline-block;
+  @apply .text-3xl;
+  @apply .text-grey-darker;
+}
+
 @screen lg {
   .blocker {
     top: 0;
+  }
+  .close-modal {
+    display: none;
   }
 }

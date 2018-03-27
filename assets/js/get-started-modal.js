@@ -27,8 +27,9 @@
               fadeDuration: 400,
               fadeDelay: 0,
               escapeClose: false,
-              clickClose: false,
-              showClose: false
+              //showClose: false,
+              closeText: '<div class="close-modal-inner">Close</div>',
+              clickClose: false
             });
 
             e.preventDefault();

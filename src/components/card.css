@@ -23,7 +23,9 @@
   .card-except-below-large .card__title {
     @apply .-mx-3;
     @apply .mb-1;
+    @apply .py-2;
     @apply .px-3;
+    @apply .text-3xl;
   }
 }
 
