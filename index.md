@@ -5,6 +5,7 @@ title: Open Source Business Automation
 
 latest_news: Something here, something here
 latest_news_link: https://www.alfresco.com
+redirect_from: content/activiti-home
 ---
 <div class="bg-no-repeat bg-full-width bg-bottom bg-image-clouds-full md:bg-image-clouds">
   <div class="text-center md:text-left wrap max-w-md pt-8 pb-16 md:pt-16 clearfix">

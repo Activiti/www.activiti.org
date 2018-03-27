@@ -1,6 +1,7 @@
 const browserSync = require("browser-sync").create();
+const path = require('path')
+const fs = require('fs');
 const child = require("child_process");
-const dest = require('gulp-dest');
 const gulp = require("gulp");
 const gutil = require('gulp-util');
 const Q = require('q');
@@ -110,6 +111,14 @@ gulp.task("serve", ["css", "js"], () => {
         extensions: ['html', 'js']
       }
     }
+  }, (err, bs) => {
+    bs.addMiddleware("*", (req, res) => {
+        // Provides the 404 content without redirect.
+        res.write(fs.readFileSync(path.join(__dirname, '/_site/404.html')));
+        res.removeHeader("Content-Type");
+        res.statusCode = 404;
+        res.end();
+    });
   });
 
   gulp.watch([cssFiles, tailwindConfig], { interval: 500 }, ['css']);
