@@ -1,0 +1,28 @@
+.hamburger {
+  @apply .absolute;
+  @apply .text-grey-darker;
+}
+
+@screen lg {
+  .hamburger {
+    @apply hidden !important;
+  }
+}
+
+.hamburger--open {
+  @apply .block;
+}
+
+.hamburger--close {
+  @apply .hidden;
+}
+
+#menu-region.is-open .hamburger--open,
+#menu-region:target .hamburger--open {
+  @apply .hidden;
+}
+
+#menu-region.is-open .hamburger--close,
+#menu-region:target .hamburger--close {
+  @apply .block;
+}

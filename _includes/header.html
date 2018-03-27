@@ -1,23 +1,23 @@
-<header class="main-menu" id="main-menu" class="" role="banner">
-  <nav class="main-menu__inner" role='navigation'>
-    <a href="#main-menu" class="js-main-menu-toggler main-menu__hamburger main-menu__hamburger--open">
-      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22">
+<header class="fixed w-full border-b border-green bg-white" id="menu-region" class="" role="banner">
+  <nav class="flex items-center px-2 h-10 lg:h-12 lg:wrap lg:max-w-xl" role='navigation'>
+    <a href="#menu-region" class="js-main-menu-toggler hamburger hamburger--open">
+      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22">
         <path class="hamburger__line hamburger__line--1" d="M1 1h30v2H1"></path>
         <path class="hamburger__line hamburger__line--2" d="M1 10h30v2H1"></path>
         <path class="hamburger__line hamburger__line--3" d="M1 19h30v2H1"></path>
       </svg>
     </a>
-    <a href="#menu-close" class="js-main-menu-toggler main-menu__hamburger main-menu__hamburger--close">
-      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22">
+    <a href="#menu-close" class="js-main-menu-toggler hamburger hamburger--close">
+      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22">
         <path class="hamburger__line hamburger__line--1" d="M1 1h30v2H1"></path>
         <path class="hamburger__line hamburger__line--2" d="M1 10h30v2H1"></path>
         <path class="hamburger__line hamburger__line--3" d="M1 19h30v2H1"></path>
       </svg>
     </a>
-    <a class="main-menu__logo" href="{{ "/" | relative_url }}">
+    <a class="mx-auto lg:ml-0 lg:mr-4" href="{{ "/" | relative_url }}">
       {% include svg/activiti-logo.svg %}
     </a>
-    <ul class="main-menu__links">
+    <ul class="main-menu">
       {% for item in site.data.main_menu_links %}
         {% assign apost = site.pages | where:"path",item.url  | first %}
         {% if apost %}
@@ -26,7 +26,7 @@
           {% assign item_url = item.url %}
         {% endif %}
         {% unless apost.path == 'before-you-start.html' %}
-          <li><a class="main-menu__link" href="{{ item_url }}">{{ item.title }}</a></li>
+          <li><a class="no-underline text-sm text-grey-darker font-normal lg:mx-4" href="{{ item_url }}">{{ item.title }}</a></li>
         {% else %}
           {% unless page.path == 'before-you-start.html' %}
             <li class='ml-auto'><a class='btn py-1' href="{{ item_url }}" data-model="#before-you-start">{{ item.title }}</a></li>
@@ -36,5 +36,5 @@
     </ul>
   </nav>
 </header>
-<div class="main-menu__escape" id="menu-close"></div>
-<div class="main-menu__placeholder"></div>
+<div class="fixed" id="menu-close"></div>
+<div class="w-full h-10 lg:h-12"></div>
