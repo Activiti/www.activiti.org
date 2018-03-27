@@ -6,7 +6,7 @@
       }
 
       e.preventDefault();
-      $('#main-menu').toggleClass('is-open');
+      $('#menu-region').toggleClass('is-open');
       return false;
     });
   });
