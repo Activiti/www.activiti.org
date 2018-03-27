@@ -142,36 +142,29 @@ marketo.utils = {};
 
 	//Makes call to server for user details if they exist
 	marketo.utils.getUser = function (callback) {
-		var getLeadData = function () {
-			$.post('/ajax/marketo', function (res) {
-					var data = res;
-					marketo.utils.user = (typeof data !== Array) ? data : {};
-					//For a new anonymous user this will come back as null from Marketo.
-					if (marketo.utils.user.emailOptIn == null) {
-						marketo.utils.user.emailOptIn = 0;
-					}
-					marketo.utils.subscribeStatus = marketo.utils.user.emailOptIn;
-					$(document).trigger('preFillDataReady');
-					marketo.utils.isOptInCountry();
-					if (callback !== undefined) callback();
-				})
-				.fail(function () {
-					marketo.utils.isOptInCountry();
-				});
-		};
-		// DISABLE AJAX REQUEST TO GET USER DATA -- just use the fallback.
-		// getLeadData();
-    // @TODO At least set marketo.utils.user.emailOptIn, perhaps from a cookie?
-		setTimeout(function () {
-      marketo.utils.user = {};
-      // For a new anonymous user this will come back as null from Marketo.
+    var actOnLeadData = function (res) {
+      var data = res;
+      marketo.utils.user = (typeof data !== Array && typeof data !== 'undefined') ? data : {};
+      //For a new anonymous user this will come back as null from Marketo.
       if (marketo.utils.user.emailOptIn == null) {
         marketo.utils.user.emailOptIn = 0;
       }
       marketo.utils.subscribeStatus = marketo.utils.user.emailOptIn;
       $(document).trigger('preFillDataReady');
       marketo.utils.isOptInCountry();
-		});
+      if (callback !== undefined) callback();
+    };
+		var getLeadData = function () {
+      $.post('/ajax/marketo', actOnLeadData)
+				.fail(function () {
+					marketo.utils.isOptInCountry();
+				});
+		};
+		// Disabled AJAX request to get user data - just continue on as if no data.
+		// Use setTimeout() to ensure a new thread (so our function to show the form
+		// will get bound to the preFillDataReady event that will be triggered).
+		// getLeadData();
+		setTimeout(actOnLeadData);
 	};
 	marketo.utils.getRedirect = function ($form) {
 			return $form.data('redirect');
@@ -228,7 +221,7 @@ marketo.utils = {};
 		// Use form labels as placeholder text
     var $form = form.getFormElem();
     // 1. 'Protected' forms protect a page, and check a cookie and redirect if needed.
-    if ($form.data('protectionForm') && $form.data('redirect')) {
+    if ($form.data('protectionForm') && $form.data('redirect') && $form.is(':visible')) {
       if ($.cookie('protected_form_completed' + $form.data('protectionForm')) === 'true') {
         window.location = $form.data('redirect');
       }
@@ -338,9 +331,6 @@ marketo.utils = {};
 		MktoForms2.whenReady(function (form) {
 			marketo.state.set(2);
 
-      // @TODO preFillDataReady is not firing because marketo.utils.user is
-      // undefined, so getUser() does not run, but that's the only thing that
-      // fires the event.
 			if (marketo.utils.user == null) {
 				marketo.utils.getUser();
 			}
