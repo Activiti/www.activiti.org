@@ -793,18 +793,31 @@ svg {
   margin-left: .625em;
   margin-right: .625em;
   margin-bottom: 1.875rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: .625rem;
+  padding-right: .625rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   max-width: calc(100% - 2 * .625em);
 }
 
-.card__bleed {
-  padding-top: .625rem;
-  padding-bottom: .625rem;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
+@media (max-width: 768px) {
+  .card-except-below-large {
+    box-shadow: none;
+    border-width: 0;
+    background-color: transparent;
+    margin: 0;
+    max-width: 100%;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+  }
+
+  .card-except-below-large .card__title {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    margin-bottom: .3125rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+  }
 }
 
 .card__content ul {
@@ -815,24 +828,45 @@ svg {
 }
 
 .card__title {
-  margin-left: -2.5rem;
-  margin-right: -2.5rem;
+  margin-top: -1.25rem;
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  padding-top: 1.25rem;
   padding-bottom: .9375rem;
   margin-bottom: .9375rem;
   border-bottom-width: 1px;
   border-color: #e6e6ec;
 }
 
-.card__title__bleed {
-  margin-top: calc(-1 * (.625rem + 1px));
-  margin-left: calc(-1 * (1.875rem + 1px));
-  margin-right: calc(-1 * (1.875rem + 1px));
-  padding-top: .625rem;
-  padding-bottom: .625rem;
-  border-width: 1px;
-  border-bottom-width: 0;
+@media (min-width: 768px) {
+  .card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .card__title {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+  }
+
+  .card__bleed {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+
+  .card__title__bleed {
+    margin-top: calc(-1 * (.625rem + 1px));
+    margin-left: calc(-1 * (1.875rem + 1px));
+    margin-right: calc(-1 * (1.875rem + 1px));
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    border-width: 1px;
+    border-bottom-width: 0;
+  }
 }
 
 .card__list {
@@ -920,8 +954,10 @@ svg {
 
 .mktoForm {
   padding: 0 !important;
+  width: auto !important;
 }
 
+.mktoForm fieldset,
 .mktoLabel {
   display: none;
 }
@@ -938,18 +974,16 @@ svg {
 
 .mktoFormRow {
   width: 100%;
-  margin-top: .9375rem !important;
-  margin-bottom: .9375rem !important;
+  margin-top: .3125rem !important;
+  margin-bottom: .3125rem !important;
 }
 
 .mktoField {
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
   box-shadow: none !important;
   border-color: #e6e6ec !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
-  padding-top: .625rem !important;
-  padding-bottom: .625rem !important;
+  padding: .625rem !important;
 }
 
 .mktoButton {
@@ -972,16 +1006,9 @@ svg {
 }
 
 .mktoForm .mktoForm-message {
-  font-size: .75rem;
   font-weight: 200;
-  margin-top: 1.875rem;
-  margin-bottom: .3125rem;
   color: #dbdadb;
-}
-
-.mktoForm .mktoForm-message:first-of-type {
-  float: right;
-  margin-top: .9375rem;
+  text-align: center;
 }
 
 .mktoForm-no-thanks {
@@ -996,6 +1023,43 @@ svg {
   text-decoration: underline;
   color: inherit;
   padding: 0;
+}
+
+.mktoForm .mktoForm-intro {
+  text-align: center;
+  font-size: 1.125rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .mktoForm-intro {
+    display: none;
+  }
+
+  .mktoField {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-top: .625rem !important;
+    padding-bottom: .625rem !important;
+  }
+
+  .mktoFormRow {
+    margin-top: .9375rem !important;
+    margin-bottom: .9375rem !important;
+  }
+
+  .mktoForm .mktoForm-message {
+    font-size: .75rem;
+    margin-top: 1.875rem;
+    margin-bottom: .3125rem;
+    text-align: right;
+  }
+
+  .mktoForm .mktoForm-message:first-of-type {
+    float: left;
+    margin-top: .9375rem;
+  }
 }
 
 .main-menu {
@@ -1128,7 +1192,7 @@ svg {
 
 .blocker {
   position: fixed;
-  top: 0;
+  top: 3.125rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1136,7 +1200,6 @@ svg {
   height: 100%;
   overflow: auto;
   z-index: 1;
-  padding: 20px;
   box-sizing: border-box;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, .68);
@@ -1154,6 +1217,12 @@ svg {
 .modal {
   z-index: 2;
   box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .blocker {
+    top: 0;
+  }
 }
 
 /**

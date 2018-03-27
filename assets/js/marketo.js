@@ -107,24 +107,29 @@ marketo.utils = {};
     var privacy_message = $form.data('privacyMessage');
     var no_thanks = $form.data('noThanks');
     var redirect = $form.data('redirect');
+    var intro = $form.data('intro');
 
 		var m = {
+			intro : '<div class="mktoForm-intro">' + intro + '</div>',
 			privacy : '<p class="mktoForm-message">' + Activiti.stringReplace(privacy_message, {
           "@href": Activiti.checkPlain(url)
         }) + '</p>',
 			require : '<p class="mktoForm-message">* Required fields</p>',
       no_thanks: '<a class="mktoForm-no-thanks" href="' + redirect + '">' + no_thanks + '</a>'
 		};
-		// Newer design places the 'no thanks' element before other messages.
+		// Newer design changes the order of the messages, and adds an intro.
     if (no_thanks && redirect) {
       $form.append(m.no_thanks);
     }
-		if (url && privacy_message) {
-      $form.append(m.privacy);
-    }
+    if (intro) {
+      $form.prepend(m.intro);
+		}
 		if ($form.find('.mktoRequired').length > 0) {
 			$form.append(m.require);
 		}
+    if (url && privacy_message) {
+      $form.append(m.privacy);
+    }
 	};
 	marketo.utils.pushToDataLayer = function (gtmEvent, cb) {
 		if (typeof dataLayer !== "undefined") {

@@ -21,12 +21,16 @@
 
         if (attach_modal) {
           $this_link.on('click', function(e) {
-            $(modal_selector).modal({
-              fadeDuration: 200,
+            $('form[id*="mktoForm_"]', $modal).removeAttr('style').find('[style]').removeAttr('style');
+
+            $modal.modal({
+              fadeDuration: 400,
+              fadeDelay: 0,
               escapeClose: false,
               clickClose: false,
               showClose: false
             });
+
             e.preventDefault();
             return false;
           });
