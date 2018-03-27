@@ -101,6 +101,8 @@ gulp.task("css", function() {
  * Serve site with Browsersync
  */
 gulp.task("serve", ["css", "js"], () => {
+  const compression = require("compression");
+  
   browserSync.init({
     files: [siteRoot + "/**"],
     open: "local",
@@ -109,7 +111,8 @@ gulp.task("serve", ["css", "js"], () => {
       baseDir: siteRoot,
       serveStaticOptions: {
         extensions: ['html', 'js']
-      }
+      },
+      middleware: compression()
     }
   }, (err, bs) => {
     bs.addMiddleware("*", (req, res) => {
