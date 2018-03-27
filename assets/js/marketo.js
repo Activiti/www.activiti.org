@@ -48,7 +48,6 @@ marketo.utils = {};
 					marketo.utils.dbCountry = data.registry_country_code;
 					marketo.utils.isOptInCountry();
 				});
-        return;
 			} catch(e) {
 				//Lets try and handle this more gracefully and set a default in case we still can't get the right values. But first we check the geoIP cookie
 				marketo.utils.dbCountry = $.cookie('_ccrp');
@@ -58,6 +57,7 @@ marketo.utils = {};
 					marketo.utils.dbCountry = "CA";
 				}
 			}
+			return;
 		}
 		var countryField = marketo.utils.dbCountry;
 
@@ -68,8 +68,8 @@ marketo.utils = {};
 		if (marketo.utils.subscribeStatus == 1) {
 			//User has already agreed to subscribe so hide all optIn
 			$("[name='emailOptIn']").parents('.mktoFormRow').hide();
-			$("[name='emailOptIn'][value='false']").prop("checked", false);				
-			$("[name='emailOptIn'][value='true']").prop("checked", true);			
+			$("[name='emailOptIn'][value='false']").prop("checked", false);
+			$("[name='emailOptIn'][value='true']").prop("checked", true);
 			return false;
 		} else if(explicitCountries.indexOf(countryField) > -1) {
 			$('.mktoButtonRow').prepend($("[name='emailOptIn']").parents('.mktoFormRow'));
@@ -115,6 +115,7 @@ marketo.utils = {};
 			require : '<p class="mktoForm-message">* Required fields</p>',
       no_thanks: '<a class="mktoForm-no-thanks" href="' + redirect + '">' + no_thanks + '</a>'
 		};
+		// Newer design places the 'no thanks' element before other messages.
     if (no_thanks && redirect) {
       $form.append(m.no_thanks);
     }
@@ -130,7 +131,7 @@ marketo.utils = {};
 			dataLayer.push({
 				'event': gtmEvent,
 				'eventCallback': cb
-			});			
+			});
 		}
 		else {
       cb();
@@ -142,6 +143,9 @@ marketo.utils = {};
 
 	//Makes call to server for user details if they exist
 	marketo.utils.getUser = function (callback) {
+		// Replaced AJAX request to get user data - just continue on as if no data.
+		// Use setTimeout() to ensure a new thread (so our function to show the form
+		// will get bound to the preFillDataReady event that will be triggered).
     var actOnLeadData = function (res) {
       var data = res;
       marketo.utils.user = (typeof data !== Array && typeof data !== 'undefined') ? data : {};
@@ -154,16 +158,13 @@ marketo.utils = {};
       marketo.utils.isOptInCountry();
       if (callback !== undefined) callback();
     };
-		var getLeadData = function () {
+		/*var getLeadData = function () {
       $.post('/ajax/marketo', actOnLeadData)
 				.fail(function () {
 					marketo.utils.isOptInCountry();
 				});
 		};
-		// Disabled AJAX request to get user data - just continue on as if no data.
-		// Use setTimeout() to ensure a new thread (so our function to show the form
-		// will get bound to the preFillDataReady event that will be triggered).
-		// getLeadData();
+		getLeadData();*/
 		setTimeout(actOnLeadData);
 	};
 	marketo.utils.getRedirect = function ($form) {
@@ -220,7 +221,10 @@ marketo.utils = {};
 	marketo.modules.all.ready = function (form) {
 		// Use form labels as placeholder text
     var $form = form.getFormElem();
-    // 1. 'Protected' forms protect a page, and check a cookie and redirect if needed.
+    // 1. 'Protected' forms protect a page, and check a cookie and redirect if
+		// needed. The form markup is hidden ready to be shown in a modal on most
+		// pages, the redirect should only be performed if the form is shown as that
+		// is when the protected page is being requested.
     if ($form.data('protectionForm') && $form.data('redirect') && $form.is(':visible')) {
       if ($.cookie('protected_form_completed' + $form.data('protectionForm')) === 'true') {
         window.location = $form.data('redirect');
@@ -235,7 +239,7 @@ marketo.utils = {};
 		if (typeof alfrescoPlaceholder !== 'undefined') {
 			alfrescoPlaceholder.init();
 		}
-		
+
 		var id = 'mktoForm_' + form.getId();
 
 		$($form).find('.mktoFieldWrap label').each(function (index) {
@@ -276,7 +280,7 @@ marketo.utils = {};
 		var states = {
 			current : 'marketo-pre-load',
 			available : [
-				'marketo-pre-load', // 0 
+				'marketo-pre-load', // 0
 				'marketo-loading', // 1
 				'marketo-loaded', // 2
 				'marketo-submitting', // 3
