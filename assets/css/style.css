@@ -1066,36 +1066,33 @@ svg {
 }
 
 .main-menu {
+  margin-top: 0;
   list-style: none;
   padding: 0;
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin-top: 0;
-  background-color: #fff;
-  top: 3.125rem;
-  height: calc(100vh - 3.125rem);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
-#menu-region.is-open .main-menu,
-#menu-region:target .main-menu {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+@media (max-width: 767px) {
+  .main-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    top: 3.125rem;
+    height: calc(100vh - 3.125rem);
+  }
+
+  #menu-region.is-open .main-menu,
+  #menu-region:target .main-menu {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 @media (min-width: 768px) {
   .main-menu {
-    display: block;
-    position: static;
-    height: auto;
-    width: auto;
-    -webkit-transform: none;
-    transform: none;
     display: flex;
     flex-grow: 1;
     align-items: center;

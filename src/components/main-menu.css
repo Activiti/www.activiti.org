@@ -1,27 +1,27 @@
 .main-menu {
-  @apply .list-reset;
-  @apply .absolute;
-  @apply .pin-x;
   @apply .mt-0;
-  @apply .bg-white;
-  top: config('height.10');
-  height: calc(100vh - config('height.10'));
-  transform: translateX(-100%);
-  transition: transform .2s ease-in-out;
+  @apply .list-reset;
 }
 
-#menu-region.is-open .main-menu,
-#menu-region:target .main-menu {
-  transform: translateX(0);
+@screen \<lg {
+  .main-menu {
+    @apply .absolute;
+    @apply .pin-x;
+    @apply .bg-white;
+    @apply .transition;
+    transform: translateX(-100%);
+    top: config('height.10');
+    height: calc(100vh - config('height.10'));
+  }
+
+  #menu-region.is-open .main-menu,
+  #menu-region:target .main-menu {
+    transform: translateX(0);
+  }
 }
 
 @screen lg {
   .main-menu {
-    @apply .block;
-    @apply .static;
-    @apply .h-auto;
-    @apply .w-auto;
-    transform: none;
     @apply .flex;
     @apply flex-grow;
     @apply .items-center;
