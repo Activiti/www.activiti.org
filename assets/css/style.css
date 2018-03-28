@@ -1009,7 +1009,7 @@ svg {
 }
 
 .mktoForm .mktoForm-message {
-  font-weight: 200;
+  font-weight: 300;
   color: #dbdadb;
   text-align: center;
 }
@@ -1999,7 +1999,7 @@ svg {
 }
 
 .font-light {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .font-normal {
@@ -2011,7 +2011,7 @@ svg {
 }
 
 .hover\:font-light:hover {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .hover\:font-normal:hover {
@@ -4513,7 +4513,7 @@ svg {
   }
 
   .sm\:font-light {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .sm\:font-normal {
@@ -4525,7 +4525,7 @@ svg {
   }
 
   .sm\:hover\:font-light:hover {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .sm\:hover\:font-normal:hover {
@@ -7001,7 +7001,7 @@ svg {
   }
 
   .md\:font-light {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .md\:font-normal {
@@ -7013,7 +7013,7 @@ svg {
   }
 
   .md\:hover\:font-light:hover {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .md\:hover\:font-normal:hover {
@@ -9489,7 +9489,7 @@ svg {
   }
 
   .\<lg\:font-light {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .\<lg\:font-normal {
@@ -9501,7 +9501,7 @@ svg {
   }
 
   .\<lg\:hover\:font-light:hover {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .\<lg\:hover\:font-normal:hover {
@@ -11977,7 +11977,7 @@ svg {
   }
 
   .lg\:font-light {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .lg\:font-normal {
@@ -11989,7 +11989,7 @@ svg {
   }
 
   .lg\:hover\:font-light:hover {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .lg\:hover\:font-normal:hover {
@@ -14465,7 +14465,7 @@ svg {
   }
 
   .xl\:font-light {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .xl\:font-normal {
@@ -14477,7 +14477,7 @@ svg {
   }
 
   .xl\:hover\:font-light:hover {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .xl\:hover\:font-normal:hover {
