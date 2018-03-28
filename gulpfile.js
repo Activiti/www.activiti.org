@@ -118,7 +118,6 @@ gulp.task("serve", ["css", "js"], () => {
     bs.addMiddleware("*", (req, res) => {
         // Provides the 404 content without redirect.
         res.write(fs.readFileSync(path.join(__dirname, '/_site/404.html')));
-        res.removeHeader("Content-Type");
         res.statusCode = 404;
         res.end();
     });

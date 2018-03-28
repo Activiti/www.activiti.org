@@ -364,6 +364,9 @@ marketo.utils = {};
 
 				//Hide the loading icon
 				$(form).siblings('.icon__loader').hide();
+
+				// Trigger another event for the form once the customisations have ran.
+        $form.trigger('CustomisedMarketoFormReady');
 			});
 		});
 	});
