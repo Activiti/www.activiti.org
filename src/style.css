@@ -47,6 +47,7 @@
 @import "components/main-menu";
 @import "components/hamburger";
 @import "components/modal";
+@import "components/embed";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
