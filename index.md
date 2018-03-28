@@ -72,12 +72,12 @@ This project is driven by a community of domain experts from different companies
 <div class="wrap pt-8 md:pb-4 lg:py-16">
   <h3 class="section-heading">Activiti Community</h3>
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
-    <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8">
+    <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       <img src="http://via.placeholder.com/1280x720" title="placeholder"/>
       <h4 class="section-sub-heading">Blog: Form Stencil Examples</h4>
       <p>“Stencils” provide a very powerful set of capabilities to Alfresco Process Services powered by Activiti (APS) and can be used within the BPMN 2.0 Editor, the Step Editor and the Forms Editor.</p>
     </div>
-    <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8">
+    <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include youtube_embed.html youtube_id="Y5bA3efD95U" %}
       <h4 class="section-sub-heading">Activiti Cloud Overview &amp; BluePrint</h4>
       <p>While we are working hard in getting our first Beta Release at the end of March (beginning of April) we wanted to share a couple of introductory videos about our work so far.</p>
