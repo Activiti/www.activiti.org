@@ -1,0 +1,29 @@
+.btn-grid {
+  @apply .flex;
+  @apply .flex-wrap;
+  @apply .justify-center;
+}
+
+.btn-grid__btn {
+  @apply .btn;
+  @apply .text-xl;
+  @apply .m-2;
+  @apply .w-full;
+}
+
+@screen md {
+  .btn-grid__btn {
+    @apply .mx-3;
+    @apply .my-4;
+    width: calc(config(width.1/2) - (2 * config(margin.3)));
+    @apply .flex;
+    @apply .justify-center;
+    @apply .items-center;
+  }
+}
+
+@screen lg {
+  .btn-grid__btn {
+    @apply .btn--large;
+  }
+}

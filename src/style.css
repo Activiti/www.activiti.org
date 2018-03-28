@@ -48,6 +48,7 @@
 @import "components/hamburger";
 @import "components/modal";
 @import "components/embed";
+@import "components/btn-grid";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
