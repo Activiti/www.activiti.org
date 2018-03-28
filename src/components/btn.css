@@ -7,7 +7,7 @@
   @apply .py-2;
   @apply .px-6;
   @apply .rounded;
-  transition: all .3s ease-in-out;
+  @apply .transition;
 }
 
 .btn:hover {
