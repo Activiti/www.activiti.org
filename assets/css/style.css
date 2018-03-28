@@ -3713,6 +3713,10 @@ svg {
   background-image: url('../images/clouds-full.svg');
 }
 
+.transition {
+  transition: all .3s ease-in-out;
+}
+
 @media (min-width: 420px) {
   .sm\:list-reset {
     list-style: none;
