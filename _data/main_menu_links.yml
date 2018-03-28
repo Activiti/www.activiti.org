@@ -5,8 +5,8 @@
   url: documentation.html 
 - title: Community
   url: 'https://community.alfresco.com/community/bpm'
-- title: Team
-  url: team.html 
+#- title: Team
+#  url: team.html
 # This link (with the url 'before-you-start.html') will recieve special handling
 - title: Get started
   url: before-you-start.html 
