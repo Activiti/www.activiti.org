@@ -26,10 +26,10 @@
           {% assign item_url = item.url %}
         {% endif %}
         {% unless apost.path == 'before-you-start.html' %}
-          <li><a class="block py-3 text-sm text-grey-darker font-normal lg:mx-4" href="{{ item_url }}">{{ item.title }}</a></li>
+          <li><a class="block text-grey-darker font-normal <lg:border-t <lg:border-green <lg:pl-8 <lg:bg-grey-lighter <lg:hover:bg-grey-light text-xl lg:text-sm py-3 lg:mx-4" href="{{ item_url }}">{{ item.title }}</a></li>
         {% else %}
           {% unless page.path == 'before-you-start.html' %}
-            <li class='lg:hidden'><a class='py-3 block bg-green text-white text-center' href="{{ item_url }}" data-modal="#before-you-start">{{ item.title }}</a></li>
+            <li class='lg:hidden'><a class='py-3 block bg-green hover:bg-green transition font-bold text-xl text-white text-center' href="{{ item_url }}" data-modal="#before-you-start">{{ item.title }}</a></li>
             <li class='<lg:hidden ml-auto'><a class='btn py-1' href="{{ item_url }}" data-modal="#before-you-start">{{ item.title }}</a></li>
           {% endunless %}
         {% endunless %}
