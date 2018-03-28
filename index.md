@@ -22,6 +22,7 @@ redirect_from: content/activiti-home
 
 <p class="mt-0 bg-green"><a href="{{ page.latest_news_link }}" class="border-t border-white md:border-0 wrap block py-4 text-center text-white text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
 
+
 <div class="wrap max-w-md md:py-4 text-center" markdown='1'>
 ----
 
@@ -34,8 +35,9 @@ This project is driven by a community of domain experts from different companies
 ----
 </div>
 
+
 <div class="bg-green">
-  <div class="wrap py-2 md:py-8 xl:py-16 md:px-0 text-white text-center">
+  <div class="wrap pt-2 pb-8 md:py-8 xl:py-16 md:px-0 text-white text-center">
     <div class="md:flex md:flex-wrap md:justify-center">
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/process-runtime.svg %}</div>
@@ -66,21 +68,57 @@ This project is driven by a community of domain experts from different companies
   </div>
 </div>
   
+
+<div class="wrap pt-8 md:pb-4 lg:py-16">
+  <h3 class="section-heading">Activiti Community</h3>
+  <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
+    <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8">
+      <img src="http://via.placeholder.com/1280x720" title="placeholder"/>
+      <h4 class="section-sub-heading">Blog: Form Stencil Examples</h4>
+      <p>“Stencils” provide a very powerful set of capabilities to Alfresco Process Services powered by Activiti (APS) and can be used within the BPMN 2.0 Editor, the Step Editor and the Forms Editor.</p>
+    </div>
+    <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8">
+      {% include youtube_embed.html youtube_id="Y5bA3efD95U" %}
+      <h4 class="section-sub-heading">Activiti Cloud Overview &amp; BluePrint</h4>
+      <p>While we are working hard in getting our first Beta Release at the end of March (beginning of April) we wanted to share a couple of introductory videos about our work so far.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-grey-light">
+  <div class="wrap py-8 md:py-12 lg:py-16 text-center">
+    <h3 class="section-sub-heading pb-8 md:pb-12 lg:pb-16">Get Involved</h3>
+    <ul class="list-reset mt-0 flex flex-wrap items-start">
+      {% for item in site.data.community_links %}
+        <li class="mb-4 w-1/3 lg:w-1/6">
+          <a class="block text-grey-darker" href="{{ item.url }}" alt="{{ item.title }}">
+            <span class="inline-block">{% include {{ item.image }} %}</span>
+            <span class="block">{{ item.title }}</span>
+          </a>
+        </li>
+      {% endfor %}      
+    </ul>
+
+  </div>
+</div>
+
+
 <div id='get-started' class="wrap py-8 md:py-16 xl:py-24 text-center">
   <h3 class="section-heading">Get started with Activiti</h3>
   <div class="lg:flex">
-    <div class="max-w-sm mx-auto my-6 lg:my-8 lg:mx-8">
+    <div class="max-w-sm mx-auto my-6 lg:m-8">
       <h4 class="section-sub-heading md:mb-6">Kubernetes</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores consectetur, voluptas. Autem deserunt animi omnis cupiditate laboriosam cumque iure.</p>
     </div>
-    <div class="max-w-sm mx-auto my-6 lg:my-8 lg:mx-8">
+    <div class="max-w-sm mx-auto my-6 lg:m-8">
       <h4 class="section-sub-heading md:mb-6">Docker</h4>
       <p>Velit ratione rem, voluptas possimus nesciunt, ad, labore qui porro incidunt. Possimus nesciunt, ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <div class="max-w-sm mx-auto my-6 lg:my-8 lg:mx-8">
+    <div class="max-w-sm mx-auto my-6 lg:m-8">
       <h4 class="section-sub-heading md:mb-6">Download v6</h4>
       <p>Quos, tempore eum consequuntur culpa soluta qui provident aspernatur adipisci praesentium optio perferendis voluptatibus harum accusamus, blanditiis possimus officia! Ad, veniam deleniti!</p>
     </div>
   </div>
-  <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large">Get Started Now</a>
+  <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get Started Now</a>
 </div>
