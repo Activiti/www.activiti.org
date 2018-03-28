@@ -1,5 +1,12 @@
 ---
 title:  "Get started"
+
+redirect_from:
+  - download-bpm
+  - download
+  - download-links
+  - content/acitiviti-7
+  - content/acitiviti-7-getting-started
 ---
 <div class="three-cards">
   <div class="three-cards__wrap">
