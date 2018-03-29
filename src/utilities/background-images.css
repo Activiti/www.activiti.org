@@ -1,0 +1,11 @@
+@responsive {
+  .bg-image-clouds {
+    background-image: url('../images/clouds.svg');
+  }
+}
+
+@responsive {
+  .bg-image-clouds-full {
+    background-image: url('../images/clouds-full.svg');
+  }
+}

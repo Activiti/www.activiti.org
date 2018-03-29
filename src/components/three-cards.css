@@ -1,0 +1,42 @@
+.three-cards {
+  @apply .bg-green;
+  @apply .text-center;
+}
+
+.three-cards__wrap {
+  @apply .wrap;
+  @apply .py-4;
+  @apply .px-0;
+}
+
+@screen lg {
+  .three-cards__wrap {
+    /*
+     * Allow flexing on large screens without forcing a third-width flex-basis
+     * until on extra-large screens.
+     */
+    @apply .flex;
+    @apply .flex-wrap;
+    @apply .justify-center;
+  }
+  .three-cards__card {
+    @apply .flex;
+    @apply .flex-col;
+    @apply .flex-grow;
+    @apply .flex-no-shrink;
+    @apply .my-3;
+  }
+
+  .three-cards__card-cta {
+    margin-top: auto;
+  }
+}
+
+@screen xl {
+  .three-cards__wrap {
+    @apply .py-16;
+  }
+  .three-cards__card {
+    flex-basis: calc((100% / 3) - 2 * config(padding.8));
+  }
+}

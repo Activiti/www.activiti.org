@@ -1,0 +1,18 @@
+- title: Github
+  image: svg/github.svg
+  url: https://github.com/Activiti/Activiti
+- title: Stack Overflow
+  image: svg/stack-overflow.svg
+  url: 'https://stackoverflow.com/questions/tagged/activiti'
+- title: Chat
+  image: svg/chat.svg
+  url: 'https://gitter.im/Activiti/Activiti7'
+- title: Forum
+  image: svg/forum.svg
+  url: 'https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D'
+- title: Jira Issue Tracker
+  image: svg/bugs.svg
+  url: 'https://issues.alfresco.com/jira/projects/ACTIVITI/issues/ACTIVITI-791?filter=allopenissues'
+- title: Contribute
+  image: svg/contribute.svg
+  url: 'https://github.com/Activiti/activiti.github.io'

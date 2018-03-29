@@ -1,0 +1,41 @@
+<footer class='bg-grey-lighter border-t border-green text-sm'>
+  <div class="wrap max-w-xl py-4 md:flex items-start justify-between">
+    <ul class="list-reset flex md:flex-wrap items-start">
+      {% for item in site.data.community_links %}
+        <li class="w-16 mb-4{% if forloop.last %} md:mr-4{% else %} mr-4{% endif %}">
+          <a class="block" href="{{ item.url }}" alt="{{ item.title }}">
+            {% include {{ item.image }} %}
+          </a>
+        </li>
+      {% endfor %}      
+    </ul>
+    <div class="flex-no-shrink flex flex-wrap items-start">
+      <div class="mb-4">
+        <h4>Documentation</h4>
+        <ul class='list-reset mt-0'>
+          <li><a class="text-grey-darker" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/">Version 7</a></li>
+          <li><a class="text-grey-darker" href="https://www.activiti.org/userguide/">Version 6</a></li>
+          <li><a class="text-grey-darker" href="https://www.activiti.org/5.x/userguide/index.html">Version 5</a></li>
+          <li><a class="text-grey-darker" href="https://github.com/Activiti/Activiti/wiki/Activiti-7-Roadmap">Product Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="mb-4 ml-4">
+        <h4>Community</h4>
+        <ul class='list-reset mt-0'>
+          <li><a class="text-grey-darker" href="https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bblogpost%5D">Blog</a></li>
+          {% for item in site.data.community_links %}
+            <li><a class="text-grey-darker" href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+          {% endfor %}        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-t">
+    <div class="wrap max-w-xl py-4 flex justify-between items-center">
+      <a class="mr-2 md:mr-4 xl:mr-8 flex-none w-32" href="{{ "/" | relative_url }}">
+        {% include svg/icon-alfresco.svg %}
+      </a>
+      <p class='mt-0'>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>

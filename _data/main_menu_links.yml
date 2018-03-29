@@ -1,0 +1,12 @@
+# The urls in this file can be either:
+# - Filepaths (recommended for site links)
+# - Absolute urls (for off-site links)
+- title: Documentation
+  url: documentation.md 
+- title: Community
+  url: 'https://community.alfresco.com/community/bpm'
+#- title: Team
+#  url: team.html
+# This link (with the url 'before-you-start.html') will recieve special handling
+- title: Get started
+  url: before-you-start.html 

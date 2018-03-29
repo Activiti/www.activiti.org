@@ -1,0 +1,24 @@
+{
+  "name": "Activiti.org",
+  "version": "1.0.0",
+  "description": "The website source for Activiti.org",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.23.6",
+    "compression": "^1.7.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-dest": "^0.2.3",
+    "gulp-postcss": "^7.0.1",
+    "gulp-util": "^3.0.8",
+    "jquery.cookie": "^1.4.1",
+    "merge-stream": "^1.0.0",
+    "postcss-import": "^11.1.0",
+    "q": "^1.5.1",
+    "tailwindcss": "^0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

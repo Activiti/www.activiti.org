@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="font-sans text-grey-darker font-light leading-normal">
+
+    {% include google-tag-manager.html %}
+
+    {% include header.html %}
+
+    {{ content }}
+
+    <div class="modal max-w-md lg:shadow-lg border-grey-dark lg:border-2 hidden align-top lg:align-middle relative" id="before-you-start">
+      {% include marketo-modal.html %}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

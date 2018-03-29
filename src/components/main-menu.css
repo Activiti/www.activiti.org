@@ -1,0 +1,29 @@
+.main-menu {
+  @apply .mt-0;
+  @apply .list-reset;
+}
+
+@screen \<lg {
+  .main-menu {
+    @apply .absolute;
+    @apply .pin-x;
+    @apply .bg-white;
+    @apply .transition;
+    transform: translateX(-100%);
+    top: config('height.10');
+    height: calc(100vh - config('height.10'));
+  }
+
+  #menu-region.is-open .main-menu,
+  #menu-region:target .main-menu {
+    transform: translateX(0);
+  }
+}
+
+@screen lg {
+  .main-menu {
+    @apply .flex;
+    @apply flex-grow;
+    @apply .items-center;
+  }
+}

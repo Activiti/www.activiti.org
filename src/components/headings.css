@@ -1,0 +1,18 @@
+.section-heading {
+  @apply .text-3xl;
+  @apply .font-bold;
+  @apply .leading-tight;
+  @apply .tracking-wide;
+  @apply .text-center;
+  @apply .pb-3;
+  @apply .mb-2;
+  @apply .border-b;
+}
+
+.section-sub-heading {
+  @apply .text-2xl;
+  @apply .font-normal;
+  @apply .leading-tight;
+  @apply .tracking-wide;
+  @apply .text-green;
+}

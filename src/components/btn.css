@@ -1,0 +1,20 @@
+.btn {
+  @apply .bg-green-light;
+  @apply .text-white;
+  @apply .font-bold;
+  @apply .no-underline;
+  @apply .inline-block;
+  @apply .py-2;
+  @apply .px-6;
+  @apply .rounded;
+  @apply .transition;
+}
+
+.btn:hover {
+  @apply .bg-green;
+  transform: scale(.9);
+}
+
+.btn--large {
+  @apply .text-2xl .px-12;
+}

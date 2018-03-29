@@ -1,0 +1,66 @@
+h1 {
+  @apply .text-3xl;
+  @apply .font-bold .leading-tight;
+}
+
+@screen md {
+  h1 {
+    @apply .text-4xl;
+    @apply .font-bold .leading-tight;
+  }
+}
+
+h2 {
+  @apply .text-3xl;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h3 {
+  @apply .text-2xl;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h4 {
+  @apply .text-xl;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h5 {
+  @apply .text-lg;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+h6 {
+  @apply .text-base;
+  @apply .font-bold .leading-tight .tracking-wide;
+}
+
+* + p,
+* + ul,
+* + ol,
+* + blockquote,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + table,
+* + code {
+  @apply .mt-4;
+}
+
+hr {
+  @apply .my-8 .border-b .max-w-xs;
+}
+
+a {
+  text-decoration: none;
+  @apply .text-green-light;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
