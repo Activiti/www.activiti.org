@@ -49,33 +49,35 @@
               clickClose: false
             });
 
-            // Soft protection mode means that the cookie recording whether the
-            // form protecting a page can be set once the modal has been
-            // dismissed, even if the Marketo form was never filled in.
-            if (protectedForm && $mktoForm.data('protectionMode') === 'soft') {
-              var closeHandler = function(event, modal) {
-                $.cookie('protected_form_completed' + protectedForm, 'true', {
-                  expires: 30,
-                  path: '/'
-                });
-              };
-
-              // Bind close handler to the normal modal close action, and any
-              // no-thanks link.
-              $modal.on($.modal.CLOSE, closeHandler);
-
-              if ($mktoForm.data('noThanks')) {
-                $modal.on('CustomisedMarketoFormReady', function () {
-                  $('.mktoForm-no-thanks', $mktoForm).on('click', closeHandler);
-                });
-              }
-            }
 
             if (typeof e !== 'undefined') {
               e.preventDefault();
             }
             return false;
           };
+
+          // Soft protection mode means that the cookie recording whether the
+          // form protecting a page can be set once the modal has been
+          // dismissed, even if the Marketo form was never filled in.
+          if (protectedForm && $mktoForm.data('protectionMode') === 'soft') {
+            var closeHandler = function(event, modal) {
+              $.cookie('protected_form_completed' + protectedForm, 'true', {
+                expires: 30,
+                path: '/'
+              });
+            };
+
+            // Bind close handler to the normal modal close action, and any
+            // no-thanks link.
+            $modal.on($.modal.CLOSE, closeHandler);
+
+            if ($mktoForm.data('noThanks')) {
+              $modal.on('CustomisedMarketoFormReady', function () {
+                $('.mktoForm-no-thanks', $mktoForm).on('click', closeHandler);
+              });
+            }
+          }
+
           $this_link.on('click', showModal);
 
           if (modal_status === 2) {
