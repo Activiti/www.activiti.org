@@ -20,6 +20,8 @@ const jekyllTask = function (watch = false) {
     'exec',
     'jekyll',
     'build',
+    '--config',
+    '_config.yml,_config-dev.yml',
   ];
 
   if (watch) {
