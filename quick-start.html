@@ -5718,7 +5718,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
       
   <p>We’re now ready to add additional BPM logic to our Activiti Engine.</p><p>For this, as suggested by the name of our OnboardingRequest Java class, we’ll use a simple Onboarding process. In this example, we’ll enter data. Then, if the years of experience are above 3, a task for a personalized onboarding welcome message will be issued. In that task, the user will manually enter data into a faux backend system. If the years of experience are 3 years or below, then simply, generically, and automatically integrate data with a faux backend system.</p><p>Activiti’s Process Engine is a BPMN 2.0 compliant. Visually, the process above can be modeled like so:</p><p></p><div class="media media-element-container media-default"><div id="file-54" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/picture1png-0">Picture1.png</a></h2>
     
   
   <div class="content">
@@ -5734,7 +5733,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
       
   <p>Underlying the visual process model above is the XML structure of BPMN. The XML document in this case is onboarding.bpmn20.xml. This quick start will not go into the depths of the underlying XML BPMN structure to focus on the mechanics of developing against the Activiti APIs and embedding Activiti into your application. Yet, to support the logic that follows, here is a summary of the relevant BPMN shapes and the defined logic codified in the underlying XML:</p><p> </p><p> </p><p> </p><table border="1" cellpadding="1" cellspacing="1"><tr><th scope="col">BPMN Shapes</th><th scope="col">Onboarding.bpmn20.xml Lines</th><th scope="col">Comments</th></tr><tr><td><div class="media media-element-container media-default"><div id="file-53" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/table1png">Table1.png</a></h2>
     
   
   <div class="content">
@@ -5744,7 +5742,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
 </div>
 </div></td><td>8</td><td>Start Event</td></tr><tr><td><div class="media media-element-container media-default"><div id="file-55" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/table2png">Table2.png</a></h2>
     
   
   <div class="content">
@@ -5754,7 +5751,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
 </div>
 </div></td><td>9-15</td><td>User Task collecting 2 form properties: “fullName” and “yearsOfExperience”. Note the candidate groups on line 9 are set to “managers”.</td></tr><tr><td><div class="media media-element-container media-default"><div id="file-56" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/table3png">Table3.png</a></h2>
     
   
   <div class="content">
@@ -5764,7 +5760,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
 </div>
 </div></td><td>21-27</td><td>User Task collecting 1 form property: “personalWelcomeTime”. Note the candidate groups on line 22 are set to “managers”.</td></tr><tr><td><div class="media media-element-container media-default"><div id="file-57" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/table4png">Table4.png</a></h2>
     
   
   <div class="content">
@@ -5774,7 +5769,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
 </div>
 </div></td><td>31-35</td><td>Script Task representing Automated Data Entry to a faux backend. Notice while simple, there is a simple script that sets a process variable autoWelcomeTime (line 34-35): <code class="language-java hljs"> var dateAsString = new Date().toString(); execution.setVariable("autoWelcomeTime", dateAsString);</code></td></tr><tr><td rowspan="3"><div class="media media-element-container media-default"><div id="file-58" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/table5png">Table5.png</a></h2>
     
   
   <div class="content">
@@ -5784,7 +5778,6 @@ ProcessEngine [default] Version: [$actVer]</code></pre>
 </div>
 </div></td><td>18</td><td>Defines the “Years of Experience” exclusive gateway. (A decision will yield one path or the other.)</td></tr><tr><td>37-39</td><td>Represents the “&gt;3” logic using the yearsOfExperience variable: <code class="language-java hljs"> ${yearsOfExperience &gt; 3}</code></td></tr><tr><td>18,36</td><td>On the exclusive gateway (line 18), note the default stanza pointing to “automatedIntroPath (line 36) representing a logical “else” to the condition “&gt;3”.</td></tr><tr><td><div class="media media-element-container media-default"><div id="file-59" class="file file-image file-image-png">
 
-        <h2 class="element-invisible"><a href="/files/table6png">Table6.png</a></h2>
     
   
   <div class="content">
