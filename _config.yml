@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Activiti is battle-tested Business Process Management (BPM). 
   Organizations across the world depend on the open source platform
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.activiti.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: /:categories/:year/:month/:day/:title
 
