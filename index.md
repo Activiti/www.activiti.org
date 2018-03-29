@@ -77,8 +77,8 @@ This project is driven by a community of domain experts from different companies
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       <img src="http://via.placeholder.com/1280x720" title="placeholder"/>
-      <h4 class="section-sub-heading">Blog: Activiti latest Dev Logs</h4>
-      <p>text here.</p>
+      <h4 class="section-sub-heading">Blog: Activiti: Last week Dev Logs #38</h4>
+      <p>Last week we manage to finally release to Maven Central and Docker Hub our Early Access Release 201802-EAartifacts. You can read more about this release and our updated Roadmap plans here. As stated in our Roadmap update we will now focus on getting things ready for a Beta1release which is intended to come by the end of April.</p>
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include youtube_embed.html youtube_id="Y5bA3efD95U" %}
