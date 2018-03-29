@@ -2,7 +2,7 @@
 # - Filepaths (recommended for site links)
 # - Absolute urls (for off-site links)
 - title: Documentation
-  url: documentation.html 
+  url: documentation.md 
 - title: Community
   url: 'https://community.alfresco.com/community/bpm'
 #- title: Team
