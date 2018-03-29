@@ -88,6 +88,7 @@
               showModal();
             }
 
+            modalsProcessed[modal_selector] = modal_status;
           }
 
           $this_link.on('click', showModal);
