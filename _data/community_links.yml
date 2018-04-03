@@ -12,7 +12,7 @@
   url: 'https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D'
 - title: Issue Tracker
   image: svg/bugs.svg
-  url: 'https://issues.alfresco.com/jira/projects/ACTIVITI/issues/ACTIVITI-791?filter=allopenissues'
+  url: 'https://github.com/Activiti/Activiti/issues'
 - title: Contribute
   image: svg/contribute.svg
   url: 'https://github.com/Activiti/activiti.github.io'
