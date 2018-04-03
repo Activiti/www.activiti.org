@@ -1,4 +1,5 @@
 ---
+title: Quick Start Guide
 layout: null
 ---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
@@ -6,6 +7,12 @@ layout: null
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
+  <title>{% if page.title %}{{ page.title | escape }}{% endif %} | {{ site.title | escape }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="canonical" href="https://www.activiti.org/quick-start" />
+  <link rel="shortlink" href="https://www.activiti.org/node/55" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-55 node-type-content-page">
   <style>/*------------------------------------*    #CSS RESET
@@ -5348,8 +5355,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
     <div class="pod-row"><div class="pod-row__inner"><div class="pod clearfix pod--bg-default pod-title">
       
-  <h1 class="field field-name-field-pod-title field-type-text field-label-hidden pod-title__title">
-    Quick Start Guide  </h1>
+  <h1 class="field field-name-field-pod-title field-type-text field-label-hidden pod-title__title">{{ page.title }}</h1>
 </div></div></div><div class="pod-row"><div class="pod-row__inner"><div class="pod clearfix pod--bg-default pod-documentation">
       
 
