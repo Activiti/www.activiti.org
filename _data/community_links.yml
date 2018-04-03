@@ -10,7 +10,7 @@
 - title: Forum
   image: svg/forum.svg
   url: 'https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D'
-- title: Jira Issue Tracker
+- title: Issue Tracker
   image: svg/bugs.svg
   url: 'https://issues.alfresco.com/jira/projects/ACTIVITI/issues/ACTIVITI-791?filter=allopenissues'
 - title: Contribute
