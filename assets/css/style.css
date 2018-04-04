@@ -3801,6 +3801,18 @@ svg {
   transform: scale(.9);
 }
 
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
 @media (min-width: 420px) {
   .sm\:list-reset {
     list-style: none;
