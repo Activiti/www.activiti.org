@@ -1,0 +1,10 @@
+@responsive {
+  .intrinsic-2x1 {
+    position: relative;
+    padding-bottom: 50%;
+  } 
+  .intrinsic-1x1 {
+    position: relative;
+    padding-bottom: 100%;
+  }
+}

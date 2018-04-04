@@ -77,3 +77,4 @@
  @import "utilities/transitions";
  @import "utilities/transforms";
  @import "utilities/clear-floats";
+ @import "utilities/instrinsic-aspect-ratios";
