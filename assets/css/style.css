@@ -776,7 +776,7 @@ svg {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
-  transition: all .3s ease-out;
+  transition: all .225s ease-out;
 }
 
 .btn:hover {
@@ -1007,12 +1007,19 @@ svg {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
-  transition: all .3s ease-out;
+  transition: all .225s ease-out;
   font-size: 1.5rem;
   width: 100%;
   cursor: pointer;
   text-align: center;
   font-weight: 400;
+}
+
+.mktoButton:hover {
+  color: #fff;
+  background-color: #22be73;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
 }
 
 .mktoForm .mktoForm-message {
@@ -1028,7 +1035,12 @@ svg {
   margin-bottom: .9375rem;
 }
 
-.mktoForm .mktoForm-no-thanks,
+.mktoForm-no-thanks {
+  color: #727174;
+  text-decoration: underline;
+  padding: 0;
+}
+
 .mktoForm-message a {
   text-decoration: underline;
   color: inherit;
@@ -1084,9 +1096,8 @@ svg {
     right: 0;
     left: 0;
     background-color: #fff;
-    transition: all .3s ease-out;
+    transition: all .225s ease-out;
     transition-timing-function: ease-in;
-    transition-duration: .225s;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     top: 3.125rem;
@@ -1236,7 +1247,7 @@ svg {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
-  transition: all .3s ease-out;
+  transition: all .225s ease-out;
   font-size: 1.25rem;
   margin: .625em;
   width: 100%;
@@ -3784,7 +3795,7 @@ svg {
 }
 
 .transition {
-  transition: all .3s ease-out;
+  transition: all .225s ease-out;
 }
 
 .transition-slow {
@@ -3792,10 +3803,6 @@ svg {
 }
 
 .transition-fast {
-  transition-duration: .225s;
-}
-
-.transition-faster {
   transition-duration: .15s;
 }
 
@@ -3812,7 +3819,7 @@ svg {
 }
 
 .hover\:transition:hover {
-  transition: all .3s ease-out;
+  transition: all .225s ease-out;
 }
 
 .hover\:transition-slow:hover {
@@ -3820,10 +3827,6 @@ svg {
 }
 
 .hover\:transition-fast:hover {
-  transition-duration: .225s;
-}
-
-.hover\:transition-faster:hover {
   transition-duration: .15s;
 }
 

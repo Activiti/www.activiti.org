@@ -10,7 +10,6 @@
     @apply .bg-white;
     @apply .transition;
     @apply .transition-timing-ease-in;
-    @apply .transition-fast;
     transform: translateX(-100%);
     top: config('height.10');
     height: calc(100vh - config('height.10'));

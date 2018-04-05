@@ -1,14 +1,11 @@
 @variants hover {
   .transition {
-    transition: all .3s ease-out;
+    transition: all .225s ease-out;
   }
   .transition-slow {
     transition-duration: .3s;
   }
   .transition-fast {
-    transition-duration: .225s;
-  }
-  .transition-faster {
     transition-duration: .15s;
   }
   .transition-timing-ease-in-out {
