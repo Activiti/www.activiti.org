@@ -9,6 +9,8 @@
     @apply .pin-x;
     @apply .bg-white;
     @apply .transition;
+    @apply .transition-timing-ease-in;
+    @apply .transition-fast;
     transform: translateX(-100%);
     top: config('height.10');
     height: calc(100vh - config('height.10'));
@@ -17,6 +19,8 @@
   #menu-region.is-open .main-menu,
   #menu-region:target .main-menu {
     transform: translateX(0);
+    @apply .transition-timing-ease-out;
+    @apply .transition-slow;
   }
 }
 

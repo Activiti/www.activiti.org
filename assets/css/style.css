@@ -1078,6 +1078,8 @@ svg {
     left: 0;
     background-color: #fff;
     transition: all .3s ease-out;
+    transition-timing-function: ease-in;
+    transition-duration: .225s;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     top: 3.125rem;
@@ -1088,6 +1090,8 @@ svg {
   #menu-region:target .main-menu {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
   }
 }
 
