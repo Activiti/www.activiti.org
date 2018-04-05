@@ -7,7 +7,7 @@ redirect_from: docs
   <div class="text-center wrap max-w-md pt-4 pb-8 md:pt-8 lg:px-16 lg:pb-16 btn-grid">
     <h1 class="text-green w-full mb-4">Activiti 7.0</h1>
     <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/' class="btn-grid__btn">Developer Guide</a>
-    <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/quickstart.html' class="btn-grid__btn">Getting Started</a>
+    <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class='btn-grid__btn'>Getting started</a>
     <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/blueprints/Overview.html' class="btn-grid__btn">Blueprints</a>
     <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html' class="btn-grid__btn">How to contribute</a>
   </div>
