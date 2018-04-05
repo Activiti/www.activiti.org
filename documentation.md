@@ -15,14 +15,6 @@ redirect_from: docs
 
 <div class="wrap py-4 xl:py-16 text-center flex flex-wrap justify-around">
   <div class="my-8 md:m-8 pb-2">
-    <h3 class="section-heading xl:px-6">Activiti 5.0</h3>
-<div markdown='1'>
-  [Developer Guide](/5.x/userguide)
-
-  [Java Docs](/javadocs)
-</div>
-  </div>
-  <div class="my-8 md:m-8 pb-2">
     <h3 class="section-heading xl:px-6">Activiti 6.0</h3>
 <div markdown='1'>
   [Developer Guide](/userguide)
@@ -32,6 +24,14 @@ redirect_from: docs
   [Java Docs](/javadocs)
 
   [Migration Guide]({% link migration.html %})
+</div>
+  </div>
+  <div class="my-8 md:m-8 pb-2">
+    <h3 class="section-heading xl:px-6">Activiti 5.0</h3>
+<div markdown='1'>
+  [Developer Guide](/5.x/userguide)
+
+  [Java Docs](/javadocs)
 </div>
   </div>
 </div>
