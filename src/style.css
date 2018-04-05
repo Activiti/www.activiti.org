@@ -40,6 +40,7 @@
  */
 @import "components/wrap";
 @import "components/btn";
+@import "components/grey-link";
 @import "components/card";
 @import "components/three-cards";
 @import "components/headings";
