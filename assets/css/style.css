@@ -792,16 +792,6 @@ svg {
   padding-right: 3.75rem;
 }
 
-.grey-link {
-  color: #727174;
-  transition: all .3s ease-out;
-  transition-duration: .15s;
-}
-
-.grey-link:hover {
-  color: #22be73;
-}
-
 .card {
   background-color: #fff;
   border-width: 1px;

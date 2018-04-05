@@ -95,7 +95,7 @@ This project is driven by a community of domain experts from different companies
     <ul class="list-reset mt-0 flex flex-wrap items-start">
       {% for item in site.data.community_links %}
         <li class="mb-4 w-1/3 lg:w-1/6">
-          <a class="grey-link block" href="{{ item.url }}" alt="{{ item.title }}">
+          <a class="text-grey-darker block" href="{{ item.url }}" alt="{{ item.title }}">
             <span class="inline-block">{% include {{ item.image }} %}</span>
             <span class="block">{{ item.title }}</span>
           </a>

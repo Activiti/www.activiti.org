@@ -1,8 +1,0 @@
-.grey-link {
-  @apply .text-grey-darker;
-  @apply .transition;
-  @apply .transition-faster;
-}
-.grey-link:hover {
-  @apply .text-green;
-}
