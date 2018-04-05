@@ -12,7 +12,7 @@
 
 .btn:hover {
   @apply .bg-green;
-  transform: scale(.9);
+  @apply .transform-scale-90;
 }
 
 .btn--large {
