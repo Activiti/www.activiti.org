@@ -58,13 +58,13 @@ Pull the latest version of the image from the Github Repo.
 <div markdown='1'>
 [6.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
 
-[6.x Developer Guide](https://www.activiti.org/userguide/)
+[6.x Developer Guide](/userguide)
 
-[Getting Started](https://www.activiti.org/quick-start)
+[Getting Started]({% link quick-start.html %})
 
-[Migration Guide 5.x to 6.x](https://www.activiti.org/migration.html)
+[Migration Guide 5.x to 6.x]({% link migration.html %})
 
-[Javadocs](https://www.activiti.org/javadocs/index.html)
+[Javadocs](/javadocs)
 </div>
   </div>
   <div class="my-8 md:m-8 pb-2">
@@ -72,7 +72,7 @@ Pull the latest version of the image from the Github Repo.
 <div markdown='1'>
 [5.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
 
-[5.x Javadocs](https://www.activiti.org/javadocs/index.html)
+[5.x Javadocs](/javadocs)
 
 [5.x Full Guide](https://github.com/Activiti/Activiti/releases/tag/activiti-5.22.0)
 </div>

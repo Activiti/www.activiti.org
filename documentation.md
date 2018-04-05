@@ -17,21 +17,21 @@ redirect_from: docs
   <div class="my-8 md:m-8 pb-2">
     <h3 class="section-heading xl:px-6">Activiti 5.0</h3>
 <div markdown='1'>
-  [Developer Guide](https://www.activiti.org/5.x/userguide/index.html)
+  [Developer Guide](/5.x/userguide)
 
-  [Java Docs](https://www.activiti.org/javadocs/index.html)
+  [Java Docs](/javadocs)
 </div>
   </div>
   <div class="my-8 md:m-8 pb-2">
     <h3 class="section-heading xl:px-6">Activiti 6.0</h3>
 <div markdown='1'>
-  [Developer Guide](https://www.activiti.org/userguide/)
+  [Developer Guide](/userguide)
 
-  [Getting Started](https://www.activiti.org/quick-start)
+  [Getting Started]({% link quick-start.html %})
 
-  [Java Docs](https://www.activiti.org/javadocs/index.html)
+  [Java Docs](/javadocs)
 
-  [Migration Guide](https://www.activiti.org/migration.html)
+  [Migration Guide]({% link migration.html %})
 </div>
   </div>
 </div>
