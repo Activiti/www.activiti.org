@@ -57,6 +57,11 @@ hr {
 a {
   text-decoration: none;
   @apply .text-green-light;
+  @apply .transition;
+  @apply .transition-fast;
+}
+a:hover {
+  @apply .text-green;
 }
 
 svg {

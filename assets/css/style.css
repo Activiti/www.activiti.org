@@ -717,6 +717,12 @@ hr {
 a {
   text-decoration: none;
   color: #8bc34a;
+  transition: all .225s ease-out;
+  transition-duration: .15s;
+}
+
+a:hover {
+  color: #22be73;
 }
 
 svg {
@@ -774,6 +780,7 @@ svg {
 }
 
 .btn:hover {
+  color: #fff;
   background-color: #22be73;
   -webkit-transform: scale(.9);
   transform: scale(.9);

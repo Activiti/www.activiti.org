@@ -11,6 +11,7 @@
 }
 
 .btn:hover {
+  @apply .text-white;
   @apply .bg-green;
   @apply .transform-scale-90;
 }
