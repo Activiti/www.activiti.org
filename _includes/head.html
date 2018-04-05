@@ -5,6 +5,8 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% endif %} | {{ site.title | escape }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
   {% assign favicon_cachebuster = RyMnEplxMR %}
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ favicon_cachebuster }}">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ favicon_cachebuster }}">
@@ -14,9 +16,9 @@
   <link rel="shortcut icon" href="/favicon.ico?v={{ favicon_cachebuster }}">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.cookie.js"></script>
