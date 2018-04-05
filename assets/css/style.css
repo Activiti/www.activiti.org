@@ -3842,6 +3842,26 @@ svg {
   transition-timing-function: ease-out;
 }
 
+.transform-none {
+  -webkit-transform: none;
+  transform: none;
+}
+
+.transform-scale-90 {
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+}
+
+.hover\:transform-none:hover {
+  -webkit-transform: none;
+  transform: none;
+}
+
+.hover\:transform-scale-90:hover {
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+}
+
 @media (min-width: 420px) {
   .sm\:list-reset {
     list-style: none;
@@ -6327,6 +6347,26 @@ svg {
 
   .sm\:bg-image-clouds-full {
     background-image: url('../images/clouds-full.svg');
+  }
+
+  .sm\:transform-none {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .sm\:transform-scale-90 {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  .sm\:hover\:transform-none:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .sm\:hover\:transform-scale-90:hover {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
   }
 }
 
@@ -8816,6 +8856,26 @@ svg {
   .md\:bg-image-clouds-full {
     background-image: url('../images/clouds-full.svg');
   }
+
+  .md\:transform-none {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .md\:transform-scale-90 {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  .md\:hover\:transform-none:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .md\:hover\:transform-scale-90:hover {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
 }
 
 @media (max-width: 767px) {
@@ -11303,6 +11363,26 @@ svg {
 
   .\<lg\:bg-image-clouds-full {
     background-image: url('../images/clouds-full.svg');
+  }
+
+  .\<lg\:transform-none {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .\<lg\:transform-scale-90 {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  .\<lg\:hover\:transform-none:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .\<lg\:hover\:transform-scale-90:hover {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
   }
 }
 
@@ -13792,6 +13872,26 @@ svg {
   .lg\:bg-image-clouds-full {
     background-image: url('../images/clouds-full.svg');
   }
+
+  .lg\:transform-none {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .lg\:transform-scale-90 {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  .lg\:hover\:transform-none:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .lg\:hover\:transform-scale-90:hover {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
 }
 
 @media (min-width: 992px) {
@@ -16279,5 +16379,25 @@ svg {
 
   .xl\:bg-image-clouds-full {
     background-image: url('../images/clouds-full.svg');
+  }
+
+  .xl\:transform-none {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .xl\:transform-scale-90 {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  .xl\:hover\:transform-none:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .xl\:hover\:transform-scale-90:hover {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
   }
 }
