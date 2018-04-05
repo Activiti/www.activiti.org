@@ -38,6 +38,11 @@
   @apply .text-center;
   @apply .font-normal;
 }
+.mktoButton:hover {
+  @apply .text-white;
+  @apply .bg-green;
+  @apply .transform-scale-90;
+}
 
 .mktoForm .mktoForm-message {
   @apply .font-light;
@@ -51,7 +56,12 @@
   @apply .my-3;
 }
 
-.mktoForm .mktoForm-no-thanks,
+.mktoForm-no-thanks {
+  @apply .text-grey-darker;
+  @apply .underline;
+  @apply .p-0;
+}
+
 .mktoForm-message a {
   @apply .underline;
   color: inherit;
