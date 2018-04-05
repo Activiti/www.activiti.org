@@ -23,7 +23,7 @@
         {% if apost %}
           {% assign item_url = apost.url | prepend: site.baseurl %}
         {% else %}
-          {% assign item_url = item.url | prepend: site.baseurl %}
+          {% assign item_url = item.url %}
         {% endif %}
         {% unless apost.path == 'before-you-start.html' %}
           <li><a class="block text-grey-darker font-normal <lg:border-t <lg:border-green <lg:pl-8 <lg:bg-grey-lighter <lg:hover:bg-grey-light text-xl lg:text-sm py-3 lg:mx-4" href="{{ item_url }}">{{ item.title }}</a></li>
