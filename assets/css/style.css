@@ -770,7 +770,7 @@ svg {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-out;
 }
 
 .btn:hover {
@@ -1000,7 +1000,7 @@ svg {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-out;
   font-size: 1.5rem;
   width: 100%;
   cursor: pointer;
@@ -1077,7 +1077,7 @@ svg {
     right: 0;
     left: 0;
     background-color: #fff;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-out;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     top: 3.125rem;
@@ -1225,7 +1225,7 @@ svg {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   border-radius: .25rem;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-out;
   font-size: 1.25rem;
   margin: .625em;
   width: 100%;
@@ -3773,7 +3773,59 @@ svg {
 }
 
 .transition {
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-out;
+}
+
+.transition-slow {
+  transition-duration: .3s;
+}
+
+.transition-fast {
+  transition-duration: .225s;
+}
+
+.transition-faster {
+  transition-duration: .15s;
+}
+
+.transition-timing-ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.transition-timing-ease-in {
+  transition-timing-function: ease-in;
+}
+
+.transition-timing-ease-out {
+  transition-timing-function: ease-out;
+}
+
+.hover\:transition:hover {
+  transition: all .3s ease-out;
+}
+
+.hover\:transition-slow:hover {
+  transition-duration: .3s;
+}
+
+.hover\:transition-fast:hover {
+  transition-duration: .225s;
+}
+
+.hover\:transition-faster:hover {
+  transition-duration: .15s;
+}
+
+.hover\:transition-timing-ease-in-out:hover {
+  transition-timing-function: ease-in-out;
+}
+
+.hover\:transition-timing-ease-in:hover {
+  transition-timing-function: ease-in;
+}
+
+.hover\:transition-timing-ease-out:hover {
+  transition-timing-function: ease-out;
 }
 
 @media (min-width: 420px) {
