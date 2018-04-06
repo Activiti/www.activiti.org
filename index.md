@@ -3,8 +3,8 @@
 # below, as it has a <br> tag in it.
 title: Open Source Business Automation
 
-latest_news: Something here, something here
-latest_news_link: https://www.alfresco.com
+latest_news: New Activiti 7 Early Access version out! Try it out!
+latest_news_link: https://community.alfresco.com/community/bpm/blog/2018/03/21/activiti-activiti-cloud-7-201802-ea-are-out
 redirect_from:
   - about
   - content/activiti-home
