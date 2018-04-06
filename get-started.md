@@ -82,7 +82,7 @@ Pull the latest version of the image from the Github Repo.
 <div class="bg-grey-light py-8 xl:py-16">
   <div class="wrap py-3 xl:pt-0">
     <div class="card border-grey">
-      <h2 class="card__title text-center">Interested in Enterprise?</h2>
+      <h2 class="card__title text-center">Interested in Enterprise Edition?</h2>
       <div class="card__content py-2 lg:pb-8 xl:px-8">
         <p>Happy with Activiti but need to reassure the boss?<br />The enterprise version takes everything you love about Activiti and bundle it up in a business-critical package.</p>
         <div class="flex flex-wrap mt-4 justify-between">
