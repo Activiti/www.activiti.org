@@ -4,12 +4,20 @@ title:  "Documentation"
 redirect_from: docs
 ---
 <div class="bg-no-repeat bg-full-width bg-bottom lg:bg-center bg-image-clouds-full xl:pb-16">
-  <div class="text-center wrap max-w-md pt-4 pb-8 md:pt-8 lg:px-16 lg:pb-16 btn-grid">
+  <div class="text-center wrap max-w-md pt-4 pb-8 md:pt-8 lg:pb-16 flex flex-wrap">
     <h1 class="text-green w-full mb-4">Activiti 7.0</h1>
-    <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/' class="btn-grid__btn">Developer Guide</a>
-    <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class='btn-grid__btn'>Getting started</a>
-    <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/blueprints/Overview.html' class="btn-grid__btn">Blueprints</a>
-    <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html' class="btn-grid__btn">How to contribute</a>
+    <div class="w-full p-3 md:w-1/2 flex items-center flex-col flex-grow">
+      <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/' class="flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl">Developer Guide</a>
+    </div>
+    <div class="w-full p-3 md:w-1/2 flex items-center flex-col flex-grow">
+      <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class='flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl'>Getting started</a>
+    </div>
+    <div class="w-full p-3 md:w-1/2 flex items-center flex-col flex-grow">
+      <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/blueprints/Overview.html' class="flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl">Blueprints</a>
+    </div>
+    <div class="w-full p-3 md:w-1/2 flex items-center flex-col flex-grow">
+      <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html' class="flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl">How to contribute</a>
+    </div>
   </div>
 </div>
 

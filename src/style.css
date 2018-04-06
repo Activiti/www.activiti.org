@@ -47,7 +47,6 @@
 @import "components/main-menu";
 @import "components/hamburger";
 @import "components/modal";
-@import "components/btn-grid";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
