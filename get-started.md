@@ -52,9 +52,10 @@ Pull the latest version of the image from the Github Repo.
   </div>
 </div>
 
-<div class="wrap py-4 xl:py-16 text-center flex flex-wrap justify-around">
+<div class="wrap py-4 xl:py-1
+text-center flex flex-wrap justify-around">
   <div class="my-8 md:m-8 pb-2">
-    <h3 class="section-heading xl:px-6">Activiti Version 6</h3>
+    <h3 class="section-heading xl:px-6">Activiti Version 6.0</h3>
 <div markdown='1'>
 [6.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
 
@@ -68,7 +69,7 @@ Pull the latest version of the image from the Github Repo.
 </div>
   </div>
   <div class="my-8 md:m-8 pb-2">
-    <h3 class="section-heading xl:px-6">Activiti Version 5</h3>
+    <h3 class="section-heading xl:px-6">Activiti Version 5.0</h3>
 <div markdown='1'>
 [5.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-5.22.0/activiti-5.22.0.zip)
 
