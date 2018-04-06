@@ -81,7 +81,7 @@ This project is driven by a community of domain experts from different companies
       <p>Last week we manage to finally release to Maven Central and Docker Hub our Early Access Release 201802-EAartifacts. You can read more about this release and our updated Roadmap plans here. As stated in our Roadmap update we will now focus on getting things ready for a Beta1release which is intended to come by the end of April.</p>
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
-      {% include youtube_embed.html %}
+      {% include video_embed.html %}
       <h4 class="section-sub-heading">Activiti Cloud Overview &amp; BluePrint</h4>
       <p>While we are working hard in getting our first Beta Release at the end of March (beginning of April) we wanted to share a couple of introductory videos about our work so far.</p>
     </div>
