@@ -11,7 +11,7 @@ redirect_from:
   - faq
 ---
 <div class="bg-no-repeat bg-full-width bg-bottom bg-image-clouds-full md:bg-image-clouds">
-  <div class="text-center md:text-left wrap max-w-md pt-8 pb-16 md:pt-16 clearfix">
+  <div class="text-center md:text-left wrap max-w-lg pt-8 pb-16 md:pt-16 clearfix">
     <div class="md:w-1/2 md:float-left">
       <h1 class="text-green">Open Source <br>Business Automation</h1>
       <p class="text-lg leading-tight mt-0">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
@@ -26,7 +26,7 @@ redirect_from:
 <p class="mt-0"><a href="{{ page.latest_news_link }}" class="block bg-green hover:bg-green-light border-t border-white md:border-0 px-3 py-4 text-center text-white hover:text-white transition-slow text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
 
 
-<div class="wrap max-w-md md:py-4 text-center" markdown='1'>
+<div class="wrap max-w-lg md:py-4 text-center" markdown='1'>
 ----
 
 Activiti has been the leading lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday.

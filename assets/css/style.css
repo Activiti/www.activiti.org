@@ -2477,14 +2477,18 @@ svg {
 }
 
 .max-w-md {
-  max-width: 53rem;
+  max-width: 45rem;
 }
 
 .max-w-lg {
-  max-width: 63rem;
+  max-width: 53rem;
 }
 
 .max-w-xl {
+  max-width: 63rem;
+}
+
+.max-w-xxl {
   max-width: 80rem;
 }
 
@@ -5055,14 +5059,18 @@ svg {
   }
 
   .sm\:max-w-md {
-    max-width: 53rem;
+    max-width: 45rem;
   }
 
   .sm\:max-w-lg {
-    max-width: 63rem;
+    max-width: 53rem;
   }
 
   .sm\:max-w-xl {
+    max-width: 63rem;
+  }
+
+  .sm\:max-w-xxl {
     max-width: 80rem;
   }
 
@@ -7563,14 +7571,18 @@ svg {
   }
 
   .md\:max-w-md {
-    max-width: 53rem;
+    max-width: 45rem;
   }
 
   .md\:max-w-lg {
-    max-width: 63rem;
+    max-width: 53rem;
   }
 
   .md\:max-w-xl {
+    max-width: 63rem;
+  }
+
+  .md\:max-w-xxl {
     max-width: 80rem;
   }
 
@@ -10071,14 +10083,18 @@ svg {
   }
 
   .\<lg\:max-w-md {
-    max-width: 53rem;
+    max-width: 45rem;
   }
 
   .\<lg\:max-w-lg {
-    max-width: 63rem;
+    max-width: 53rem;
   }
 
   .\<lg\:max-w-xl {
+    max-width: 63rem;
+  }
+
+  .\<lg\:max-w-xxl {
     max-width: 80rem;
   }
 
@@ -12579,14 +12595,18 @@ svg {
   }
 
   .lg\:max-w-md {
-    max-width: 53rem;
+    max-width: 45rem;
   }
 
   .lg\:max-w-lg {
-    max-width: 63rem;
+    max-width: 53rem;
   }
 
   .lg\:max-w-xl {
+    max-width: 63rem;
+  }
+
+  .lg\:max-w-xxl {
     max-width: 80rem;
   }
 
@@ -15087,14 +15107,18 @@ svg {
   }
 
   .xl\:max-w-md {
-    max-width: 53rem;
+    max-width: 45rem;
   }
 
   .xl\:max-w-lg {
-    max-width: 63rem;
+    max-width: 53rem;
   }
 
   .xl\:max-w-xl {
+    max-width: 63rem;
+  }
+
+  .xl\:max-w-xxl {
     max-width: 80rem;
   }
 
