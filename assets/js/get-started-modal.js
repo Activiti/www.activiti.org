@@ -45,10 +45,7 @@
             $modal.modal({
               fadeDuration: 400,
               fadeDelay: 0,
-              escapeClose: false,
-              //showClose: false,
               closeText: '<div class="close-modal-inner">Close</div>',
-              clickClose: false
             });
 
 
