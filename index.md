@@ -87,8 +87,8 @@ This project is driven by a community of domain experts from different companies
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include video_embed.html %}
-      <h4 class="section-sub-heading">Activiti Cloud Overview &amp; BluePrint</h4>
-      <p>While we are working hard in getting our first Beta Release at the end of March (beginning of April) we wanted to share a couple of introductory videos about our work so far.</p>
+      <h4 class="section-sub-heading">Activiti Cloud Overview @ Alfresco Meetup</h4>
+      <p>While we are working hard in getting our first Beta Release we wanted to give an overview of our work so far.</p>
     </div>
   </div>
 </div>
