@@ -21,10 +21,10 @@ redirect_from:
     <div class="card three-cards__card">
       <h3 class="card__title">Quickstart</h3>
 <div class="card__content" markdown='1'>
-This Quickstart is designed to help you get up and running with Activiti Cloud in 5 minutes. With only few command lines, you will be able to deploy your fist Activiti Cloud application example.
+This Quickstart is designed to help you get up and running with Activiti Cloud in 5 minutes.
 
 * Step 1 (prerequisites): install Git & Docker
-* Step 2: deploy the Activiti Cloud infrastructure and Activiti Cloud application example
+* Step 2: deploy the Docker images
 * Step 3: test the Activiti Cloud application example
 </div>
       <div class="three-cards__card-cta">
