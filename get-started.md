@@ -92,7 +92,7 @@ text-center flex flex-wrap justify-around">
 * Enterprise-grade services including support, certified platforms and upgrades
 * Enterprise-centric features such as access control & security, analytics or multi-language support
 * Super fast UI development & teamwork
-* Integration with the Alfresco Digital Business Platform
+* Integration with the [Alfresco Digital Business Platform](https://www.alfresco.com/platform)
 </div>
           <div class="self-center text-center mb-4 mx-auto">
             <a href="https://www.alfresco.com/platform/process-services-bpm" class="btn btn--large">Explore Now</a>
