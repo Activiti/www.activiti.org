@@ -91,8 +91,7 @@ text-center flex flex-wrap justify-around">
 **Alfresco Process Services includes:**
 * Enterprise-grade services including support, certified platforms and upgrades
 * Enterprise-centric features such as access control & security, analytics or multi-language support
-* Super fast UI development
-* Team development
+* Super fast UI development & teamwork
 * Integration with the Alfresco Digital Business Platform
 </div>
           <div class="self-center text-center mb-4 mx-auto">
