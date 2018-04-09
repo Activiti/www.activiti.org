@@ -82,7 +82,7 @@ This project is driven by a community of domain experts from different companies
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       <img src="https://activiti.gitbooks.io/activiti-7-developers-guide/assets/infrastructure.png" title="placeholder"/>
-      <h4 class="section-sub-heading">Blog: Activiti Cloud BluePrint Demo</h4>
+      <h4 class="section-sub-heading">Activiti Cloud BluePrint Demo</h4>
       <p>Quick demo of the Twitter trending topics compaigns example using the Activiti Cloud BluePrint.</p>
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
