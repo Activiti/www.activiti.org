@@ -13,20 +13,15 @@ redirect_from:
     <div class="card three-cards__card">
       <h3 class="card__title">Kubernetes</h3>
 <div class="card__content" markdown='1'>
-Java-based app works on any operating system. Works great with your choice of technology, from popular databases to Docker Containers
-
-* Lorem ipsum dolor sit amet,
-* consectetur adipiscing  elit.
-* Se d ea mala virtuti ipsos.”
 </div>
       <div class="three-cards__card-cta">
         <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/minikube.html" class="btn btn--large px-8 font-normal">Get Started</a>
       </div>
     </div>
     <div class="card three-cards__card">
-      <h3 class="card__title">Docker</h3>
+      <h3 class="card__title">Quickstart</h3>
 <div class="card__content" markdown='1'>
-Pull the latest version of the image  from the docker index. This is the recommended method of installation as it is easier to update in the future.
+This Quickstart is designed to help you get up and running with Activiti Cloud in 5 minutes. With only few command lines, you will be able to deploy your fist Activiti Cloud application example.
 
 * Lorem ipsum dolor sit amet,
 * consectetur adipiscing  elit.
