@@ -64,8 +64,8 @@ This project is driven by a community of domain experts from different companies
       </div>
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/case-management.svg %}</div>
-        <h5>Activiti Cloud Application / Case Management Router</h5>
-        <p>Bridging the gap between content, data and processes for cloud native environments.</p>
+        <h5>Application Service</h5>
+        <p>Distributed & Scalable application aggregation layer.</p>
       </div>
     </div>
   </div>
