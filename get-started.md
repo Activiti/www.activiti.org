@@ -85,7 +85,7 @@ text-center flex flex-wrap justify-around">
     <div class="card border-grey">
       <h2 class="card__title text-center">Interested in Alfresco Process Services?</h2>
       <div class="card__content py-2 lg:pb-8 xl:px-8">
-        <p>Happy with Activiti but need to reassure the boss? The enterprise subscription, takes everything you love about Activiti and bundle it up in a business-critical package.</p>
+        <p>Happy with Activiti but need to reassure the boss? Alfresco Process Services enterprise subscription, takes everything you love about Activiti and bundle it up in a business-critical package.</p>
         <div class="flex flex-wrap mt-4 justify-between">
 <div class="mb-4 md:mr-8" markdown='1'>
 **Alfresco Process Services includes:**
