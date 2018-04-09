@@ -1,14 +1,20 @@
 <footer class='bg-grey-lighter border-t border-green text-sm'>
   <div class="wrap max-w-xxl py-4 md:flex items-start justify-between">
-    <ul class="list-reset flex md:flex-wrap items-start">
-      {% for item in site.data.community_links %}
-        <li class="w-16 mb-4{% if forloop.last %} md:mr-4{% else %} mr-4{% endif %}">
-          <a class="text-grey-darker block" href="{{ item.url }}" alt="{{ item.title }}">
-            {% include {{ item.image }} %}
-          </a>
-        </li>
-      {% endfor %}      
-    </ul>
+    <div class="wrap py-4">
+        <h3 class="section-sub-heading">Get Involved</h3>
+        <ul class="list-reset flex md:flex-wrap items-start text-center">
+            {% for item in site.data.community_links %}
+              <li class="w-16 mb-4{% if forloop.last %} md:mr-4{% else %} mr-4{% endif %}">
+                <a class="text-grey-darker block" href="{{ item.url }}" alt="{{ item.title }}">
+                  <span class="inline-block">{% include {{ item.image }} %}</span>
+                  <span class="block">{{ item.title }}</span>
+                </a>
+              </li>
+            {% endfor %}      
+          </ul>
+    </div>
+    
+    
     <div class="flex-no-shrink flex flex-wrap items-start">
       <div class="mb-4">
         <h4>Documentation</h4>
@@ -35,7 +41,7 @@
       <a class="mr-2 md:mr-4 xl:mr-8 flex-none w-32" href="{{ "https://www.alfresco.com/" | relative_url }}">
         {% include svg/icon-alfresco.svg %}
       </a>
-      <p class='mt-0'>&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</p>
+      <p class='mt-0'><a href="https://www.alfresco.com/" class="text-grey-darker">&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</a></p>
     </div>
   </div>
 </footer>

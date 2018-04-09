@@ -81,12 +81,12 @@ This project is driven by a community of domain experts from different companies
   <h3 class="section-heading">Activiti Community</h3>
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
-      <img src="https://activiti.gitbooks.io/activiti-7-developers-guide/assets/infrastructure.png" title="placeholder"/>
-      <h4 class="section-sub-heading">Blog: Activiti: Last week Dev Logs #38</h4>
-      <p>Last week we manage to finally release to Maven Central and Docker Hub our Early Access Release 201802-EAartifacts. You can read more about this release and our updated Roadmap plans here. As stated in our Roadmap update we will now focus on getting things ready for a Beta1release which is intended to come by the end of April.</p>
+      {% include left_video_embed.html %}
+      <h4 class="section-sub-heading">Activiti Cloud BluePrint Demo</h4>
+      <p>A demo of the Twitter trending topics compaigns, using the Activiti Cloud BluePrint.</p>
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
-      {% include video_embed.html %}
+      {% include right_video_embed.html %}
       <h4 class="section-sub-heading">Activiti Cloud Overview &amp; BluePrint</h4>
       <p>While we are working hard in getting our first Beta Release at the end of March (beginning of April) we wanted to share a couple of introductory videos about our work so far.</p>
     </div>
@@ -94,39 +94,25 @@ This project is driven by a community of domain experts from different companies
 </div>
 
 
-<div class="bg-grey-light">
-  <div class="wrap py-8 md:py-12 lg:py-16 text-center">
-    <h3 class="section-sub-heading pb-8 md:pb-12 lg:pb-16">Get Involved</h3>
-    <ul class="list-reset mt-0 flex flex-wrap items-start">
-      {% for item in site.data.community_links %}
-        <li class="mb-4 w-1/3 lg:w-1/6">
-          <a class="text-grey-darker block" href="{{ item.url }}" alt="{{ item.title }}">
-            <span class="inline-block">{% include {{ item.image }} %}</span>
-            <span class="block">{{ item.title }}</span>
-          </a>
-        </li>
-      {% endfor %}      
-    </ul>
 
+<div id='get-started' class="py-8 md:py-16 xl:py-24 text-center bg-grey-light">
+  <div class="wrap">
+    <h3 class="section-heading text-green border-grey-dark">Get started with Activiti</h3>
+      <div class="lg:flex">
+        <div class="max-w-sm mx-auto my-6 lg:m-8">
+          <h4 class="section-sub-heading md:mb-6">Kubernetes</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores consectetur, voluptas. Autem deserunt animi omnis cupiditate laboriosam cumque iure.</p>
+        </div>
+        <div class="max-w-sm mx-auto my-6 lg:m-8">
+          <h4 class="section-sub-heading md:mb-6">Docker</h4>
+          <p>Velit ratione rem, voluptas possimus nesciunt, ad, labore qui porro incidunt. Possimus nesciunt, ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="max-w-sm mx-auto my-6 lg:m-8">
+          <h4 class="section-sub-heading md:mb-6">Download v6</h4>
+          <p>Quos, tempore eum consequuntur culpa soluta qui provident aspernatur adipisci praesentium optio perferendis voluptatibus harum accusamus, blanditiis possimus officia! Ad, veniam deleniti!</p>
+        </div>
+      </div>
+      <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get Started Now</a>
   </div>
 </div>
-
-
-<div id='get-started' class="wrap py-8 md:py-16 xl:py-24 text-center">
-  <h3 class="section-heading">Get started with Activiti</h3>
-  <div class="lg:flex">
-    <div class="max-w-sm mx-auto my-6 lg:m-8">
-      <h4 class="section-sub-heading md:mb-6">Kubernetes</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores consectetur, voluptas. Autem deserunt animi omnis cupiditate laboriosam cumque iure.</p>
-    </div>
-    <div class="max-w-sm mx-auto my-6 lg:m-8">
-      <h4 class="section-sub-heading md:mb-6">Docker</h4>
-      <p>Velit ratione rem, voluptas possimus nesciunt, ad, labore qui porro incidunt. Possimus nesciunt, ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="max-w-sm mx-auto my-6 lg:m-8">
-      <h4 class="section-sub-heading md:mb-6">Download v6</h4>
-      <p>Quos, tempore eum consequuntur culpa soluta qui provident aspernatur adipisci praesentium optio perferendis voluptatibus harum accusamus, blanditiis possimus officia! Ad, veniam deleniti!</p>
-    </div>
-  </div>
-  <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get Started Now</a>
-</div>
+  
