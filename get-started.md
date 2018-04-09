@@ -34,11 +34,7 @@ This Quickstart is designed to help you get up and running with Activiti Cloud i
 <div class="card three-cards__card">
       <h3 class="card__title">GitHub</h3>
 <div class="card__content" markdown='1'>
-Pull the latest version of the image from the Github Repo.
 
-* Lorem ipsum dolor sit amet,
-* consectetur adipiscing  elit.
-* Se d ea mala virtuti ipsos.”
 </div>
       <div class="three-cards__card-cta">
         <a href="https://github.com/Activiti" class="btn btn--large px-8 font-normal">Get Started</a>
