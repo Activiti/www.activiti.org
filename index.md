@@ -66,10 +66,11 @@ This project is driven by a community of domain experts from different companies
         <div class="inline-block">{% include svg/case-management.svg %}</div>
         <h5>Application Service</h5>
         <p>Distributed & Scalable application aggregation layer.</p>
-      <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        </div>
+       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/form-runtime.svg %}</div>
         <h5>Notification Service</h5>
         <p>Cloud ready secure WebSocket and subscription handling as part of GraphQL integration.</p>
-        </div>
       </div>
     </div>
   </div>
