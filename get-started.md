@@ -11,44 +11,19 @@ redirect_from:
 <div class="three-cards">
   <div class="three-cards__wrap">
     <div class="card three-cards__card">
-      <h3 class="card__title">Kubernetes</h3>
+      <h3 class="card__title">Quickstart</h3>
 <div class="card__content" markdown='1'>
-Java-based app works on any operating system. Works great with your choice of technology, from popular databases to Docker Containers
+This Quickstart is designed to help you get up and running with Activiti Cloud in 5 minutes.
 
-* Lorem ipsum dolor sit amet,
-* consectetur adipiscing  elit.
-* Se d ea mala virtuti ipsos.”
-</div>
-      <div class="three-cards__card-cta">
-        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/minikube.html" class="btn btn--large px-8 font-normal">Get Started</a>
-      </div>
-    </div>
-    <div class="card three-cards__card">
-      <h3 class="card__title">Docker</h3>
-<div class="card__content" markdown='1'>
-Pull the latest version of the image  from the docker index. This is the recommended method of installation as it is easier to update in the future.
-
-* Lorem ipsum dolor sit amet,
-* consectetur adipiscing  elit.
-* Se d ea mala virtuti ipsos.”
+* **Step 1:** (prerequisites) - Install Git & Docker
+* **Step 2:** Deploy the Docker images
+* **Step 3:** Test the Activiti Cloud application example
 </div>
       <div class="three-cards__card-cta">
         <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/quickstart.htm" class="btn btn--large px-8 font-normal">Get Started</a>
       </div>
     </div>
-<div class="card three-cards__card">
-      <h3 class="card__title">GitHub</h3>
-<div class="card__content" markdown='1'>
-Pull the latest version of the image from the Github Repo.
 
-* Lorem ipsum dolor sit amet,
-* consectetur adipiscing  elit.
-* Se d ea mala virtuti ipsos.”
-</div>
-      <div class="three-cards__card-cta">
-        <a href="https://github.com/Activiti" class="btn btn--large px-8 font-normal">Get Started</a>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -85,16 +60,14 @@ text-center flex flex-wrap justify-around">
     <div class="card border-grey">
       <h2 class="card__title text-center">Interested in Alfresco Process Services?</h2>
       <div class="card__content py-2 lg:pb-8 xl:px-8">
-        <p>Happy with Activiti but need to reassure the boss?<br />Alfresco Process Services, the enterprise edition, takes everything you love about Activiti and bundle it up in a business-critical package.</p>
+        <p>Alfresco Process Services enterprise subscription, takes everything you love about Activiti and bundle it up in a business-critical package.</p>
         <div class="flex flex-wrap mt-4 justify-between">
 <div class="mb-4 md:mr-8" markdown='1'>
-**Alfresco Process Services subscription includes:**
-* Expert support
-* Access control and other security features
-* Super fast UI development
-* Team development
-* Operations management tools
-* Even better availability and scalability
+**Alfresco Process Services includes:**
+* Enterprise-grade services including support, certified platforms and upgrades
+* Enterprise-centric features such as access control & security, analytics or multi-language support
+* Super fast UI development & teamwork
+* Integration with the [Alfresco Digital Business Platform](https://www.alfresco.com/platform)
 </div>
           <div class="self-center text-center mb-4 mx-auto">
             <a href="https://www.alfresco.com/platform/process-services-bpm" class="btn btn--large">Explore Now</a>

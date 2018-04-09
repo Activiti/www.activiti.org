@@ -29,18 +29,17 @@ redirect_from:
 <div class="wrap max-w-lg md:py-4 text-center" markdown='1'>
 ----
 
-Activiti has been the leading lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday.
+<p class="text-lg"><a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti</a> has been the leading lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday. 
+Activiti is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios.</p>
 
-Activiti is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios. 
-
-This project is driven by a community of domain experts from different companies with strong industry experience.
 
 ----
 </div>
 
 
-<div class="bg-green">
-  <div class="wrap pt-2 pb-8 md:py-8 xl:py-16 md:px-0 text-white text-center">
+<div class="bg-grey-light">
+  <div class="wrap pt-2 pb-8 md:py-8 xl:py-16 md:px-0 text-center">
+  <h3 class="section-heading border-grey-dark text-green">Cloud Native Building Blocks</h3>
     <div class="md:flex md:flex-wrap md:justify-center">
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/process-runtime.svg %}</div>
@@ -73,8 +72,21 @@ This project is driven by a community of domain experts from different companies
         <p>Cloud ready secure WebSocket and subscription handling as part of GraphQL integration.</p>
       </div>
     </div>
-  </div>
-</div>
+      
+    <div class="wrap pt-4 pb-4">
+      
+    <div class="md:flex md:flex-wrap md:justify-center md:items-center">
+    <img src="assets/images/spring.png">    
+    <p class="section-heading border-none my-4 md:mx-0 md:px-6">+</p>
+    <img src="assets/images/docker.png">
+    <p class="section-heading border-none my-4 md:mx-0 md:px-6">+</p>
+    <img src="assets/images/kubernetes.png">
+    </div>
+   </div> 
+      
+    </div>
+   </div>
+     
   
 
 <div class="wrap pt-8 md:pb-4 lg:py-16">
@@ -97,22 +109,12 @@ This project is driven by a community of domain experts from different companies
 
 <div id='get-started' class="py-8 md:py-16 xl:py-24 text-center bg-grey-light">
   <div class="wrap">
-    <h3 class="section-heading text-green border-grey-dark">Get started with Activiti</h3>
-      <div class="lg:flex">
-        <div class="max-w-sm mx-auto my-6 lg:m-8">
-          <h4 class="section-sub-heading md:mb-6">Kubernetes</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores consectetur, voluptas. Autem deserunt animi omnis cupiditate laboriosam cumque iure.</p>
-        </div>
-        <div class="max-w-sm mx-auto my-6 lg:m-8">
-          <h4 class="section-sub-heading md:mb-6">Docker</h4>
-          <p>Velit ratione rem, voluptas possimus nesciunt, ad, labore qui porro incidunt. Possimus nesciunt, ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="max-w-sm mx-auto my-6 lg:m-8">
-          <h4 class="section-sub-heading md:mb-6">Download v6</h4>
-          <p>Quos, tempore eum consequuntur culpa soluta qui provident aspernatur adipisci praesentium optio perferendis voluptatibus harum accusamus, blanditiis possimus officia! Ad, veniam deleniti!</p>
-        </div>
-      </div>
+    <h3 class="section-heading text-green border-grey-dark">Get started with Activiti</h3> 
+    <div class="wrap max-w-lg md:py-4 text-center">
+       <p class="text-lg">Following our Quickstart guide, you will be able to deploy in 3 steps your first Activiti Cloud application composed of a cloud infrastructure, a runtime bundle, an audit and a query service all running as microservices on the Docker platform.</p>  
+    </div> 
       <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get Started Now</a>
   </div>
 </div>
-  
+
+
