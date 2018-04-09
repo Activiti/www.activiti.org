@@ -23,9 +23,9 @@ redirect_from:
 <div class="card__content" markdown='1'>
 This Quickstart is designed to help you get up and running with Activiti Cloud in 5 minutes. With only few command lines, you will be able to deploy your fist Activiti Cloud application example.
 
-* Lorem ipsum dolor sit amet,
-* consectetur adipiscing  elit.
-* Se d ea mala virtuti ipsos.”
+* Step 1 (prerequisites): install Git & Docker
+* Step 2: deploy the Activiti Cloud infrastructure and Activiti Cloud application example
+* Step 3: test the Activiti Cloud application example
 </div>
       <div class="three-cards__card-cta">
         <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/quickstart.htm" class="btn btn--large px-8 font-normal">Get Started</a>
