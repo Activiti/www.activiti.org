@@ -85,16 +85,15 @@ text-center flex flex-wrap justify-around">
     <div class="card border-grey">
       <h2 class="card__title text-center">Interested in Alfresco Process Services?</h2>
       <div class="card__content py-2 lg:pb-8 xl:px-8">
-        <p>Happy with Activiti but need to reassure the boss?<br />Alfresco Process Services, the enterprise edition, takes everything you love about Activiti and bundle it up in a business-critical package.</p>
+        <p>Happy with Activiti but need to reassure the boss? The enterprise subscription, takes everything you love about Activiti and bundle it up in a business-critical package.</p>
         <div class="flex flex-wrap mt-4 justify-between">
 <div class="mb-4 md:mr-8" markdown='1'>
-**Alfresco Process Services subscription includes:**
-* Expert support
-* Access control and other security features
+**Alfresco Process Services includes:**
+* Enterprise-grade services including support, certified platforms and upgrades
+* Enterprise-centric features such as access control & security, analytics or multi-language support
 * Super fast UI development
 * Team development
-* Operations management tools
-* Even better availability and scalability
+* Integration with the Alfresco Digital Business Platform
 </div>
           <div class="self-center text-center mb-4 mx-auto">
             <a href="https://www.alfresco.com/platform/process-services-bpm" class="btn btn--large">Explore Now</a>
