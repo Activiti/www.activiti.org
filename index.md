@@ -117,11 +117,13 @@ This project is driven by a community of domain experts from different companies
   <div class="lg:flex">
     <div class="max-w-sm mx-auto my-6 lg:m-8">
       <h4 class="section-sub-heading md:mb-6">Kubernetes</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maiores consectetur, voluptas. Autem deserunt animi omnis cupiditate laboriosam cumque iure.</p>
     </div>
     <div class="max-w-sm mx-auto my-6 lg:m-8">
-      <h4 class="section-sub-heading md:mb-6">Docker</h4>
-      <p>Velit ratione rem, voluptas possimus nesciunt, ad, labore qui porro incidunt. Possimus nesciunt, ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <h4 class="section-sub-heading md:mb-6">Quickstart</h4>
+      <p>This Quickstart is designed to help you get up and running with Activiti Cloud in 5 minutes.
+* Step 1 (prerequisites): install Git & Docker
+* Step 2: deploy the Docker images
+* Step 3: test the Activiti Cloud application example</p>
     </div>
     <div class="max-w-sm mx-auto my-6 lg:m-8">
       <h4 class="section-sub-heading md:mb-6">Download v6</h4>
