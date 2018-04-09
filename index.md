@@ -44,28 +44,33 @@ This project is driven by a community of domain experts from different companies
     <div class="md:flex md:flex-wrap md:justify-center">
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/process-runtime.svg %}</div>
-        <h5>Activiti Process Runtime</h5>
-        <p>Cloud native, lightweight BPMN Process Runtime, you can still use and embed activiti in your java apps, but we have fine tuned it to work for cloud deployments.</p>
+        <h5>Runtime Bundle</h5>
+        <p>Inmutable, scalable & pain free Process & Decision Runtimes designed to integrate with your cloud native infrastructure.</p>
       </div>
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/decision-runtime.svg %}</div>
-        <h5>Activiti Decision Runtime</h5>
-        <p>Cloud native, lightweight and reactive Decision Runtime</p>
+        <h5>Audit Service</h5>
+        <p>Scalable, storage independent and extensible audit service.</p>
       </div>
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/form-runtime.svg %}</div>
-        <h5>Activiti Form Runtime</h5>
-        <p>Cloud native, lightweight Runtime Form Service.</p>
+        <h5>Query Service</h5>
+        <p>Scalable, storage independent and extensible query service.</p>
       </div>
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/cloud-infra.svg %}</div>
-        <h5>Activiti Cloud Connectors</h5>
+        <h5>Cloud Connectors</h5>
         <p>Simplified system to system interactions that can scale in distributed environments.</p>
       </div>
       <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
         <div class="inline-block">{% include svg/case-management.svg %}</div>
         <h5>Application Service</h5>
         <p>Distributed & Scalable application aggregation layer.</p>
+         <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
+        <div class="inline-block">{% include svg/case-management.svg %}</div>
+        <h5>Notification Service</h5>
+        <p>Cloud ready secure WebSocket and subscription handling as part of GraphQL integration.</p>
+      </div>
       </div>
     </div>
   </div>
