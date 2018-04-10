@@ -14,7 +14,7 @@ redirect_from:
   <div class="text-center md:text-left wrap max-w-lg pt-8 pb-16 md:pt-16 clearfix">
     <div class="md:w-1/2 md:float-left">
       <h1 class="text-green">Open Source <br>Business Automation</h1>
-      <p class="text-lg leading-tight mt-0">Helping businesses solving automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
+      <p class="text-lg leading-tight mt-0">Helping businesses solve automation challenges in distributed, highly-scalable and cost effective infrastructures.</p>
       <a href='#get-started' class="mt-4 btn btn--large">Learn More</a>
     </div>
     <div class="hidden md:block md:float-right">
@@ -29,8 +29,7 @@ redirect_from:
 <div class="wrap max-w-lg md:py-4 text-center" markdown='1'>
 ----
 
-<p class="text-lg"><a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti</a> has been the leading lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday. 
-Activiti is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios.</p>
+<p class="text-lg"><a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. Activiti Cloud is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures and help application teams be more efficient.</p>
 
 
 ----
