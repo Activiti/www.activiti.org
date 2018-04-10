@@ -27,11 +27,12 @@ This Quickstart is designed to help you get up and running with Activiti Cloud i
   </div>
 </div>
 
-<div class="wrap py-4 xl:py-1
-text-center flex flex-wrap justify-around">
+<div class="wrap py-4 xl:py-16 text-center">
+  <h3 class="section-heading text-center">Older Versions</h3>
+  <div class="flex flex-wrap justify-around">
   <div class="my-8 md:m-8 pb-2">
     <h3 class="section-heading xl:px-6">Activiti 6.0</h3>
-<div markdown='1'>
+  <div markdown='1'>
 [6.x Download](https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/activiti-6.0.0.zip)
 
 [6.x Developer Guide](/userguide)
@@ -53,6 +54,7 @@ text-center flex flex-wrap justify-around">
 [5.x Full Guide](https://github.com/Activiti/Activiti/releases/tag/activiti-5.22.0)
 </div>
   </div>
+</div>
 </div>
 
 <div class="bg-grey-light py-8 xl:py-16">

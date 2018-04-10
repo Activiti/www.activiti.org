@@ -72,20 +72,17 @@ Activiti is now the new generation of process engine composed of a set of micros
         <p>Cloud ready secure WebSocket and subscription handling as part of GraphQL integration.</p>
       </div>
     </div>
-      
     <div class="wrap pt-4 pb-4">
-      
-    <div class="md:flex md:flex-wrap md:justify-center md:items-center">
-    <img src="assets/images/spring.png">    
-    <p class="section-heading border-none my-4 md:mx-0 md:px-6">+</p>
-    <img src="assets/images/docker.png">
-    <p class="section-heading border-none my-4 md:mx-0 md:px-6">+</p>
-    <img src="assets/images/kubernetes.png">
+        <div class="md:flex md:flex-wrap md:justify-center md:items-center">
+        <img src="assets/images/spring.png">    
+        <p class="section-heading border-none my-4 md:mx-0 md:px-6">+</p>
+        <img src="assets/images/docker.png">
+        <p class="section-heading border-none my-4 md:mx-0 md:px-6">+</p>
+        <img src="assets/images/kubernetes.png">
     </div>
    </div> 
-      
-    </div>
-   </div>
+ </div>
+</div>
      
   
 
