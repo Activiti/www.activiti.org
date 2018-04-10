@@ -1206,10 +1206,6 @@ svg {
   .blocker {
     top: 0;
   }
-
-  .close-modal {
-    display: none;
-  }
 }
 
 /**
