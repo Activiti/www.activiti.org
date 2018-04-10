@@ -29,7 +29,7 @@ redirect_from:
 <div class="wrap max-w-lg md:py-4 text-center" markdown='1'>
 ----
 
-<p class="text-lg"><a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-2xl font-normal">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
+<p class="text-lg"><a class="text-2xl font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
 
 
 ----
