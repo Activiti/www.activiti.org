@@ -29,8 +29,7 @@ redirect_from:
 <div class="wrap max-w-lg md:py-4 text-center" markdown='1'>
 ----
 
-<p class="text-lg"><a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti</a> has been the leading lightweight, java-centric open-source BPMN process engine supporting real-world and important process needs everyday. 
-Activiti is now the new generation of process engine composed of a set of microservices designed for Cloud environments to solve business automation scenarios.</p>
+<p class="text-lg"><a class="text-2xl font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti</a> Activiti has been the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. Activiti is now the new generation of business automation platofrom composed of a set of cloud native building blocks.</p>
 
 
 ----
