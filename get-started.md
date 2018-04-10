@@ -20,7 +20,7 @@ This Quickstart is designed to help you get up and running with Activiti Cloud i
 * **Step 3:** Test the Activiti Cloud application example
 </div>
       <div class="three-cards__card-cta">
-        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/getting-started/quickstart.htm" class="btn btn--large px-8 font-normal">Get Started</a>
+        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/getting-started/quickstart.html" class="btn btn--large px-8 font-normal">Get Started</a>
       </div>
     </div>
 
