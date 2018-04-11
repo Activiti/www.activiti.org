@@ -73,9 +73,7 @@ Guide](https://github.com/Activiti/Activiti/releases/tag/activiti-5.22.0)
       <h2 class="card__title text-center">Interested in Alfresco Process
         Services?</h2>
       <div class="card__content py-2 lg:pb-8 xl:px-8">
-        <p>Alfresco Process Services enterprise subscription, takes everything
-          you love about Activiti and bundle it up in a business-critical
-          package.</p>
+        <p>Alfresco Process Services is the commercial version provided as part of an annual subscription. It takes everything you love about Activiti and bundles it up in a business-critical package.</p>
         <div class="flex flex-wrap mt-4 justify-between">
           
 <div class="mb-4 md:mr-8" markdown='1'>
