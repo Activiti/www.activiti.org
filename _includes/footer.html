@@ -2,7 +2,7 @@
   <div class="wrap max-w-xxl py-4 md:flex items-start justify-between">
     <div class="py-4">
         <h3 class="section-sub-heading">Get Involved</h3>
-        <ul class="list-reset flex md:flex-wrap items-start text-center">
+        <ul class="list-reset flex flex-wrap items-start text-center">
             {% for item in site.data.community_links %}
               <li class="w-16 mb-4{% if forloop.last %} md:mr-4{% else %} mr-4{% endif %}">
                 <a class="text-grey-darker block" href="{{ item.url }}" alt="{{ item.title }}">
