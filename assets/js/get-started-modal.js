@@ -65,7 +65,7 @@
             if (protectedForm && $mktoForm.data('protectionMode') === 'soft') {
               var closeHandler = function(event, modal) {
                 $.cookie('protected_form_completed' + protectedForm, 'true', {
-                  expires: 30,
+                  expires: 2,
                   path: '/'
                 });
               };

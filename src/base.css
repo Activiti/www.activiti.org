@@ -51,7 +51,7 @@ h6 {
 }
 
 hr {
-  @apply .my-8 .border-b .max-w-xs;
+  @apply .my-8 .border-b .max-w-xs .border-grey-dark;
 }
 
 a {
