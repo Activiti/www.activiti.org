@@ -111,10 +111,7 @@ redirect_from:
     <h3 class="section-heading text-green border-grey-dark">Get started with
       Activiti</h3>
     <div class="wrap max-w-lg md:py-4 text-center">
-      <p class="text-lg">Following our Quickstart guide, you will be able to
-        deploy in 3 steps your first Activiti Cloud application composed of a
-        cloud infrastructure, a runtime bundle, an audit and a query service all
-        running as microservices on the Docker platform.</p>
+      <p class="text-lg">Follow our QuickStart Guide to get an Activiti Cloud Application up and running in 3 simple steps into a Kubernetes installation.</p>
     </div>
     <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get
       Started Now</a>
