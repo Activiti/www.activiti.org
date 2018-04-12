@@ -76,11 +76,14 @@ redirect_from:
 </div> 
 
 <div class="bg-grey-light md:py-4 md:my-4">
-  <div class="wrap md:py-8 md:my-8 flex flex-wrap justify-around  lg:justify-between"> 
-      <img class="my-4" src="assets/images/kubernetes-horizontal-color.png">
-      <img class="my-4" src="assets/images/spring-cloud-horizontal.png">
-      <img class="my-4" src="assets/images/docker-horizontal.png">
-    </div>
+  <div class="wrap md:py-8 md:my-8">
+  <h6>Designed for:</h6> 
+      <div class="flex flex-wrap justify-around lg:justify-between">
+          <img class="my-4" src="assets/images/spring-cloud-horizontal.png">
+          <img class="my-4" src="assets/images/docker-horizontal.png">
+          <img class="my-4" src="assets/images/kubernetes-horizontal-color.png">
+        </div>
+   </div>
 </div>
      
   
