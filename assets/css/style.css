@@ -2451,6 +2451,10 @@ svg {
   min-width: 0;
 }
 
+.min-w-40{
+  min-width: 40%;
+}
+
 .min-w-1\/2 {
   min-width: 50%;
 }
