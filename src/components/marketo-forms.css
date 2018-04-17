@@ -7,6 +7,7 @@
 .mktoLabel {
   @apply .hidden;
 }
+.mktoOriginalButton,
 .mktoHide {
   @apply .hidden !important;
 }
@@ -28,6 +29,60 @@
   @apply .shadow-none !important;
   @apply .border-grey !important;
   @apply .p-2 !important;
+}
+
+.mktoForm .mktoRadioList {
+  @apply .p-0 !important;
+}
+
+.mktoRadioList .mktoField {
+  @apply .w-auto !important;
+}
+
+.mktoForm input[type=radio] {
+  @apply .absolute !important;
+}
+
+.mktoForm input[type=radio] + label {
+  @apply .relative;
+  @apply .inline-block;
+  @apply .mr-6;
+}
+
+.mktoForm input[type=radio] + label:before {
+  @apply .shadow-none !important;
+  border-radius: .125rem !important;
+  margin-top: .25em;
+}
+
+.mktoForm input[type=radio]:checked + label:before {
+  @apply .border-none !important;
+  background: #0094d2 !important;
+}
+
+.mktoForm input[type=radio]:checked + label:after {
+  @apply .inline-block;
+  @apply .absolute !important;
+  content: '';
+  height: .25em;
+  width: .5em;
+  border-left: .15em solid #fff;
+  border-bottom: .15em solid #fff;
+  top: 0.3em;
+  left: -1.05em;
+  -webkit-transform: translateY(.15em) rotate(-55deg);
+  transform: translateY(.15em) rotate(-55deg);
+  @apply .border-white;
+}
+
+.mktoForm input[type=radio]:focus + label:before {
+  outline: 0;
+  box-shadow: 0 0 2px 2px #6bc1e3 !important;
+}
+
+.mktoRadioList + .mktoError {
+  right: auto !important;
+  bottom: -100% !important;
 }
 
 .mktoButton {

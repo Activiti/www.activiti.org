@@ -978,6 +978,7 @@ img {
   display: none;
 }
 
+.mktoOriginalButton,
 .mktoHide {
   display: none !important;
 }
@@ -1000,6 +1001,60 @@ img {
   box-shadow: none !important;
   border-color: #e6e6ec !important;
   padding: .625rem !important;
+}
+
+.mktoForm .mktoRadioList {
+  padding: 0 !important;
+}
+
+.mktoRadioList .mktoField {
+  width: auto !important;
+}
+
+.mktoForm input[type=radio] {
+  position: absolute !important;
+}
+
+.mktoForm input[type=radio] + label {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.875rem;
+}
+
+.mktoForm input[type=radio] + label:before {
+  box-shadow: none !important;
+  border-radius: .125rem !important;
+  margin-top: .25em;
+}
+
+.mktoForm input[type=radio]:checked + label:before {
+  border-style: none !important;
+  background: #0094d2 !important;
+}
+
+.mktoForm input[type=radio]:checked + label:after {
+  display: inline-block;
+  position: absolute !important;
+  content: '';
+  height: .25em;
+  width: .5em;
+  border-left: .15em solid #fff;
+  border-bottom: .15em solid #fff;
+  top: .3em;
+  left: -1.05em;
+  -webkit-transform: translateY(.15em) rotate(-55deg);
+          transform: translateY(.15em) rotate(-55deg);
+  border-color: #fff;
+}
+
+.mktoForm input[type=radio]:focus + label:before {
+  outline: 0;
+  box-shadow: 0 0 2px 2px #6bc1e3 !important;
+}
+
+.mktoRadioList + .mktoError {
+  right: auto !important;
+  bottom: -100% !important;
 }
 
 .mktoButton {
