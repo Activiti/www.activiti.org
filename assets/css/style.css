@@ -2153,6 +2153,14 @@ svg {
   margin: 2.5rem;
 }
 
+.m-16 {
+  margin: 5rem;
+}
+
+.m-24 {
+  margin: 7.5rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -2229,6 +2237,26 @@ svg {
 .mx-8 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.my-16 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mx-16 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.my-24 {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.mx-24 {
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
 }
 
 .my-auto {
@@ -2361,6 +2389,38 @@ svg {
 
 .ml-8 {
   margin-left: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 5rem;
+}
+
+.mr-16 {
+  margin-right: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 5rem;
+}
+
+.ml-16 {
+  margin-left: 5rem;
+}
+
+.mt-24 {
+  margin-top: 7.5rem;
+}
+
+.mr-24 {
+  margin-right: 7.5rem;
+}
+
+.mb-24 {
+  margin-bottom: 7.5rem;
+}
+
+.ml-24 {
+  margin-left: 7.5rem;
 }
 
 .mt-auto {
@@ -4757,6 +4817,14 @@ svg {
     margin: 2.5rem;
   }
 
+  .sm\:m-16 {
+    margin: 5rem;
+  }
+
+  .sm\:m-24 {
+    margin: 7.5rem;
+  }
+
   .sm\:m-auto {
     margin: auto;
   }
@@ -4833,6 +4901,26 @@ svg {
   .sm\:mx-8 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .sm\:my-16 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .sm\:mx-16 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .sm\:my-24 {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .sm\:mx-24 {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
   }
 
   .sm\:my-auto {
@@ -4965,6 +5053,38 @@ svg {
 
   .sm\:ml-8 {
     margin-left: 2.5rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mr-16 {
+    margin-right: 5rem;
+  }
+
+  .sm\:mb-16 {
+    margin-bottom: 5rem;
+  }
+
+  .sm\:ml-16 {
+    margin-left: 5rem;
+  }
+
+  .sm\:mt-24 {
+    margin-top: 7.5rem;
+  }
+
+  .sm\:mr-24 {
+    margin-right: 7.5rem;
+  }
+
+  .sm\:mb-24 {
+    margin-bottom: 7.5rem;
+  }
+
+  .sm\:ml-24 {
+    margin-left: 7.5rem;
   }
 
   .sm\:mt-auto {
@@ -7279,6 +7399,14 @@ svg {
     margin: 2.5rem;
   }
 
+  .md\:m-16 {
+    margin: 5rem;
+  }
+
+  .md\:m-24 {
+    margin: 7.5rem;
+  }
+
   .md\:m-auto {
     margin: auto;
   }
@@ -7355,6 +7483,26 @@ svg {
   .md\:mx-8 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .md\:my-16 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .md\:mx-16 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .md\:my-24 {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .md\:mx-24 {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
   }
 
   .md\:my-auto {
@@ -7487,6 +7635,38 @@ svg {
 
   .md\:ml-8 {
     margin-left: 2.5rem;
+  }
+
+  .md\:mt-16 {
+    margin-top: 5rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 5rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 5rem;
+  }
+
+  .md\:ml-16 {
+    margin-left: 5rem;
+  }
+
+  .md\:mt-24 {
+    margin-top: 7.5rem;
+  }
+
+  .md\:mr-24 {
+    margin-right: 7.5rem;
+  }
+
+  .md\:mb-24 {
+    margin-bottom: 7.5rem;
+  }
+
+  .md\:ml-24 {
+    margin-left: 7.5rem;
   }
 
   .md\:mt-auto {
@@ -9801,6 +9981,14 @@ svg {
     margin: 2.5rem;
   }
 
+  .\<lg\:m-16 {
+    margin: 5rem;
+  }
+
+  .\<lg\:m-24 {
+    margin: 7.5rem;
+  }
+
   .\<lg\:m-auto {
     margin: auto;
   }
@@ -9877,6 +10065,26 @@ svg {
   .\<lg\:mx-8 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .\<lg\:my-16 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .\<lg\:mx-16 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .\<lg\:my-24 {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .\<lg\:mx-24 {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
   }
 
   .\<lg\:my-auto {
@@ -10009,6 +10217,38 @@ svg {
 
   .\<lg\:ml-8 {
     margin-left: 2.5rem;
+  }
+
+  .\<lg\:mt-16 {
+    margin-top: 5rem;
+  }
+
+  .\<lg\:mr-16 {
+    margin-right: 5rem;
+  }
+
+  .\<lg\:mb-16 {
+    margin-bottom: 5rem;
+  }
+
+  .\<lg\:ml-16 {
+    margin-left: 5rem;
+  }
+
+  .\<lg\:mt-24 {
+    margin-top: 7.5rem;
+  }
+
+  .\<lg\:mr-24 {
+    margin-right: 7.5rem;
+  }
+
+  .\<lg\:mb-24 {
+    margin-bottom: 7.5rem;
+  }
+
+  .\<lg\:ml-24 {
+    margin-left: 7.5rem;
   }
 
   .\<lg\:mt-auto {
@@ -12323,6 +12563,14 @@ svg {
     margin: 2.5rem;
   }
 
+  .lg\:m-16 {
+    margin: 5rem;
+  }
+
+  .lg\:m-24 {
+    margin: 7.5rem;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -12399,6 +12647,26 @@ svg {
   .lg\:mx-8 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .lg\:my-16 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mx-16 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:my-24 {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .lg\:mx-24 {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
   }
 
   .lg\:my-auto {
@@ -12531,6 +12799,38 @@ svg {
 
   .lg\:ml-8 {
     margin-left: 2.5rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mr-16 {
+    margin-right: 5rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 5rem;
+  }
+
+  .lg\:ml-16 {
+    margin-left: 5rem;
+  }
+
+  .lg\:mt-24 {
+    margin-top: 7.5rem;
+  }
+
+  .lg\:mr-24 {
+    margin-right: 7.5rem;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 7.5rem;
+  }
+
+  .lg\:ml-24 {
+    margin-left: 7.5rem;
   }
 
   .lg\:mt-auto {
@@ -14845,6 +15145,14 @@ svg {
     margin: 2.5rem;
   }
 
+  .xl\:m-16 {
+    margin: 5rem;
+  }
+
+  .xl\:m-24 {
+    margin: 7.5rem;
+  }
+
   .xl\:m-auto {
     margin: auto;
   }
@@ -14921,6 +15229,26 @@ svg {
   .xl\:mx-8 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .xl\:my-16 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .xl\:mx-16 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .xl\:my-24 {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .xl\:mx-24 {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
   }
 
   .xl\:my-auto {
@@ -15053,6 +15381,38 @@ svg {
 
   .xl\:ml-8 {
     margin-left: 2.5rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 5rem;
+  }
+
+  .xl\:mr-16 {
+    margin-right: 5rem;
+  }
+
+  .xl\:mb-16 {
+    margin-bottom: 5rem;
+  }
+
+  .xl\:ml-16 {
+    margin-left: 5rem;
+  }
+
+  .xl\:mt-24 {
+    margin-top: 7.5rem;
+  }
+
+  .xl\:mr-24 {
+    margin-right: 7.5rem;
+  }
+
+  .xl\:mb-24 {
+    margin-bottom: 7.5rem;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 7.5rem;
   }
 
   .xl\:mt-auto {
