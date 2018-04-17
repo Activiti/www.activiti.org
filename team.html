@@ -38,7 +38,7 @@ team:
         <h2 class="text-green text-xl font-normal">{{ person.name }}</h2>
         <span class="text-grey-darker text-lg">{{ person.role }}</span>
       </a>
-      <div id="profile-{{ slug }}" class="hidden modal w-full max-w-xl bg-white text-left px-3 py-6 lg:px-6 shadow align-middle relative">
+      <div id="profile-{{ slug }}" class="hidden modal w-full max-w-md xl:max-w-xl bg-white text-left px-3 py-6 lg:px-6 lg:pb-2 shadow align-middle relative">
           {% include team_profile.html person=person %}
           <div class="absolute pin-r mr-6 pin-b mb-6">
             {% assign prev = forloop.index0 | minus: 1 %}

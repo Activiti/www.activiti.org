@@ -1,12 +1,16 @@
 {% assign team_collection = site.collections | where: 'label', 'team' | first %}
 {% assign headshot = team_collection.files | where: "basename", include.person.slug | first %}
 
-<div class="lg:intrinsic-2x1">
-  <div class="w-32 mb-2 mx-auto sm:float-left sm:ml-0 sm:mr-3 md:w-48 lg:absolute lg:m-0 lg:pin-y lg:pin-l lg:w-1/2">
-    <img class="w-full border p-1 lg:border-0 lg:p-0" src="/{{ headshot.path | replace_first: '_team', 'team' }}" alt="Picture of {{ include.person.name | escape }}" />
+<div class="xl:intrinsic-2x1">
+  <div class="w-32 mb-2 mx-auto sm:float-left sm:ml-0 sm:mr-3 md:w-48 xl:absolute xl:m-0 xl:pin-y xl:pin-l xl:w-1/2 xl:pr-4">
+    {% if headshot %}
+      <img class="w-full border p-1 xl:border-0 xl:p-0" src="/{{ headshot.path | replace_first: '_team', 'team' }}" alt="Picture of {{ include.person.name | escape }}" />
+    {% else %}
+      <div class="intrinsic-1x1 bg-grey-light"></div>
+    {% endif %}
   </div>
-  <div class="lg:absolute lg:pin-y lg:pin-r lg:w-1/2 lg:pl-4 lg:flex lg:flex-col">
-    <div class='text-center sm:text-left sm:overflow-hidden lg:flex-no-shrink'>
+  <div class="xl:absolute xl:pin-y xl:pin-r xl:w-1/2 xl:flex xl:flex-col lg:pb-2">
+    <div class='text-center sm:text-left sm:overflow-hidden xl:flex-no-shrink'>
       {% if include.person.id == page.id %}
         <h1 class="mt-0 pb-1 text-2xl md:text-3xl text-green font-normal leading-tight tracking-wide border-b">{{ include.person.name }}</h1>
       {% else %}
@@ -15,7 +19,7 @@
       <h3 class="text-xl md:text-2xl font-light leading-tight tracking-wide mt-1 mb-1">{{ include.person.role }}</h3>
       <a class="inline-block w-12 text-grey-darker" href="{{ include.person.github }}">{% include svg/github.svg %}</a>
     </div>
-    <div class="mt-3 clear-left lg:overflow-y-auto mb-16">
+    <div class="mt-3 clear-left xl:overflow-y-auto mb-16">
       {{ include.person.content | markdownify }}
     </div> 
   </div>
