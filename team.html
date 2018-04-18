@@ -42,10 +42,10 @@ team:
           <div class="absolute pin-r mr-6 pin-b mb-6">
             {% assign prev = forloop.index0 | minus: 1 %}
             {% assign prev_person = site.team | where: 'slug', page.team[prev] | first %}
-            <a class="inline-block w-6 mr-6" href="{{ prev_person.url }}" data-modal="#profile-{{ page.team[prev] }}">{% include svg/nav-prev.svg %}</a>
+            <a class="text-grey-darker inline-block w-6 mr-6" href="{{ prev_person.url }}" data-modal="#profile-{{ page.team[prev] }}">{% include svg/nav-prev.svg alt_text="See previous team member" %}</a>
             {% assign next = forloop.index0 | plus: 1 %}
             {% assign next_person = site.team | where: 'slug', page.team[next] | first %}
-            <a class="inline-block w-6" href="{{ next_person.url }}" data-modal="#profile-{{ page.team[next] }}">{% include svg/nav-next.svg %}</a>
+            <a class="text-grey-darker inline-block w-6" href="{{ next_person.url }}" data-modal="#profile-{{ page.team[next] }}">{% include svg/nav-next.svg alt_text="See next team member" %}</a>
           </div>
       </div>
     </div>

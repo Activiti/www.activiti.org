@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="65.25" height="130.49" viewBox="0 0 65.25 130.49"><title>Navigate next</title><polyline points="0 0 65.25 65.25 0 130.49" fill="none" stroke="#737174" stroke-miterlimit="10"/></svg>
+<svg class="stroke-current" role="img" xmlns="http://www.w3.org/2000/svg" width="65.25" height="130.49" viewBox="0 0 65.25 130.49"><title>{{ include.alt_text }}</title><polyline points="0 0 65.25 65.25 0 130.49" fill="none" stroke-miterlimit="10"/></svg>
