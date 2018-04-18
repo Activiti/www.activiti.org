@@ -732,6 +732,11 @@ svg {
   height: auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
