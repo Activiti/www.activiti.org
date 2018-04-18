@@ -37,19 +37,19 @@
     </div>
   </div>
   <div class="border-t">
-    <div class="wrap max-w-xxl py-4 flex justify-between items-center">
+    <div class="wrap max-w-xxl py-4 md:flex justify-between items-center">
       <a class="mr-2 md:mr-4 xl:mr-8 flex-none w-32" href="{{ "https://www.alfresco.com/" | relative_url }}">
         {% include svg/icon-alfresco.svg %}
       </a>
 
-      <div class="flex justify-between items-center">
-        <p class='text-base mx-2 mt-0'><a href="https://www.alfresco.com/" class="text-grey-darker">&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</a></p>
-        <p class='text-base mx-2 mt-0'>|</p>
-        <p class='text-base mx-2 mt-0'><a href="https://www.alfresco.com/terms-use" class="text-grey-darker">Legal</a></p>
-        <p class='text-base mx-2 mt-0'>|</p>
-        <p class='text-base mx-2 mt-0'><a href="https://www.alfresco.com/cookie-statement" class="text-grey-darker">Cookies</a></p>
-        <p class='text-base mx-2 mt-0'>|</p>
-        <p class='text-base mx-2 mt-0'><a href="https://www.alfresco.com/privacy-statement" class="text-grey-darker">Privacy</a></p>
+      <div class="md:flex flex-wrap justify-between items-center">
+        <p class='text-base mx-2 mt-0 mb-1 w-full xl:w-auto'><a href="https://www.alfresco.com/" class="text-grey-darker">&copy; {{ site.time | date: '%Y' }} Alfresco Software, Inc. All Rights Reserved.</a></p>
+        <p class='text-base mx-2 mt-0 mb-1 hidden xl:block'>|</p>
+        <p class='text-base mx-2 mt-0 mb-1'><a href="https://www.alfresco.com/terms-use" class="text-grey-darker">Legal</a></p>
+        <p class='text-base mx-2 mt-0 mb-1 hidden md:block'>|</p>
+        <p class='text-base mx-2 mt-0 mb-1'><a href="https://www.alfresco.com/cookie-statement" class="text-grey-darker">Cookies</a></p>
+        <p class='text-base mx-2 mt-0 mb-1 hidden md:block'>|</p>
+        <p class='text-base mx-2 mt-0 mb-1'><a href="https://www.alfresco.com/privacy-statement" class="text-grey-darker">Privacy</a></p>
       </div>
     </div>
   </div>
