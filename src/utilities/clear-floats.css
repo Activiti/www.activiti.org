@@ -9,3 +9,13 @@
 .clear-both {
   clear: both;
 }
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

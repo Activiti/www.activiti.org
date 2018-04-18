@@ -27,16 +27,16 @@ redirect_from:
 
 <p class="mt-0"><a href="{{ page.latest_news_link }}" class="block bg-green hover:bg-green-light border-t border-white md:border-0 px-3 py-4 text-center text-white hover:text-white transition-slow text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
 
-<div class="bg-grey-light">
+<div class="bg-grey-light clearfix">
 <div class="wrap max-w-lg md:py-8 text-center" markdown='1'>
-----
-<p class="text-base"><a class="text-lg underline font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-lg underline font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
-----
+<hr class="hidden md:block" />
+<p class="text-base my-8"><a class="text-lg underline font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-lg underline font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
+<hr class="hidden md:block" />
 </div>
 </div>
 
 
-<div class="wrap pt-2 pb-8 md:py-8 xl:py-16 md:px-0 text-center">
+<div class="wrap py-8 md:py-12 lg:py-16 text-center">
   <h3 class="section-heading border-grey-dark">Cloud Native Building Blocks</h3>
   <div class="md:flex md:flex-wrap md:justify-center">
     <div class="max-w-xs mx-auto my-4 md:mx-0 md:px-6">
@@ -75,20 +75,20 @@ redirect_from:
   </div>
 </div> 
 
-<div class="bg-grey-light md:py-4 md:my-4">
-  <div class="wrap md:py-8 md:my-8">
+<div class="bg-grey-light">
+  <div class="wrap py-8 md:py-12 lg:py-16">
   <h6>Designed for:</h6> 
-      <div class="flex flex-wrap justify-around lg:justify-between">
-          <img class="my-4" src="assets/images/spring-cloud-horizontal.png">
-          <img class="my-4" src="assets/images/docker-horizontal.png">
-          <img class="my-4" src="assets/images/kubernetes-horizontal-color.png">
+      <div class="flex flex-wrap justify-around xl:justify-between">
+          <img class="my-4 mx-2" src="assets/images/spring-cloud-horizontal.png">
+          <img class="my-4 mx-2" src="assets/images/docker-horizontal.png">
+          <img class="my-4 mx-2" src="assets/images/kubernetes-horizontal-color.png">
         </div>
    </div>
 </div>
      
   
 
-<div class="wrap pt-8 md:pb-4 lg:py-16">
+<div class="wrap py-8 md:py-12 lg:py-16 pb-0 md:pb-4 lg:pb-8">
   <h3 class="section-heading">Activiti Community</h3>
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
@@ -113,7 +113,7 @@ redirect_from:
   <div class="wrap">
     <h3 class="section-heading text-green border-grey-dark">Get started with
       Activiti</h3>
-    <div class="wrap max-w-lg md:py-4 text-center">
+    <div class="wrap max-w-lg pb-4 md:py-4 text-center">
       <p class="text-lg">Follow our QuickStart Guide to get an Activiti Cloud Application up and running in 3 simple steps into a Kubernetes installation.</p>
     </div>
     <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get

@@ -3874,6 +3874,16 @@ svg {
   clear: both;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .intrinsic-2x1 {
   position: relative;
   padding-bottom: 50%;
