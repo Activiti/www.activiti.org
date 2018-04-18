@@ -114,8 +114,20 @@ gulp.task("serve", ["css", "js"], () => {
       serveStaticOptions: {
         extensions: ['html', 'js']
       },
-      middleware: compression()
-    }
+      middleware: [
+        // For some reason if a folder exists with the same name as your path, 
+        // then browsersync will 301 redirect with a trailing slash, rather than
+        // serve the extensionless file. Ideally this logic wouldn't be a 
+        // special case for team, but for now this makes it work.
+        function(req,res,next) {
+          if (req.url === '/team') {
+            req.url = '/team.html';
+          }
+          return next();
+        },
+        compression(),
+      ]
+    },
   }, (err, bs) => {
     bs.addMiddleware("*", (req, res) => {
         // Provides the 404 content without redirect.

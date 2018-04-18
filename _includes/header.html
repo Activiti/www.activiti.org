@@ -19,7 +19,7 @@
     </a>
     <ul class="main-menu">
       {% for item in site.data.main_menu_links %}
-        {% assign apost = site.pages | where:"path",item.url  | first %}
+        {% assign apost = site.pages | where:"path", item.url | first %}
         {% if apost %}
           {% assign item_url = apost.url | prepend: site.baseurl %}
         {% else %}
