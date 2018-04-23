@@ -1,5 +1,12 @@
 ---
 title:  "Get Involved with the Activiti Community"
+custom_js:
+  - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/gcal.min.js
+  - /assets/js/full-calendar.js
+custom_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css
 ---
 
 <div class="bg-green py-6 md:py-8 lg:py-12 xl:py-16">
@@ -12,6 +19,13 @@ title:  "Get Involved with the Activiti Community"
   </div>
 </div>
 
-<div class="wrap">
+<div class="wrap py-8 md:py-12 lg:py-16">
   <h2 class="section-heading">Events</h2>
+  <div class="js-full-calendar">
+    <div class="hidden">
+      <a class="js-calendar-prev float-none text-grey-darker inline-block w-6 mr-6" href="#">{% include svg/nav-prev.svg alt_text="View previous month" %}</a>
+      <a class="js-calendar-next float-none text-grey-darker inline-block w-6" href="#">{% include svg/nav-next.svg alt_text="View next month" %}</a>
+    </div>
+  </div>
+
 </div>

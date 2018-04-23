@@ -1242,6 +1242,58 @@ img {
 }
 
 /**
+ * Branding styles for full calendar.
+ */
+
+.fc-unthemed.fc-unthemed th {
+  font-weight: 400;
+}
+
+.fc-unthemed.fc-unthemed td {
+  border-color: #eef0f0;
+}
+
+.fc-unthemed.fc-unthemed td.fc-today {
+  background-color: #eef0f0;
+}
+
+.fc-unthemed.fc-unthemed td.fc-other-month {
+  background-color: #f9f9f9;
+}
+
+.fc-unthemed .fc-event,
+.fc-unthemed .fc-event-dot {
+  background-color: #8bc34a;
+}
+
+.fc-unthemed .fc-event {
+  border-color: #8bc34a;
+}
+
+/**
+ * Specific styles for the community calendar.
+ */
+
+.tweaked-fc .fc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tweaked-fc .fc-left {
+  margin-right: auto;
+}
+
+.tweaked-fc .fc-right {
+  margin-left: auto;
+}
+
+.tweaked-fc .fc-center,
+.tweaked-fc .fc-clear {
+  display: none;
+}
+
+/**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
  *
