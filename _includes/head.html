@@ -19,6 +19,11 @@
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="{{ stylesheet }}" media="screen" type="text/css">
+    {% endfor %}
+  {% endif %}
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.cookie.js"></script>
@@ -30,4 +35,9 @@
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/menu-toggling.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/smooth-scroll.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/external-links.js"></script>
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script type="text/javascript" src='{{ js_file }}'></script>
+    {% endfor %}
+  {% endif %}
 </head>
