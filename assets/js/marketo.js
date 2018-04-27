@@ -32,7 +32,6 @@ marketo.utils = {};
   // Marketo Helper Methods.
   // Add Required and Add Privacy Note dynamically.
   marketo.utils.setRequired = function ($form) {
-    var url = $form.data('privacyUrl');
     var privacy_message = $form.data('privacyMessage');
     var no_thanks = $form.data('noThanks');
     var redirect = $form.data('redirect');
@@ -42,9 +41,7 @@ marketo.utils = {};
     var m = {
       intro: '<div class="mktoForm-intro">' + intro + '</div>',
       optInLabel: '<div class="mktoForm-opt-in-label mktoFormRow">' + optInLabel + '</div>',
-      privacy: '<p class="mktoForm-message">' + Activiti.stringReplace(privacy_message, {
-        "@href": Activiti.checkPlain(url)
-      }) + '</p>',
+      privacy: '<p class="mktoForm-message">' + privacy_message + '</p>',
       require: '<p class="mktoForm-message">* Required fields</p>',
       no_thanks: '<a class="mktoForm-no-thanks" href="' + redirect + '">' + no_thanks + '</a>'
     };
@@ -55,11 +52,11 @@ marketo.utils = {};
     if (intro) {
       $form.prepend(m.intro);
     }
+    if (privacy_message) {
+      $form.append(m.privacy);
+    }
     if ($form.find('.mktoRequired').length > 0) {
       $form.append(m.require);
-    }
-    if (url && privacy_message) {
-      $form.append(m.privacy);
     }
     var $optIn = $form.find("label[for='emailOptIn']");
     if ($optIn.length && optInLabel.length > 0) {

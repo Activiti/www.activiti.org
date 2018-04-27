@@ -142,12 +142,8 @@
   }
   .mktoForm .mktoForm-message {
     @apply .text-xs;
-    @apply .mt-6;
-    @apply .mb-1;
-    @apply .text-right;
-  }
-  .mktoForm .mktoForm-message:first-of-type {
-    @apply .float-left;
     @apply .mt-3;
+    @apply .mb-1;
+    @apply .text-left;
   }
 }

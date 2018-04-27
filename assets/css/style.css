@@ -1134,14 +1134,9 @@ img {
 
   .mktoForm .mktoForm-message {
     font-size: .75rem;
-    margin-top: 1.875rem;
-    margin-bottom: .3125rem;
-    text-align: right;
-  }
-
-  .mktoForm .mktoForm-message:first-of-type {
-    float: left;
     margin-top: .9375rem;
+    margin-bottom: .3125rem;
+    text-align: left;
   }
 }
 
