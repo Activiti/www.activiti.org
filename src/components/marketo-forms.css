@@ -46,8 +46,12 @@
 
 .mktoForm .mktoForm-message {
   @apply .font-light;
-  @apply .text-grey-dark;
-  @apply .text-center;
+  @apply .text-grey-darker;
+  @apply .text-left;
+}
+
+.mktoForm .mktoForm-message-required {
+  @apply .text-right;
 }
 
 .mktoForm-no-thanks {
@@ -89,7 +93,6 @@
     @apply .text-xs;
     @apply .mt-6;
     @apply .mb-1;
-    @apply .text-right;
   }
   .mktoForm .mktoForm-message:first-of-type {
     @apply .float-left;
