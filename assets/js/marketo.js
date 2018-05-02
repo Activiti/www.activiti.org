@@ -42,7 +42,7 @@ marketo.utils = {};
       intro: '<div class="mktoForm-intro">' + intro + '</div>',
       optInLabel: '<div class="mktoForm-opt-in-label mktoFormRow">' + optInLabel + '</div>',
       privacy: '<p class="mktoForm-message">' + privacy_message + '</p>',
-      require: '<p class="mktoForm-message">* Required fields</p>',
+      require: '<p class="mktoForm-message mktoForm-message-required">* Required fields</p>',
       no_thanks: '<a class="mktoForm-no-thanks" href="' + redirect + '">' + no_thanks + '</a>'
     };
     // Newer design changes the order of the messages, and adds an intro.
