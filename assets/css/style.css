@@ -1244,6 +1244,7 @@ img {
   justify-content: space-around;
   max-width: 1280px;
   min-height: 50px;
+  margin: 0 auto;
 }
 
 #sliding-popup .popup-content #popup-text {
@@ -1307,6 +1308,7 @@ img {
   text-decoration: none;
   text-shadow: none;
   box-shadow: none;
+  display: inline-block;
 }
 
 #sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button:hover,
