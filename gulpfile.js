@@ -7,7 +7,7 @@ const gutil = require('gulp-util');
 const Q = require('q');
 const merge = require('merge-stream');
 
-const cssFiles = "src/**/*.css";
+const cssFiles = "src/css/**/*.css";
 const siteRoot = "_site";
 const tailwindConfig = "tailwind.js"; /* Tailwind config */
 
@@ -87,7 +87,7 @@ gulp.task("css", function() {
   browserSync.notify("Compiling CSS...");
 
   return gulp
-    .src('src/style.css')
+    .src('src/css/style.css')
     .pipe(postcss([
       atimport(), 
       tailwindcss(tailwindConfig),
