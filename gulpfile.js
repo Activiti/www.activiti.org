@@ -5,7 +5,7 @@ const child = require("child_process");
 const gulp = require("gulp");
 const gutil = require('gulp-util');
 const Q = require('q');
-const merge = require('merge-stream');
+const concat = require('gulp-concat');
 
 const cssFiles = "src/css/**/*.css";
 const siteRoot = "_site";
@@ -64,14 +64,12 @@ gulp.task("jekyll:watch", function() {
  * Compile JS
  */
 gulp.task('js', function () {
-  var merged = merge();
   var files = [
-    'jquery.cookie/jquery.cookie.js',
+    'src/js/*.js',
   ];
-  files.forEach(function(file) {
-    merged.add(gulp.src(`node_modules/${file}`).pipe(gulp.dest(`assets/js`)));
-  });
-  return merged;
+  return gulp.src(files)
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('assets/js/'));
 });
 
 /**

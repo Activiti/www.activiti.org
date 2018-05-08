@@ -9,6 +9,7 @@
     "compression": "^1.7.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
     "gulp-dest": "^0.2.3",
     "gulp-postcss": "^7.0.1",
     "gulp-util": "^3.0.8",
