@@ -65,6 +65,8 @@ gulp.task("jekyll:watch", function() {
  */
 gulp.task('js', function () {
   var files = [
+    'node_modules/jquery.cookie/jquery.cookie.js',
+    'node_modules/jquery-modal/jquery.modal.min.js',
     'src/js/*.js',
   ];
   return gulp.src(files)

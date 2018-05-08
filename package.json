@@ -13,6 +13,7 @@
     "gulp-dest": "^0.2.3",
     "gulp-postcss": "^7.0.1",
     "gulp-util": "^3.0.8",
+    "jquery-modal": "^0.9.1",
     "jquery.cookie": "^1.4.1",
     "merge-stream": "^1.0.0",
     "postcss-import": "^11.1.0",
