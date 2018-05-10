@@ -1085,8 +1085,11 @@ img {
 
 .mktoForm .mktoForm-message {
   font-weight: 300;
-  color: #dbdadb;
   text-align: center;
+}
+
+.mktoForm .mktoForm-message a:hover {
+  color: #22be73;
 }
 
 .mktoForm-no-thanks {
