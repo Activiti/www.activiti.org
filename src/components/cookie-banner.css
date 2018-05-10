@@ -82,10 +82,10 @@
     margin: 8px 0;
     padding: 0;
     border: none;
-    border-bottom: 1px solid #01579b;
+    border-bottom: 1px solid #22be73;
     border-radius: 0;
     background: transparent;
-    color: #2196f3;
+    color: #8bc34a;
     font-family: "museo_slab500", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -96,7 +96,7 @@
 
 #sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button:hover,
 #sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button:hover {
-    color: #01579b;
+    color: #22be73;
 }
 
 #sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button {
