@@ -973,6 +973,8 @@ img {
   width: auto !important;
 }
 
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset,
 .mktoForm fieldset,
 .mktoLabel {
   display: none;
@@ -1004,7 +1006,10 @@ img {
 }
 
 .mktoForm .mktoRadioList {
-  padding: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
 }
 
 .mktoRadioList .mktoField {
@@ -1019,6 +1024,7 @@ img {
   position: relative;
   display: inline-block;
   margin-right: 1.875rem;
+  margin-bottom: 0;
 }
 
 .mktoForm input[type=radio] + label:before {
@@ -1055,6 +1061,11 @@ img {
 .mktoRadioList + .mktoError {
   right: auto !important;
   bottom: -100% !important;
+}
+
+label[for="emailOptIn"] {
+  display: block;
+  width: 100% !important;
 }
 
 .mktoButton {
