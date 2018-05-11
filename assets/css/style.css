@@ -1030,8 +1030,12 @@ img {
 
 .mktoForm .mktoForm-message {
   font-weight: 300;
-  color: #dbdadb;
-  text-align: center;
+  color: #727174;
+  text-align: left;
+}
+
+.mktoForm .mktoForm-message-required {
+  text-align: right;
 }
 
 .mktoForm-no-thanks {
@@ -1081,7 +1085,6 @@ img {
     font-size: .75rem;
     margin-top: 1.875rem;
     margin-bottom: .3125rem;
-    text-align: right;
   }
 
   .mktoForm .mktoForm-message:first-of-type {

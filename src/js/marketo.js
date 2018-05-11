@@ -114,7 +114,7 @@ marketo.utils = {};
 			privacy : '<p class="mktoForm-message">' + Activiti.stringReplace(privacy_message, {
           "@href": Activiti.checkPlain(url)
         }) + '</p>',
-			require : '<p class="mktoForm-message">* Required fields</p>',
+			require : '<p class="mktoForm-message mktoForm-message-required">* Required fields</p>',
       no_thanks: '<a class="mktoForm-no-thanks" href="' + redirect + '">' + no_thanks + '</a>'
 		};
 		// Newer design changes the order of the messages, and adds an intro.
@@ -124,11 +124,11 @@ marketo.utils = {};
     if (intro) {
       $form.prepend(m.intro);
 		}
-		if ($form.find('.mktoRequired').length > 0) {
-			$form.append(m.require);
-		}
     if (url && privacy_message) {
       $form.append(m.privacy);
+    }
+    if ($form.find('.mktoRequired').length > 0) {
+      $form.append(m.require);
     }
 	};
 	marketo.utils.pushToDataLayer = function (gtmEvent, cb) {
