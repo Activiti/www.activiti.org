@@ -101,7 +101,6 @@
 
 .mktoForm .mktoForm-message {
   @apply .font-light;
-  @apply .text-grey-darker;
   @apply .text-left;
 }
 
@@ -113,6 +112,10 @@
   @apply .block;
   @apply .text-center;
   @apply .my-3;
+}
+
+.mktoForm .mktoForm-message a:hover {
+  @apply .text-green;
 }
 
 .mktoForm-no-thanks {
