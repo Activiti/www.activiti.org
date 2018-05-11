@@ -1218,6 +1218,111 @@ img {
   }
 }
 
+#sliding-popup.sliding-popup-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e6e6ec;
+  margin: 0 0 -50px;
+  z-index: 50;
+}
+
+#sliding-popup.popup-content {
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sliding-popup h2 {
+  font-family: "museo_slab700", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1280px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+#sliding-popup .popup-content #popup-text {
+  color: #fff;
+  font-weight: bold;
+  margin: 5px 0 0;
+  max-width: 60%;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-text {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-text p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#sliding-popup .popup-content #popup-text h1,
+#sliding-popup .popup-content #popup-text h2,
+#sliding-popup .popup-content #popup-text h3,
+#sliding-popup .popup-content #popup-text p {
+  color: #727174;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 5px 0;
+}
+
+#sliding-popup .popup-content #popup-buttons {
+  max-width: 40%;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons {
+  flex-basis: 150px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+#sliding-popup .popup-content #popup-buttons button {
+  cursor: pointer;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button,
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button {
+  font-size: 13px;
+  margin: 8px 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #22be73;
+  border-radius: 0;
+  background: transparent;
+  color: #8bc34a;
+  font-family: "museo_slab500", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button:hover,
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button:hover {
+  color: #22be73;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button {
+  font-size: 20px;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
