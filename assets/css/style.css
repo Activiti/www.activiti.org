@@ -973,11 +973,14 @@ img {
   width: auto !important;
 }
 
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset,
 .mktoForm fieldset,
 .mktoLabel {
   display: none;
 }
 
+.mktoOriginalButton,
 .mktoHide {
   display: none !important;
 }
@@ -1000,6 +1003,69 @@ img {
   box-shadow: none !important;
   border-color: #e6e6ec !important;
   padding: .625rem !important;
+}
+
+.mktoForm .mktoRadioList {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+}
+
+.mktoRadioList .mktoField {
+  width: auto !important;
+}
+
+.mktoForm input[type=radio] {
+  position: absolute !important;
+}
+
+.mktoForm input[type=radio] + label {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.875rem;
+  margin-bottom: 0;
+}
+
+.mktoForm input[type=radio] + label:before {
+  box-shadow: none !important;
+  border-radius: .125rem !important;
+  margin-top: .25em;
+}
+
+.mktoForm input[type=radio]:checked + label:before {
+  border-style: none !important;
+  background: #0094d2 !important;
+}
+
+.mktoForm input[type=radio]:checked + label:after {
+  display: inline-block;
+  position: absolute !important;
+  content: '';
+  height: .25em;
+  width: .5em;
+  border-left: .15em solid #fff;
+  border-bottom: .15em solid #fff;
+  top: .3em;
+  left: -1.05em;
+  -webkit-transform: translateY(.15em) rotate(-55deg);
+          transform: translateY(.15em) rotate(-55deg);
+  border-color: #fff;
+}
+
+.mktoForm input[type=radio]:focus + label:before {
+  outline: 0;
+  box-shadow: 0 0 2px 2px #6bc1e3 !important;
+}
+
+.mktoRadioList + .mktoError {
+  right: auto !important;
+  bottom: -100% !important;
+}
+
+label[for="emailOptIn"] {
+  display: block;
+  width: 100% !important;
 }
 
 .mktoButton {
@@ -1030,8 +1096,11 @@ img {
 
 .mktoForm .mktoForm-message {
   font-weight: 300;
-  color: #dbdadb;
-  text-align: center;
+  text-align: left;
+}
+
+.mktoForm .mktoForm-message-required {
+  text-align: right;
 }
 
 .mktoForm-no-thanks {
@@ -1039,6 +1108,10 @@ img {
   text-align: center;
   margin-top: .9375rem;
   margin-bottom: .9375rem;
+}
+
+.mktoForm .mktoForm-message a:hover {
+  color: #22be73;
 }
 
 .mktoForm-no-thanks {
@@ -1079,14 +1152,9 @@ img {
 
   .mktoForm .mktoForm-message {
     font-size: .75rem;
-    margin-top: 1.875rem;
-    margin-bottom: .3125rem;
-    text-align: right;
-  }
-
-  .mktoForm .mktoForm-message:first-of-type {
-    float: left;
     margin-top: .9375rem;
+    margin-bottom: .3125rem;
+    text-align: left;
   }
 }
 
@@ -1291,6 +1359,111 @@ img {
 .tweaked-fc .fc-center,
 .tweaked-fc .fc-clear {
   display: none;
+}
+
+#sliding-popup.sliding-popup-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e6e6ec;
+  margin: 0 0 -50px;
+  z-index: 50;
+}
+
+#sliding-popup.popup-content {
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sliding-popup h2 {
+  font-family: "museo_slab700", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1280px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+#sliding-popup .popup-content #popup-text {
+  color: #fff;
+  font-weight: bold;
+  margin: 5px 0 0;
+  max-width: 60%;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-text {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-text p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#sliding-popup .popup-content #popup-text h1,
+#sliding-popup .popup-content #popup-text h2,
+#sliding-popup .popup-content #popup-text h3,
+#sliding-popup .popup-content #popup-text p {
+  color: #727174;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 5px 0;
+}
+
+#sliding-popup .popup-content #popup-buttons {
+  max-width: 40%;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons {
+  flex-basis: 150px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+#sliding-popup .popup-content #popup-buttons button {
+  cursor: pointer;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button,
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button {
+  font-size: 13px;
+  margin: 8px 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #22be73;
+  border-radius: 0;
+  background: transparent;
+  color: #8bc34a;
+  font-family: "museo_slab500", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button:hover,
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button:hover {
+  color: #22be73;
+}
+
+#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button {
+  font-size: 20px;
 }
 
 /**

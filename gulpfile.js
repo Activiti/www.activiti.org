@@ -5,9 +5,9 @@ const child = require("child_process");
 const gulp = require("gulp");
 const gutil = require('gulp-util');
 const Q = require('q');
-const merge = require('merge-stream');
+const concat = require('gulp-concat');
 
-const cssFiles = "src/**/*.css";
+const cssFiles = "src/css/**/*.css";
 const siteRoot = "_site";
 const tailwindConfig = "tailwind.js"; /* Tailwind config */
 
@@ -64,14 +64,14 @@ gulp.task("jekyll:watch", function() {
  * Compile JS
  */
 gulp.task('js', function () {
-  var merged = merge();
   var files = [
-    'jquery.cookie/jquery.cookie.js',
+    'node_modules/jquery.cookie/jquery.cookie.js',
+    'node_modules/jquery-modal/jquery.modal.min.js',
+    'src/js/*.js',
   ];
-  files.forEach(function(file) {
-    merged.add(gulp.src(`node_modules/${file}`).pipe(gulp.dest(`assets/js`)));
-  });
-  return merged;
+  return gulp.src(files)
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('assets/js/'));
 });
 
 /**
@@ -87,7 +87,7 @@ gulp.task("css", function() {
   browserSync.notify("Compiling CSS...");
 
   return gulp
-    .src('src/style.css')
+    .src('src/css/style.css')
     .pipe(postcss([
       atimport(), 
       tailwindcss(tailwindConfig),
