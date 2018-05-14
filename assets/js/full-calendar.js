@@ -15,9 +15,11 @@
           $root.addClass('tweaked-fc');
 
           $prev.off('click.full-cal').on('click.full-cal', function(e) {
+            e.preventDefault();
             calendar.prev();
           });
           $next.off('click.full-cal').on('click.full-cal', function(e) {
+            e.preventDefault();
             calendar.next();
           });
 
