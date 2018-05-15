@@ -4,6 +4,9 @@
 - title: Documentation
   url: documentation.md 
 - title: Community
-  url: community.html
+  # Once we have a Google maps API key:
+  # url: community.html
+  # But for now:
+  url: https://community.alfresco.com/community/bpm
 # - title: Team
 #   url: team.html
