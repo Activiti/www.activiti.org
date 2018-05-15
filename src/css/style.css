@@ -47,6 +47,8 @@
 @import "components/main-menu";
 @import "components/hamburger";
 @import "components/modal";
+@import "components/hr-text-row";
+@import "components/full-calendar";
 @import "components/cookie-banner";
 
 /**

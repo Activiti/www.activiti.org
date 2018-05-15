@@ -27,12 +27,10 @@ redirect_from:
 
 <p class="mt-0"><a href="{{ page.latest_news_link }}" class="block bg-green hover:bg-green-light border-t border-white md:border-0 px-3 py-4 text-center text-white hover:text-white transition-slow text-lg"><strong>Latest News: </strong>{{ page.latest_news }}</a></p>
 
-<div class="bg-grey-light clearfix">
-<div class="wrap max-w-lg md:py-8 text-center" markdown='1'>
-<hr class="hidden md:block" />
-<p class="text-base my-8"><a class="text-lg underline font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-lg underline font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
-<hr class="hidden md:block" />
-</div>
+<div class="bg-grey-light">
+  <div class="hr-text-row">
+    <p><a class="text-lg underline font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-lg underline font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
+  </div>
 </div>
 
 

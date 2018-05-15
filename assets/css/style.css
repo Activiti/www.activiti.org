@@ -1283,6 +1283,84 @@ label[for="emailOptIn"] {
   }
 }
 
+.hr-text-row {
+  max-width: 53rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 576px) {
+  .hr-text-row::before,
+  .hr-text-row::after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom-width: 1px;
+    border-color: #dbdadb;
+  }
+}
+
+/**
+ * Branding styles for full calendar.
+ */
+
+.fc-unthemed.fc-unthemed th {
+  font-weight: 400;
+}
+
+.fc-unthemed.fc-unthemed td {
+  border-color: #eef0f0;
+}
+
+.fc-unthemed.fc-unthemed td.fc-today {
+  background-color: #eef0f0;
+}
+
+.fc-unthemed.fc-unthemed td.fc-other-month {
+  background-color: #f9f9f9;
+}
+
+.fc-unthemed .fc-event,
+.fc-unthemed .fc-event-dot {
+  background-color: #8bc34a;
+}
+
+.fc-unthemed .fc-event {
+  border-color: #8bc34a;
+}
+
+/**
+ * Specific styles for the community calendar.
+ */
+
+.tweaked-fc .fc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tweaked-fc .fc-left {
+  margin-right: auto;
+}
+
+.tweaked-fc .fc-right {
+  margin-left: auto;
+}
+
+.tweaked-fc .fc-center,
+.tweaked-fc .fc-clear {
+  display: none;
+}
+
 #sliding-popup.sliding-popup-top {
   position: fixed;
   top: 0;

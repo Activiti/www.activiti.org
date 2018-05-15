@@ -1,0 +1,52 @@
+/**
+ * Branding styles for full calendar.
+ */
+
+.fc-unthemed.fc-unthemed th {
+  @apply .font-normal;
+}
+
+.fc-unthemed.fc-unthemed td {
+  @apply .border-grey-light;
+}
+
+.fc-unthemed.fc-unthemed td.fc-today {
+  @apply .bg-grey-light;
+}
+
+.fc-unthemed.fc-unthemed td.fc-other-month {
+  @apply .bg-grey-lighter;
+}
+
+.fc-unthemed .fc-event,
+.fc-unthemed .fc-event-dot {
+  @apply .bg-green-light;
+}
+
+.fc-unthemed .fc-event {
+  @apply .border-green-light;
+}
+
+
+/**
+ * Specific styles for the community calendar.
+ */
+
+.tweaked-fc .fc-toolbar {
+  @apply .flex;
+  @apply .flex-wrap;
+  @apply .items-center;
+}
+
+.tweaked-fc .fc-left {
+  margin-right: auto;
+}
+.tweaked-fc .fc-right {
+  margin-left: auto;
+}
+
+.tweaked-fc .fc-center,
+.tweaked-fc .fc-clear {
+  @apply .hidden;
+}
+

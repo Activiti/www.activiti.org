@@ -1,0 +1,20 @@
+.hr-text-row {
+  @apply .max-w-lg;
+  @apply .mx-auto;
+  @apply .px-3;
+  @apply .text-center;
+  @apply .py-8;
+}
+
+@screen md {
+  .hr-text-row::before,
+  .hr-text-row::after {
+    content: '';
+    @apply .block;
+    @apply .mx-auto;
+    @apply .max-w-xs;
+    @apply .my-8; 
+    @apply .border-b; 
+    @apply .border-grey-dark;
+  }
+}
