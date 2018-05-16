@@ -99,7 +99,7 @@ redirect_from:
       {% include right_video_embed.html %}
       <h4 class="section-sub-heading">Activiti Cloud Overview &amp;
         BluePrint</h4>
-      <p>While we are working hard in getting our first Beta Release (targeting May) we wanted to share a couple of
+      <p>While we are working hard in getting our first Beta Release (end of May), we wanted to share a couple of
         introductory videos about our work so far.</p>
     </div>
   </div>
