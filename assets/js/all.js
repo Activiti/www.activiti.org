@@ -201,9 +201,69 @@ var Activiti = Activiti || {};
 
 (function($) {
   $(function() {
+    var $banner = $('#sliding-popup');
+
+    // Any truthy value in the cookie is fine.
+    if ($.cookie('cookie_banner')) {
+      $banner.hide();
+    }
+    else {
+      $banner.find('.agree-button').click(function () {
+        $banner.slideUp();
+        $.cookie('cookie_banner', '1');
+      });
+
+      $banner.slideDown();
+    }
+  });
+})(jQuery);
+
+(function($) {
+  $(function() {
     $('a[href^="http"]').filter(function() {
       return this.hostname && this.hostname !== location.hostname;
     }).attr('target', '_blank');
+  });
+})(jQuery);
+
+(function($) {
+  $(function() {
+    $('.js-full-calendar').each(function() {
+      var $root = $(this);
+      $root.fullCalendar({
+        header: {
+          left: 'title',
+          center: '',
+          right: '',
+        },
+        viewRender: function(view, $element) {
+          var $prev = $root.find('.js-calendar-prev');
+          var $next = $root.find('.js-calendar-next');
+          var calendar = $root.fullCalendar('getCalendar');
+          $root.addClass('tweaked-fc');
+
+          $prev.off('click.full-cal').on('click.full-cal', function(e) {
+            e.preventDefault();
+            calendar.prev();
+          });
+          $next.off('click.full-cal').on('click.full-cal', function(e) {
+            e.preventDefault();
+            calendar.next();
+          });
+
+          if ($element.find('.fc-right .js-calendar-prev').length == 0) {
+            $prev.appendTo($root.find('.fc-right'));
+          }
+          if ($element.find('.fc-right .js-calendar-next').length == 0) {
+            $next.appendTo($root.find('.fc-right'));
+          }
+        },
+        googleCalendarApiKey: '@TODO replace with API key',
+        events: {
+          googleCalendarId: 'sabiolo48unj3l03ieehupviss@group.calendar.google.com'
+        } 
+      });
+    });
   });
 })(jQuery);
 
