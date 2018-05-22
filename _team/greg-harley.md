@@ -1,6 +1,6 @@
 --- 
 name: Greg Harley
-role: Activiti Core Developer
+role: Activiti Developer
 github: https://github.com/greg-harley
 ---
 
