@@ -1,6 +1,6 @@
 --- 
 name: Daisuke Yoshimoto
-role: Activiti Developer
+role: Activiti Core Developer
 github: https://github.com/daisuke-yoshimoto
 ---
 
