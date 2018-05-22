@@ -1,6 +1,6 @@
 --- 
 name: Igor Dianov
-role: Activiti Developer
+role: Activiti Core Developer
 github: https://github.com/igor-dianov
 ---
 
