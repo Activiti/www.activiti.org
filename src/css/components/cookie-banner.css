@@ -1,12 +1,20 @@
-#sliding-popup.sliding-popup-top {
+#sliding-popup  {
     position: fixed;
-    top: 0px;
     width: 100%;
     text-align: center;
     background: #f9f9f9;
     border-bottom: 1px solid #e6e6ec;
-    margin: 0px 0px -50px;
     @apply z-50;
+}
+
+#sliding-popup.sliding-popup-top {
+    top: 0px;
+    margin: 0px 0px -50px;
+}
+
+#sliding-popup.sliding-popup-bottom {
+    bottom: 0px;
+    margin: 0;
 }
 
 #sliding-popup.popup-content {
@@ -20,7 +28,7 @@
     font-family: "museo_slab700", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info {
+#sliding-popup  .popup-content.info {
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -37,13 +45,13 @@
     max-width: 60%;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-text {
+#sliding-popup  .popup-content.info #popup-text {
     padding: 0 10px;
     text-align: center;
     margin-top: 0;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-text p {
+#sliding-popup  .popup-content.info #popup-text p {
     font-size: 14px;
     font-weight: 500;
 }
@@ -63,7 +71,7 @@
     max-width: 40%;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons {
+#sliding-popup  .popup-content.info #popup-buttons {
     flex-basis: 150px;
     flex-shrink: 0;
     text-align: right;
@@ -76,8 +84,8 @@
     width: auto;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button, 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button {
+#sliding-popup  .popup-content.info #popup-buttons .agree-button,
+#sliding-popup  .popup-content.info #popup-buttons .find-more-button {
     font-size: 13px;
     margin: 8px 0;
     padding: 0;
@@ -94,12 +102,12 @@
     display: inline-block;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button:hover,
-#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .find-more-button:hover {
+#sliding-popup  .popup-content.info #popup-buttons .agree-button:hover,
+#sliding-popup  .popup-content.info #popup-buttons .find-more-button:hover {
     color: #22be73;
 }
 
-#sliding-popup.sliding-popup-top .popup-content.info #popup-buttons .agree-button {
+#sliding-popup  .popup-content.info #popup-buttons .agree-button {
     font-size: 20px;
 }
 
