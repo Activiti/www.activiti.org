@@ -1,6 +1,6 @@
 --- 
 name: Bassam Al-Sarori
-role: Core Activiti Developer
+role: Activiti Core Developer
 github: https://github.com/bassam-al-sarori
 ---
 
