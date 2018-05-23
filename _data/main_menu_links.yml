@@ -8,5 +8,5 @@
   # url: community.html
   # But for now:
   url: https://community.alfresco.com/community/bpm
-# - title: Team
-#   url: team.html
+- title: Team
+  url: team.html
