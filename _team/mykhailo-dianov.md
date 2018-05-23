@@ -1,7 +1,6 @@
 --- 
 name: Mykhailo Dianov
 role: Activiti Developer
-github: https://github.com/mykhailo-dianov
 ---
 
 Mykhailo Dianov has a solid 40+ years-long engineering and scientific background, having degrees of D.Sc. on Information Technologies (HW & SW Specialized Systems) and Ph.D. on Theoretical Foundations of Electrical Engineering (Computer Methods for 3D Magnetic Field Calculations). In his previous ventures as a CTO of large software services companies such as Luxoft and IntroPro, Mykhailo Dianov had a long and successful experience delivering technology solutions and sophisticated applications for big companies like AT&T, Boeing, Harman and others using middleware software for different projects such Oracle Fusion, TIBCO ActiveMatrix BPM, IBM Integration Server. As the software development market has changed dramatically in the favour of open-source software, after building a prototype in Igor Dianov’s basement den in early 2016, the entrepreneurs decided the concept had legs – literally. In the Spring of 2016, IntroPro Ventures Inc. was established with an office in Vancouver, British Colimbia, Canada to develop and market an open-sourced business application development platform that is called YouBPM today (www.introproventures.com).
