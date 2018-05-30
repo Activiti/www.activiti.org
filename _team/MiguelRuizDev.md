@@ -1,6 +1,6 @@
 --- 
 name: Miguel Ruiz
-role: Activiti Core Developer
+role: Activiti Intern Developer
 github: https://github.com/MiguelRuizDev
 ---
 
