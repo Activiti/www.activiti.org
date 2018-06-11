@@ -1063,7 +1063,8 @@ img {
   bottom: -100% !important;
 }
 
-label[for="emailOptIn"] {
+label[for="emailOptIn"],
+label[for="Partner_Opt_In__c"] {
   display: block;
   width: 100% !important;
 }
