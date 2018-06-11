@@ -1,5 +1,6 @@
 --- 
 name: Marcello Teodori
 role: Activiti Developer
-github: https://github.com/mteodori
+social_links:
+  github: https://github.com/mteodori
 ---
