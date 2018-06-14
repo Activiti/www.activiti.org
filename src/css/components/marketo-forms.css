@@ -45,6 +45,7 @@
 
 .mktoForm input[type=radio] {
   @apply .absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .mktoForm input[type=radio] + label {
