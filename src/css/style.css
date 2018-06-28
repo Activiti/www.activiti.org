@@ -50,6 +50,7 @@
 @import "components/hr-text-row";
 @import "components/full-calendar";
 @import "components/cookie-banner";
+@import "components/team-badges";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

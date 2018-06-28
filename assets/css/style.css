@@ -1476,6 +1476,32 @@ label[for="Partner_Opt_In__c"] {
   font-size: 20px;
 }
 
+.badge:after {
+  content: '';
+  display: block;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.rock-star-small:after {
+  background-image: url('/assets/images/rock-star-small.png');
+  bottom: -75%;
+}
+
+.rock-star:after {
+  background-image: url('/assets/images/rock-star.png');
+  bottom: -100%;
+}
+
+.rock-star-large:after {
+  background-image: url('/assets/images/rock-star-large.png');
+  bottom: -100%;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -4161,6 +4187,21 @@ label[for="Partner_Opt_In__c"] {
 }
 
 @media (min-width: 420px) {
+  .sm\:rock-star-small:after {
+    background-image: url('/assets/images/rock-star-small.png');
+    bottom: -75%;
+  }
+
+  .sm\:rock-star:after {
+    background-image: url('/assets/images/rock-star.png');
+    bottom: -100%;
+  }
+
+  .sm\:rock-star-large:after {
+    background-image: url('/assets/images/rock-star-large.png');
+    bottom: -100%;
+  }
+
   .sm\:list-reset {
     list-style: none;
     padding: 0;
@@ -6743,6 +6784,21 @@ label[for="Partner_Opt_In__c"] {
 }
 
 @media (min-width: 576px) {
+  .md\:rock-star-small:after {
+    background-image: url('/assets/images/rock-star-small.png');
+    bottom: -75%;
+  }
+
+  .md\:rock-star:after {
+    background-image: url('/assets/images/rock-star.png');
+    bottom: -100%;
+  }
+
+  .md\:rock-star-large:after {
+    background-image: url('/assets/images/rock-star-large.png');
+    bottom: -100%;
+  }
+
   .md\:list-reset {
     list-style: none;
     padding: 0;
@@ -9325,6 +9381,21 @@ label[for="Partner_Opt_In__c"] {
 }
 
 @media (max-width: 767px) {
+  .\<lg\:rock-star-small:after {
+    background-image: url('/assets/images/rock-star-small.png');
+    bottom: -75%;
+  }
+
+  .\<lg\:rock-star:after {
+    background-image: url('/assets/images/rock-star.png');
+    bottom: -100%;
+  }
+
+  .\<lg\:rock-star-large:after {
+    background-image: url('/assets/images/rock-star-large.png');
+    bottom: -100%;
+  }
+
   .\<lg\:list-reset {
     list-style: none;
     padding: 0;
@@ -11907,6 +11978,21 @@ label[for="Partner_Opt_In__c"] {
 }
 
 @media (min-width: 768px) {
+  .lg\:rock-star-small:after {
+    background-image: url('/assets/images/rock-star-small.png');
+    bottom: -75%;
+  }
+
+  .lg\:rock-star:after {
+    background-image: url('/assets/images/rock-star.png');
+    bottom: -100%;
+  }
+
+  .lg\:rock-star-large:after {
+    background-image: url('/assets/images/rock-star-large.png');
+    bottom: -100%;
+  }
+
   .lg\:list-reset {
     list-style: none;
     padding: 0;
@@ -14489,6 +14575,21 @@ label[for="Partner_Opt_In__c"] {
 }
 
 @media (min-width: 992px) {
+  .xl\:rock-star-small:after {
+    background-image: url('/assets/images/rock-star-small.png');
+    bottom: -75%;
+  }
+
+  .xl\:rock-star:after {
+    background-image: url('/assets/images/rock-star.png');
+    bottom: -100%;
+  }
+
+  .xl\:rock-star-large:after {
+    background-image: url('/assets/images/rock-star-large.png');
+    bottom: -100%;
+  }
+
   .xl\:list-reset {
     list-style: none;
     padding: 0;

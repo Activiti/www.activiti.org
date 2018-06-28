@@ -37,12 +37,12 @@ team:
         {% assign headshot = team_collection.files | where: "basename", person.slug | first %}
         <div class="inline-block w-2/3 overflow-hidden rounded-full relative">
           {% if headshot %}
-            <img class="w-full align-middle {{ person.caption | slugify }}" src="/{{ headshot.path | replace_first: '_team', 'team' }}" alt="Picture of {{ person.name | escape }}" />
+            <img class="w-full align-middle" src="/{{ headshot.path | replace_first: '_team', 'team' }}" alt="Picture of {{ person.name | escape }}" />
           {% else %}
             <div class="intrinsic-1x1 bg-grey-light"></div>
           {% endif %}
-          {% if person.caption %}
-            <div class="bg-green text-white absolute w-full pin-b mb-6 font-bold text-lg">{{ person.caption }}</div>
+          {% if person.badge %}
+            <div class="bg-green text-white absolute w-full pin-b mb-6 font-bold text-lg badge {{ person.badge | slugify }}">{{ person.badge }}</div>
           {% endif %}
         </div>
         <h2 class="text-green text-xl font-normal">{{ person.name }}</h2>
