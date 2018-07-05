@@ -113,8 +113,7 @@ redirect_from:
     <div class="wrap max-w-lg pb-4 md:py-4 text-center">
       <p class="text-lg">Follow our QuickStart Guide to get an Activiti Cloud Application up and running in 3 simple steps into a Kubernetes installation.</p>
     </div>
-    <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Get
-      Started Now</a>
+    <a href="{% link before-you-start.html %}" data-modal="#before-you-start" class="btn btn--large px-8">Try Now/a>
   </div>
 </div>
 
