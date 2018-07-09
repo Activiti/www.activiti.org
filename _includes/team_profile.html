@@ -2,11 +2,17 @@
 {% assign headshot = team_collection.files | where: "basename", include.person.slug | first %}
 
 <div class="xl:intrinsic-2x1">
-  <div class="w-32 mb-2 mx-auto sm:float-left sm:ml-0 sm:mr-3 md:w-48 xl:absolute xl:m-0 xl:pin-y xl:pin-l xl:w-1/2 xl:pr-4">
+  <div class="w-32 mb-2 mx-auto relative sm:float-left sm:ml-0 sm:mr-3 md:w-48 xl:absolute xl:m-0 xl:pin-y xl:pin-l xl:w-1/2 xl:pr-4">
     {% if headshot %}
       <img class="w-full border p-1 xl:border-0 xl:p-0" src="/{{ headshot.path | replace_first: '_team', 'team' }}" alt="Picture of {{ include.person.name | escape }}" />
     {% else %}
       <div class="intrinsic-1x1 bg-grey-light"></div>
+    {% endif %}
+    {% if include.person.badge %}
+      <div class="absolute pin-r pin-l pin-b border border-transparent pb-1 mt-1 mx-1 mb-4  md:mb-6 xl:mt-0 xl:mx-0 xl:mb-16 xl:border-0">
+        {% assign badge_slug = person.badge | slugify %}
+        <div class="relative bg-green text-center text-white text-xs md:text-base md:font-bold xl:text-4xl xl:mr-4 badge {{ badge_slug }}-small md:{{ badge_slug }} xl:{{ badge_slug }}-large">{{ include.person.badge }}</div>
+      </div>
     {% endif %}
   </div>
   <div class="xl:absolute xl:pin-y xl:pin-r xl:w-1/2 xl:flex xl:flex-col lg:pb-2">

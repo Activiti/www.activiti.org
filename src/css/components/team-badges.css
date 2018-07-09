@@ -1,0 +1,24 @@
+.badge:after {
+  content: '';
+  display: block;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+@responsive {
+  .rock-star-small:after {
+    background-image: url('/assets/images/rock-star-small.png');
+    bottom: -75%;
+  }
+  .rock-star:after {
+    background-image: url('/assets/images/rock-star.png');
+    bottom: -100%;
+  }
+  .rock-star-large:after {
+    background-image: url('/assets/images/rock-star-large.png');
+    bottom: -100%;
+  }
+}
