@@ -287,7 +287,7 @@ var Activiti = Activiti || {};
         $mktoForm = $('form[id*="mktoForm_"]', $modal);
         if ($mktoForm.length) {
           protectedForm = $mktoForm.data('protectionForm');
-          redirect = $mktoForm.data('redirect');
+          redirect = $this_link.data('redirect') || $mktoForm.data('redirect');
           if (protectedForm && redirect) {
             if ($.cookie('protected_form_completed' + protectedForm) === 'true') {
               $this_link.attr('href', redirect);
@@ -309,6 +309,19 @@ var Activiti = Activiti || {};
 
         if (modal_status) {
           var showModal = function(e) {
+            var latestLeadSourceVal = $(this).data('mostRecentLeadSourceDetail');
+            if (latestLeadSourceVal && latestLeadSourceVal.length > 0) {
+              $mktoForm.data('mostRecentLeadSourceDetail', latestLeadSourceVal);
+              var $latestLeadSourceElem = $(':input[name="mostRecentLeadSourceDetail"]', $mktoForm);
+              if ($latestLeadSourceElem.length > 0) {
+                $latestLeadSourceElem.val(latestLeadSourceVal);
+              }
+            }
+
+            var redirect = $(this).attr('href');
+            $mktoForm.data('redirect', redirect);
+            $('.js-marketo-continue, .mktoForm-no-thanks', $mktoForm).attr('href', redirect);
+
             $mktoForm.removeAttr('style').find('[style]').removeAttr('style');
 
             $modal.modal({
@@ -429,12 +442,16 @@ marketo.utils = {};
       $optIn.closest('.mktoFormRow').before(m.optInLabel);
     }
   };
-  marketo.utils.pushToDataLayer = function (gtmEvent, cb) {
+  marketo.utils.pushToDataLayer = function (gtmEvent, cb, latestLeadSource) {
     if (typeof dataLayer !== "undefined") {
-      dataLayer.push({
+      var push = {
         'event': gtmEvent,
         'eventCallback': cb
-      });
+      };
+      if (latestLeadSource.length > 0) {
+        push['mostRecentLeadSource'] = latestLeadSource;
+      }
+      dataLayer.push(push);
     }
     else {
       cb();
@@ -473,12 +490,19 @@ marketo.utils = {};
 
       // 3. We may need to do a custom redirect.
       var callback = function () {
-        window.location = $form.data('redirect');
+        // Ensure redirect property is checked afresh, in case it was updated
+        // since the $form object was cached.
+        window.location = $('#' + $form.attr('id')).data('redirect');
       };
 
       // 2. Google events may need to be fired.
       if ($form.data('googleEvent')) {
-        marketo.utils.pushToDataLayer($form.data('googleEvent'), callback);
+        var $latestLeadSourceElem = $(':input[name="mostRecentLeadSourceDetail"]', $form);
+        var latestLeadSourceVal = '';
+        if ($latestLeadSourceElem.length > 0) {
+          latestLeadSourceVal = $latestLeadSourceElem.val();
+        }
+        marketo.utils.pushToDataLayer($form.data('googleEvent'), callback, latestLeadSourceVal);
         return false;
       }
       else {

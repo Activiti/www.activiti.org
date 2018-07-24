@@ -1,0 +1,27 @@
+.menu-link {
+  @apply .block;
+  @apply .text-grey-darker;
+  @apply .font-normal;
+  @apply .text-xl;
+  @apply .py-3;
+}
+
+@media (max-width: config(screens.lg)) {
+  .menu-link {
+    @apply .border-t;
+    @apply .border-green;
+    @apply .pl-8;
+    @apply .bg-grey-lighter;
+  }
+
+  .menu-link:hover {
+    @apply .bg-grey-light;
+  }
+}
+
+@screen lg {
+  .menu-link {
+    @apply .text-base;
+    @apply .mx-4
+  }
+}
