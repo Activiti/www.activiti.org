@@ -1197,6 +1197,36 @@ label[for="Partner_Opt_In__c"] {
   }
 }
 
+.menu-link {
+  display: block;
+  color: #727174;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
+}
+
+@media (max-width: 768px) {
+  .menu-link {
+    border-top-width: 1px;
+    border-color: #22be73;
+    padding-left: 2.5rem;
+    background-color: #f9f9f9;
+  }
+
+  .menu-link:hover {
+    background-color: #eef0f0;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-link {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
 .hamburger {
   position: absolute;
   color: #727174;

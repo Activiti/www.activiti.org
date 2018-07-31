@@ -18,7 +18,7 @@
         $mktoForm = $('form[id*="mktoForm_"]', $modal);
         if ($mktoForm.length) {
           protectedForm = $mktoForm.data('protectionForm');
-          redirect = $mktoForm.data('redirect');
+          redirect = $this_link.data('redirect') || $mktoForm.data('redirect');
           if (protectedForm && redirect) {
             if ($.cookie('protected_form_completed' + protectedForm) === 'true') {
               $this_link.attr('href', redirect);
@@ -40,6 +40,19 @@
 
         if (modal_status) {
           var showModal = function(e) {
+            var latestLeadSourceVal = $(this).data('mostRecentLeadSourceDetail');
+            if (latestLeadSourceVal && latestLeadSourceVal.length > 0) {
+              $mktoForm.data('mostRecentLeadSourceDetail', latestLeadSourceVal);
+              var $latestLeadSourceElem = $(':input[name="mostRecentLeadSourceDetail"]', $mktoForm);
+              if ($latestLeadSourceElem.length > 0) {
+                $latestLeadSourceElem.val(latestLeadSourceVal);
+              }
+            }
+
+            var redirect = $(this).attr('href');
+            $mktoForm.data('redirect', redirect);
+            $('.js-marketo-continue, .mktoForm-no-thanks', $mktoForm).attr('href', redirect);
+
             $mktoForm.removeAttr('style').find('[style]').removeAttr('style');
 
             $modal.modal({

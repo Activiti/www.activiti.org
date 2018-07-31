@@ -8,6 +8,11 @@ const Q = require('q');
 const concat = require('gulp-concat');
 
 const cssFiles = "src/css/**/*.css";
+const jsFiles = [
+  'node_modules/jquery.cookie/jquery.cookie.js',
+  'node_modules/jquery-modal/jquery.modal.min.js',
+  'src/js/*.js',
+];
 const siteRoot = "_site";
 const tailwindConfig = "tailwind.js"; /* Tailwind config */
 
@@ -64,12 +69,7 @@ gulp.task("jekyll:watch", function() {
  * Compile JS
  */
 gulp.task('js', function () {
-  var files = [
-    'node_modules/jquery.cookie/jquery.cookie.js',
-    'node_modules/jquery-modal/jquery.modal.min.js',
-    'src/js/*.js',
-  ];
-  return gulp.src(files)
+  return gulp.src(jsFiles)
     .pipe(concat('all.js'))
     .pipe(gulp.dest('assets/js/'));
 });
@@ -138,6 +138,7 @@ gulp.task("serve", ["css", "js"], () => {
   });
 
   gulp.watch([cssFiles, tailwindConfig], { interval: 500 }, ['css']);
+  gulp.watch([jsFiles], { interval: 500 }, ['js']);
 });
 
 gulp.task("default", ['build']);
