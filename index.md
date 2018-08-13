@@ -3,8 +3,8 @@
 # below, as it has a <br> tag in it.
 title: Open Source Business Automation
 
-latest_news: Your feedback matters to us! Take our survey
-latest_news_link: https://docs.google.com/forms/d/e/1FAIpQLSeBRVDZyYU-gZF-LRAe0HpBS-yrhGVlgKFfcl_jAiRLAj8pfg/viewform
+latest_news: Activiti Core & Activiti Cloud Beta1 released!
+latest_news_link: https://community.alfresco.com/community/bpm/blog/2018/08/13/activiti-core-activiti-cloud-beta1-released
 redirect_from:
   - about
   - content/activiti-home
