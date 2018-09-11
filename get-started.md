@@ -22,7 +22,7 @@ Cloud in 5 minutes.
 </div>
 
       <div class="three-cards__card-cta">
-        <a href="https://activiti.gitbooks.io/activiti-7-developers-guide/getting-started/quickstart.html" class="btn btn--large px-8 font-normal">Start
+        <a href="https://activiti.gitbook.io/activiti-7-developers-guide/getting-started/getting-started" class="btn btn--large px-8 font-normal">Start
           Now</a>
       </div>
     </div>
