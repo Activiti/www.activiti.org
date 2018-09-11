@@ -14,11 +14,10 @@ redirect_from:
       <h3 class="card__title">Quickstart</h3>
 
 <div class="card__content" markdown='1'>
-This Quickstart is designed to help you get up and running with Activiti
-Cloud in 5 minutes.
-* **Step 1:** (prerequisites) - Install Git & Docker
-* **Step 2:** Deploy the Docker images
-* **Step 3:** Test the Activiti Cloud application example
+This Quickstart is designed to help you get up and running with Activiti Core and Activiti Cloud. Our tutorials provide a walkthrough of the basics of the Activiti process automation project.
+* **Step 1:** (prerequisites) - Setup your environment
+* **Step 2:** Deploy the Activiti runtime application
+* **Step 3:** Test the Activiti application example
 </div>
 
       <div class="three-cards__card-cta">
