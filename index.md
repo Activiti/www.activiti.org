@@ -99,7 +99,7 @@ redirect_from:
       {% include right_video_embed.html %}
       <h4 class="section-sub-heading">Activiti Cloud Overview &amp;
         BluePrint</h4>
-      <p>Now that our first Beta Release is out, you can check in this post the roadmap updates <a class="text-lg underline font-normal" href="https://community.alfresco.com/community/bpm/blog/2018/08/30/activiti-activiti-cloud-roadmap-update-290818">roadmap updates</a> with more details about what is keeping us busy.</p>
+      <p>Now that our first Beta Release is out, you can check in this post the <a class="text-lg underline font-normal" href="https://community.alfresco.com/community/bpm/blog/2018/08/30/activiti-activiti-cloud-roadmap-update-290818">roadmap updates</a> including details about what is keeping us busy.</p>
     </div>
   </div>
 </div>
