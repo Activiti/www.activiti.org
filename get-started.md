@@ -21,7 +21,7 @@ This Quickstart is designed to help you get up and running with Activiti Core an
 </div>
 
       <div class="three-cards__card-cta">
-        <a href="https://activiti.gitbook.io/activiti-7-developers-guide/getting-started/getting-started" class="btn btn--large px-8 font-normal">Start
+        <a href="https://activiti.gitbook.io/activiti-7-developers-guide/getting-started" class="btn btn--large px-8 font-normal">Start
           Now</a>
       </div>
     </div>
