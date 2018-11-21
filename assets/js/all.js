@@ -290,10 +290,13 @@ var Activiti = Activiti || {};
       }
     }
 
-          $this_link.on('click', showModal);
-        }
+    // Get started page
+    if (current_path === "/get-started") {
+      // If the form has not been skipped or filled, redirect
+      if (document.cookie.search(/\bprotected_form_completed\S*=/) < 0) {
+        window.location.replace("/before-you-start");
       }
-    });
+    }
   });
 })(jQuery);
 
