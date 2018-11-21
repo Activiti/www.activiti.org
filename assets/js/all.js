@@ -276,6 +276,11 @@ var Activiti = Activiti || {};
     if (current_path === "/before-you-start") {
       $mktoForm = $('form[id*="mktoForm_"]');
 
+      // If the form has been skipped or filled already, redirect
+      if (document.cookie.search(/\bprotected_form_completed\S*=/) >= 0) {
+        window.location.replace("/get-started");
+      }
+
       // If there is a marketo form in the page
       if ($mktoForm.length) {
         protectedForm = $mktoForm.data('protectionForm');
