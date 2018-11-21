@@ -269,111 +269,34 @@ var Activiti = Activiti || {};
 
 (function ($) {
   $(function () {
-    var modalsProcessed = {};
+    // Get current relative path
+    var current_path = window.location.pathname;
 
-    // Attach click handler to show modal, unless the modal contains a marketo
-    // form protecting a page, and the form has already been completed, in which
-    // case change the link target to the protected page.
-    $('a[data-modal]').each(function () {
-      var $mktoForm, redirect, protectedForm;
-      // Attach click handler if modal status is anything other than 0. If modal
-      // status is 2, show it immediately (i.e. it is supposed to be protecting
-      // the current page).
-      var modal_status = 1;
-      var $this_link = $(this);
-      var modal_selector = $this_link.data('modal');
-      var $modal = $(modal_selector);
-      if ($modal.length) {
-        $mktoForm = $('form[id*="mktoForm_"]', $modal);
-        if ($mktoForm.length) {
-          protectedForm = $mktoForm.data('protectionForm');
-          redirect = $this_link.data('redirect') || $mktoForm.data('redirect');
-          if (protectedForm && redirect) {
-            if ($.cookie('protected_form_completed' + protectedForm) === 'true') {
-              $this_link.attr('href', redirect);
-              modal_status = 0;
-            }
-            else {
-              var current_path = window.location.pathname;
-              if (redirect === current_path) {
-                modal_status = 2;
-              }
-              // Also possible that the redirect contains a fragment identifier
-              // or query string, so this is the protected page after all.
-              else if (redirect.substr(0, current_path.length) && (redirect[current_path.length] === '?' || redirect[current_path.length] === '#')) {
-                modal_status = 2;
-              }
-            }
-          }
-        }
+    // Before you start page
+    if (current_path === "/before-you-start") {
+      $mktoForm = $('form[id*="mktoForm_"]');
 
-        if (modal_status) {
-          var showModal = function(e) {
-            var latestLeadSourceVal = $(this).data('mostRecentLeadSourceDetail');
-            if (latestLeadSourceVal && latestLeadSourceVal.length > 0) {
-              $mktoForm.data('mostRecentLeadSourceDetail', latestLeadSourceVal);
-              var $latestLeadSourceElem = $(':input[name="mostRecentLeadSourceDetail"]', $mktoForm);
-              if ($latestLeadSourceElem.length > 0) {
-                $latestLeadSourceElem.val(latestLeadSourceVal);
-              }
-            }
+      // If there is a marketo form in the page
+      if ($mktoForm.length) {
+        protectedForm = $mktoForm.data('protectionForm');
 
-            var redirect = $(this).attr('href');
-            $mktoForm.data('redirect', redirect);
-            $('.js-marketo-continue, .mktoForm-no-thanks', $mktoForm).attr('href', redirect);
-
-            $mktoForm.removeAttr('style').find('[style]').removeAttr('style');
-
-            $modal.modal({
-              fadeDuration: 400,
-              fadeDelay: 0,
-              closeText: '<div class="close-modal-inner">Close</div>',
-            });
-
-
-            if (typeof e !== 'undefined') {
-              e.preventDefault();
-            }
-            return false;
-          };
-
-          // This modal may already have had handlers bound to it, and
-          // potentially soft protection checked, if any other links that would
-          // invoke it have already been processed.
-          if (!modalsProcessed.hasOwnProperty(modal_selector)) {
-            // Soft protection mode means that the cookie recording whether the
-            // form protecting a page can be set once the modal has been
-            // dismissed, even if the Marketo form was never filled in.
-            if (protectedForm && $mktoForm.data('protectionMode') === 'soft') {
-              var closeHandler = function(event, modal) {
-                $.cookie('protected_form_completed' + protectedForm, 'true', {
-                  expires: 2,
-                  path: '/'
-                });
-              };
-
-              // Bind close handler to the normal modal close action, and any
-              // no-thanks link.
-              $modal.on($.modal.CLOSE, closeHandler);
-
-              if ($mktoForm.data('noThanks')) {
-                $modal.on('CustomisedMarketoFormReady', function () {
-                  $('.mktoForm-no-thanks', $mktoForm).on('click', closeHandler);
-                });
-              }
-            }
-
-            if (modal_status === 2) {
-              showModal();
-            }
-
-            modalsProcessed[modal_selector] = modal_status;
-          }
-
-          $this_link.on('click', showModal);
-        }
+        // If you skip the form, set the cookie for 2 days
+        $(document).on("click", "a.mktoForm-no-thanks", function() {
+          $.cookie('protected_form_completed' + protectedForm, 'true', {
+            expires: 2,
+            path: '/'
+          });
+        });
       }
-    });
+    }
+
+    // Get started page
+    if (current_path === "/get-started") {
+      // If the form has not been skipped or filled, redirect
+      if (document.cookie.search(/\bprotected_form_completed\S*=/) < 0) {
+        window.location.replace("/before-you-start");
+      }
+    }
   });
 })(jQuery);
 
@@ -602,46 +525,50 @@ marketo.utils = {};
   $(document).ready(function () {
     var _all = marketo.modules.all;
     var $forms = $('[id*="mktoForm_"]');
-    $forms.each(function () {
-      var $this = $(this);
-      var id = $this.attr('id');
-      var args = {};
 
-      // Show the loading icon.
-      $this.siblings('.icon__loader').show();
+    // If there is a form in the page
+    if ($forms.length) {
+      $forms.each(function () {
+        var $this = $(this);
+        var id = $this.attr('id');
+        var args = {};
 
-      // Strip out inline styles unless set otherwise.
-      // Build parameters for form load.
-      args.formId = id.replace('mktoForm_', '');
-      args.baseUrl = _BASE_URL;
-      args.munchkinId = _MUNCHKIN_ID;
-      // Load Form.
-      MktoForms2.loadForm(args.baseUrl, args.munchkinId, args.formId, function defaultHandler(form) {
-        // Marketo adds some seriously crazy inline styles that we simply don't
-        // need and cause the forms to over flow.
-        form.getFormElem().removeAttr('style');
-        // Lets hide the form and show a loading icon until the pre-fill data is
-        // ready then we show the form.
-        form.getFormElem().hide();
-        _all.attachEventHandlers(form); // Load events needed for all forms.
+        // Show the loading icon.
+        $this.siblings('.icon__loader').show();
+
+        // Strip out inline styles unless set otherwise.
+        // Build parameters for form load.
+        args.formId = id.replace('mktoForm_', '');
+        args.baseUrl = _BASE_URL;
+        args.munchkinId = _MUNCHKIN_ID;
+        // Load Form.
+        MktoForms2.loadForm(args.baseUrl, args.munchkinId, args.formId, function defaultHandler(form) {
+          // Marketo adds some seriously crazy inline styles that we simply don't
+          // need and cause the forms to over flow.
+          form.getFormElem().removeAttr('style');
+          // Lets hide the form and show a loading icon until the pre-fill data is
+          // ready then we show the form.
+          form.getFormElem().hide();
+          _all.attachEventHandlers(form); // Load events needed for all forms.
+        });
       });
-    });
-    marketo.state.set(1);
-    MktoForms2.whenReady(function (form) {
-      marketo.state.set(2);
+      marketo.state.set(1);
+      MktoForms2.whenReady(function (form) {
+        marketo.state.set(2);
 
-      // Hide the loading icon.
-      var $form = $(form.getFormElem());
-      $form.siblings('.icon__loader').hide();
+        // Hide the loading icon.
+        var $form = $(form.getFormElem());
+        $form.siblings('.icon__loader').hide();
 
-      _all.ready(form); // Ready code run for all forms.
+        _all.ready(form); // Ready code run for all forms.
 
-      // Hide the loading icon.
-      $(form).siblings('.icon__loader').hide();
+        // Hide the loading icon.
+        $(form).siblings('.icon__loader').hide();
 
-      // Trigger another event for the form once the customisations have ran.
-      $form.trigger('CustomisedMarketoFormReady');
-    });
+        // Trigger another event for the form once the customisations have ran.
+        $form.trigger('CustomisedMarketoFormReady');
+      });
+    }
   });
 
 })(jQuery);
