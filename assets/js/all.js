@@ -269,6 +269,26 @@ var Activiti = Activiti || {};
 
 (function ($) {
   $(function () {
+    // Get current relative path
+    var current_path = window.location.pathname;
+
+    // Before you start page
+    if (current_path === "/before-you-start") {
+      $mktoForm = $('form[id*="mktoForm_"]');
+
+      // If there is a marketo form in the page
+      if ($mktoForm.length) {
+        protectedForm = $mktoForm.data('protectionForm');
+
+        // If you skip the form, set the cookie for 2 days
+        $(document).on("click", "a.mktoForm-no-thanks", function() {
+          $.cookie('protected_form_completed' + protectedForm, 'true', {
+            expires: 2,
+            path: '/'
+          });
+        });
+      }
+    }
 
           $this_link.on('click', showModal);
         }
