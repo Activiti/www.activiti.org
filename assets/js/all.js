@@ -502,46 +502,50 @@ marketo.utils = {};
   $(document).ready(function () {
     var _all = marketo.modules.all;
     var $forms = $('[id*="mktoForm_"]');
-    $forms.each(function () {
-      var $this = $(this);
-      var id = $this.attr('id');
-      var args = {};
 
-      // Show the loading icon.
-      $this.siblings('.icon__loader').show();
+    // If there is a form in the page
+    if ($forms.length) {
+      $forms.each(function () {
+        var $this = $(this);
+        var id = $this.attr('id');
+        var args = {};
 
-      // Strip out inline styles unless set otherwise.
-      // Build parameters for form load.
-      args.formId = id.replace('mktoForm_', '');
-      args.baseUrl = _BASE_URL;
-      args.munchkinId = _MUNCHKIN_ID;
-      // Load Form.
-      MktoForms2.loadForm(args.baseUrl, args.munchkinId, args.formId, function defaultHandler(form) {
-        // Marketo adds some seriously crazy inline styles that we simply don't
-        // need and cause the forms to over flow.
-        form.getFormElem().removeAttr('style');
-        // Lets hide the form and show a loading icon until the pre-fill data is
-        // ready then we show the form.
-        form.getFormElem().hide();
-        _all.attachEventHandlers(form); // Load events needed for all forms.
+        // Show the loading icon.
+        $this.siblings('.icon__loader').show();
+
+        // Strip out inline styles unless set otherwise.
+        // Build parameters for form load.
+        args.formId = id.replace('mktoForm_', '');
+        args.baseUrl = _BASE_URL;
+        args.munchkinId = _MUNCHKIN_ID;
+        // Load Form.
+        MktoForms2.loadForm(args.baseUrl, args.munchkinId, args.formId, function defaultHandler(form) {
+          // Marketo adds some seriously crazy inline styles that we simply don't
+          // need and cause the forms to over flow.
+          form.getFormElem().removeAttr('style');
+          // Lets hide the form and show a loading icon until the pre-fill data is
+          // ready then we show the form.
+          form.getFormElem().hide();
+          _all.attachEventHandlers(form); // Load events needed for all forms.
+        });
       });
-    });
-    marketo.state.set(1);
-    MktoForms2.whenReady(function (form) {
-      marketo.state.set(2);
+      marketo.state.set(1);
+      MktoForms2.whenReady(function (form) {
+        marketo.state.set(2);
 
-      // Hide the loading icon.
-      var $form = $(form.getFormElem());
-      $form.siblings('.icon__loader').hide();
+        // Hide the loading icon.
+        var $form = $(form.getFormElem());
+        $form.siblings('.icon__loader').hide();
 
-      _all.ready(form); // Ready code run for all forms.
+        _all.ready(form); // Ready code run for all forms.
 
-      // Hide the loading icon.
-      $(form).siblings('.icon__loader').hide();
+        // Hide the loading icon.
+        $(form).siblings('.icon__loader').hide();
 
-      // Trigger another event for the form once the customisations have ran.
-      $form.trigger('CustomisedMarketoFormReady');
-    });
+        // Trigger another event for the form once the customisations have ran.
+        $form.trigger('CustomisedMarketoFormReady');
+      });
+    }
   });
 
 })(jQuery);
