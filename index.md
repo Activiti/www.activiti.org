@@ -91,9 +91,8 @@ redirect_from:
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include left_video_embed.html %}
-      <h4 class="section-sub-heading">Activiti Cloud BluePrint Demo</h4>
-      <p>A demo of the Twitter trending topics compaigns, using the Activiti
-        Cloud BluePrint.</p>
+      <h4 class="section-sub-heading">Activiti Cloud Beta2 Demo</h4>
+      <p>A demo of the Activiti Cloud Beta2 release process modeling application.</p>
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include right_video_embed.html %}
