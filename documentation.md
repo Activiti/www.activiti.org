@@ -16,7 +16,7 @@ redirect_from: docs
       <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/blueprints/Overview.html' class="flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl">Blueprints</a>
     </div>
     <div class="w-full p-3 md:w-1/2 flex items-center flex-col flex-grow">
-      <a href='https://activiti.gitbooks.io/activiti-7-developers-guide/content/contribute.html' class="flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl">How to contribute</a>
+      <a href='https://github.com/Activiti/Activiti/wiki/Activiti-7-Roadmap' class="flex-grow flex items-center justify-center btn text-xl w-full max-w-xs lg:text-2xl">Roadmap</a>
     </div>
   </div>
 </div>
