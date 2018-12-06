@@ -8,9 +8,9 @@
   # url: community.html
   # But for now:
   url: https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~category%5Bactiviti-7%5D&filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bblogpost%5D
+- title: Get Involved
+  url: https://activiti.github.io/#get-started
 - title: Team
   url: team.html
 - title: Enterprise
   url: https://www.alfresco.com/platform/process-services-bpm
-- title: Get Involved
-  url: https://activiti.github.io/#get-started
