@@ -91,8 +91,8 @@ redirect_from:
   <div class="flex flex-wrap justify-center lg:flex-no-wrap -mx-3">
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include left_video_embed.html %}
-      <h4 class="section-sub-heading">Activiti Cloud Beta2 Demo</h4>
-      <p>Check out our Activiti Cloud Beta2 demo including the new bpmn process modeling application and a cloud connector integrating with a Slack bot.</p>
+      <h4 class="section-sub-heading">Activiti Cloud CD/CD Demo</h4>
+      <p>Check out our Kubernetes-based CI/CD demo including practical advice on maturing your organization’s DevOps practices.</p>
     </div>
     <div class="max-w-sm mt-4 md:mt-8 mb-8 mx-3 lg:mx-8 lg:w-1/2">
       {% include right_video_embed.html %}
