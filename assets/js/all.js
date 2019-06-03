@@ -258,7 +258,7 @@ var Activiti = Activiti || {};
             $next.appendTo($root.find('.fc-right'));
           }
         },
-        googleCalendarApiKey: '@TODO replace with API key',
+        googleCalendarApiKey: 'AIzaSyB5evPhjurN1fGVbckqlTVmGUBMWCXi_8s',
         events: {
           googleCalendarId: 'sabiolo48unj3l03ieehupviss@group.calendar.google.com'
         } 
