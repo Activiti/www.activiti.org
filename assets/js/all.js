@@ -260,7 +260,7 @@ var Activiti = Activiti || {};
         },
         googleCalendarApiKey: 'AIzaSyB5evPhjurN1fGVbckqlTVmGUBMWCXi_8s',
         events: {
-          googleCalendarId: 'sabiolo48unj3l03ieehupviss@group.calendar.google.com'
+          googleCalendarId: 'alfresco.com_js010n8567npirubeoimhst1ps@group.calendar.google.com'
         } 
       });
     });
