@@ -3,8 +3,8 @@
 # below, as it has a <br> tag in it.
 title: Open Source Business Automation
 
-latest_news: Activiti Cloud 7.1.0.M1 released!
-latest_news_link: https://community.alfresco.com/community/bpm/blog/2019/05/17/activiti-cloud-710m1-released
+latest_news: Activiti Cloud 7.1.0.M2 released!
+latest_news_link: https://community.alfresco.com/community/bpm/blog/2019/07/03/activiti-cloud-710m2-released
 redirect_from:
   - about
   - content/activiti-home
