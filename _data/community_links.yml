@@ -9,7 +9,7 @@
   url: 'https://gitter.im/Activiti/Activiti7'
 - title: Forum
   image: svg/forum.svg
-  url: 'https://community.alfresco.com/community/bpm/content?filterID=contentstatus%5Bpublished%5D~objecttype~thread%5Bquestions%5D'
+  url: 'https://hub.alfresco.com/t5/alfresco-process-services/bd-p/forum-BPM-software'
 - title: Issue Tracker
   image: svg/bugs.svg
   url: 'https://github.com/Activiti/Activiti/issues'
