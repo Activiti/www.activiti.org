@@ -1,7 +1,6 @@
 --- 
 name: Alex Merkulov
 role: Activiti Core Developer
-badge: Rock Star
 social_links:
   github: https://github.com/almerico
   linkedin: https://www.linkedin.com/in/oleksadrmerkulov/
