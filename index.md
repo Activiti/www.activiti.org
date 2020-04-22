@@ -1,5 +1,5 @@
 ---
-# This only sets the meta page title, as the visible one is set in the HTML 
+# This only sets the meta page title, as the visible one is set in the HTML
 # below, as it has a <br> tag in it.
 title: Open Source Business Automation
 
@@ -29,7 +29,7 @@ redirect_from:
 
 <div class="bg-grey-light">
   <div class="hr-text-row">
-    <p><a class="text-lg underline font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-lg underline font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide/content/introduction.html">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
+    <p><a class="text-lg underline font-normal" href="https://github.com/Activiti/Activiti">Activiti</a> is the leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs. <a class="text-lg underline font-normal" href="https://activiti.gitbooks.io/activiti-7-developers-guide">Activiti Cloud</a> is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.</p>
   </div>
 </div>
 
@@ -71,11 +71,11 @@ redirect_from:
         GraphQL integration.</p>
     </div>
   </div>
-</div> 
+</div>
 
 <div class="bg-grey-light">
   <div class="wrap py-8 md:py-12 lg:py-16">
-  <h6>Designed for:</h6> 
+  <h6>Designed for:</h6>
       <div class="flex flex-wrap justify-around xl:justify-between">
           <img class="my-4 mx-2" src="assets/images/spring-cloud-horizontal.png">
           <img class="my-4 mx-2" src="assets/images/docker-horizontal.png">
@@ -83,8 +83,8 @@ redirect_from:
         </div>
    </div>
 </div>
-     
-  
+
+
 
 <div class="wrap py-8 md:py-12 lg:py-16 pb-0 md:pb-4 lg:pb-8">
   <h3 class="section-heading">Activiti Community</h3>
