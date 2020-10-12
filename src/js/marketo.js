@@ -104,7 +104,7 @@ marketo.utils = {};
       // that the form has been filled in.
       if ($form.data('protectionForm')) {
         $.cookie('protected_form_completed' + $form.data('protectionForm'), 'true', {
-          expires: 30,
+          expires: 14,
           path: '/'
         });
       }
