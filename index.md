@@ -3,7 +3,7 @@
 # below, as it has a <br> tag in it.
 title: Open Source Business Automation
 
-latest_news: Activiti Cloud 7.2.0 released!
+latest_news: Activiti Cloud 7.3.0 released!
 latest_news_link: https://activiti.gitbook.io/activiti-7-developers-guide/releases/7.2.0
 redirect_from:
   - about
