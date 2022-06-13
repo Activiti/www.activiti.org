@@ -1,6 +1,6 @@
 --- 
 name: Raphael Allegre
-role: Product Marketing
+role: Product Manager
 social_links:
   github: https://github.com/rallegre
   linkedin: https://www.linkedin.com/in/raphaelallegre/
